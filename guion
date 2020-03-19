@@ -1,0 +1,37 @@
+PLAN TRABAJO hstats 19Marzo2020
+
+1. Cargar web usando csv como plantilla (la cabecera)
+
+	Los campos deben tener un formato determinado, por ejemplo los q sirvan de nombre o q van en la cabecera, q sean los primeros o tengan prefijo nom_
+	Los campos 'finales' son los q hacen referencia a datos reales q interesa ver al final del arbol.
+
+2. Generar json a partir de ciertas dimensiones
+
+	Usar el programa q para obtener la consulta deseada en csv	
+	Probar la conversion a json usando los scripts de fpcualifica.
+	Automatizar todo partiendo de un fichero csv y hasta 4 dimensiones
+
+3. Integrar formulario web para obtenr las dimensiones y en funcion de ellas mostrar los arboles
+
+4. Guardar los arboles para mostrarlos desde un enlace, si es q existe.
+
+
+
+
+
+
+PENDIENTE 31 OCTUBRE JUEVES
+
+-Revisar js para mostrar las 3 dimensiones como un conjunto de graficos. Incluyendo el código para cada fila , actualmente están predefinidas en el html
+
+Cargar oferta formativa y matricula en FPDATA
+Generar graficos con ajax
+Se envia los datos mediante un submit (aplicar filtros) 
+Se llama a php para conectar bbdd
+Si hay más de dos dimensiones:
+	Pàra cada valor de la tercera dimension:
+		Se genera la consulta con las dimensiones (select) y filtros (where)
+		Se generan los ficheros csv correspondientes
+		Se visualizan 
+
+

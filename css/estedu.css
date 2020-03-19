@@ -1,0 +1,54 @@
+.bdimension {
+    color: black;
+    background: white;
+    border-radius: 50px;
+}
+.dim,.fil{
+text-align:center;
+}
+[class*="col-"]
+{
+padding-top: 10px;
+}
+.nav-link[data-toggle].collapsed:after {
+    content: "▾";
+}
+.nav-link[data-toggle]:not(.collapsed):after {
+    content: "▴";
+}
+.mppal
+{
+margin-left: 10%;
+display: flex;
+}
+.smppal
+{
+padding-left:1%;
+}
+.btn-secondary
+{
+width:250px;
+}
+
+[id*="fil"]{
+left:12%!important;
+padding-left:12px;
+}
+
+#bgengra{
+background: black;
+color: aliceblue;
+}
+
+.shiva{
+tex-align:center;
+}
+.count{
+padding-left: 10%;
+    font-size: 50px;
+}
+
+.col-lg-2
+{
+max-width:30%!important
+}

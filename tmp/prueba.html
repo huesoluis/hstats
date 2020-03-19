@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Estadística Educativa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/estedu.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+  <script src="js/main.js"></script>
+</head>
+<body>
+
+<h2>HTML Forms</h2>
+<form id="fs" action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse">
+  <br><br>
+
+  <select class="custom-select " name="dim3" id="dim3">
+    <option selected="">Elige dato representar</option>
+    <option value="1">Grado</option>
+    <option value="2">Provincia</option>
+    <option value="3">Género</option>
+  </select>
+  <input type="submit" value="Submit">
+</form> 
+<form id="s" action="ko.txtt">
+  <select class="custom-select" id="dim1">
+    <option value="0" selected="">Elige dato representar</option>
+    <option value="1">Grado</option>
+    <option value="2">Provincia</option>
+    <option value="3">Género</option>
+  </select>
+  <select class="custom-select" id="dim2">
+    <option selected="">Elige dato representar</option>
+    <option value="1">Grado</option>
+    <option value="2">Provincia</option>
+    <option value="3">Género</option>
+  </select>
+  <select class="custom-select " id="dim3">
+    <option selected="">Elige dato representar</option>
+    <option value="1">Grado</option>
+    <option value="2">Provincia</option>
+    <option value="3">Género</option>
+  </select>
+  <input type="submit" value="Submit">
+					</form>
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>
