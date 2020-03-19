@@ -1,15 +1,16 @@
 PLAN TRABAJO hstats 19Marzo2020
 
-1. Cargar web usando csv como plantilla (la cabecera)
+1. Generar json a partir de ciertas dimensiones
+
+	Usar el programa q para obtener la consulta deseada en csv usando como entrada los campos elegidos de entre aquellos suceptibles, dos, tres o cuatro según dimensiones	
+	Probar la conversion a json usando los scripts de fpcualifica.
+	Automatizar todo partiendo de un fichero csv y hasta 4 dimensiones
+
+2. Cargar web usando csv como plantilla (la cabecera)
 
 	Los campos deben tener un formato determinado, por ejemplo los q sirvan de nombre o q van en la cabecera, q sean los primeros o tengan prefijo nom_
 	Los campos 'finales' son los q hacen referencia a datos reales q interesa ver al final del arbol.
 
-2. Generar json a partir de ciertas dimensiones
-
-	Usar el programa q para obtener la consulta deseada en csv	
-	Probar la conversion a json usando los scripts de fpcualifica.
-	Automatizar todo partiendo de un fichero csv y hasta 4 dimensiones
 
 3. Integrar formulario web para obtenr las dimensiones y en funcion de ellas mostrar los arboles
 
