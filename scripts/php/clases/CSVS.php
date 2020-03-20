@@ -31,8 +31,6 @@ class CSVS {
 	$select=trim($select,',').' FROM '.$this->fichero_csv.' ORDER BY ';
 	foreach($dimclaves as $d=>$v)
 		{
-			print_r($v);
-			print_r($this->dimensiones);
 		if(in_array($v,$this->dimensiones))
 			{
 			$select.=$this->dim_campos[$v][0].',';
