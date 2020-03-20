@@ -32,7 +32,7 @@ $_POST['dim']=Array( "ciclos","centros","provincias");
 $listado = new \hstats\CSVS($fichero,$_POST['dim'],$dim_oferta);
 $res=$listado->makeQuery();
 if($res)
-	print_r($res);
+	print_r("ok");
 else print("error");
 
 $csv=$listado->genCsv();
