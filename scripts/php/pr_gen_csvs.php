@@ -3,6 +3,7 @@
 //require_once(dirname(__FILE__) . '/config.php');
 
 require_once('clases/CSVS.php');
+require_once('datos/dim_oferta.php');
 
 if(isset($_SERVER["REQUEST_METHOD"]))
 {
@@ -26,9 +27,9 @@ if(isset($_SERVER["REQUEST_METHOD"]))
 else
 {
 #zona de pruebas
-$fichero='datos/oferta26062018.csv';
+$fichero='datos/oferta.csv';
 $_POST['dim']=Array( "ciclos","centros","provincias");
-$listado = new \hstats\CSVS($fichero,$_POST['dim']);
+$listado = new \hstats\CSVS($fichero,$_POST['dim'],$dim_oferta);
 $res=$listado->makeQuery();
 if($res)
 	print_r($res);
