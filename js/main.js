@@ -1,5 +1,35 @@
 $( document ).ready(function() {
 
+$('#fdim').submit(function(event) {
+	console.log('entrand ajax');
+        var formData = {
+	    'd0'		: $( "#d0 option:selected" ).text()
+        };
+	$.ajax({
+            type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
+            url         : 'scripts/php/pr_gen_csvs.php', // the url where we want to POST
+            data        : formData, // our data object
+            //dataType    : 'json', // what type of data do we expect back from the server
+            encode          : true
+        })
+            // using the done promise callback
+            .done(function(data) {
+			console.log('ivolviendo ajax');
+
+                // log data to the console so we can see
+                console.log(data); 
+
+                // here we will handle errors and validation messages
+            })
+	 	.fail(function(request, status, error) {
+
+		// show any errors
+		// best to remove for production
+		console.log(error);
+	    });
+	        event.preventDefault();
+});
+
 var fdgrado='js/dimensiones/grados.json';
 var fdprov='js/dimensiones/provincias.json';
 var fdgenero='js/dimensiones/generos.json';

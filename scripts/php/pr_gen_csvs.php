@@ -2,6 +2,8 @@
 // include configuration
 //require_once(dirname(__FILE__) . '/config.php');
 
+print_r($_POST);
+	exit();
 require_once('clases/CSVS.php');
 require_once('datos/dim_oferta.php');
 
@@ -10,7 +12,8 @@ if(isset($_SERVER["REQUEST_METHOD"]))
 	if($_SERVER["REQUEST_METHOD"] == "POST") 
 	{
 	http_response_code(200);
-
+	print_r($_POST);
+	exit();
 	$dal = new ACCESO($_POST);
 	if($dal->dimension==0) {echo "NO DATA";exit();}
 	else $csvs=$dal->gen_csvs();
