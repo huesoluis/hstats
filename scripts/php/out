@@ -1,0 +1,1 @@
+ q -d ';' 'SELECT c8,c2,c1 FROM datos/oferta26062018.csv ORDER BY c8,c2,c1'

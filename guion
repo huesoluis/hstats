@@ -2,7 +2,9 @@ PLAN TRABAJO hstats 19Marzo2020
 
 1. Generar json a partir de ciertas dimensiones
 
-	Usar el programa q para obtener la consulta deseada en csv usando como entrada los campos elegidos de entre aquellos suceptibles, dos, tres o cuatro según dimensiones	
+	Usar el programa 'q' para obtener la consulta deseada en csv usando como entrada los campos elegidos de entre aquellos suceptibles, dos, tres o cuatro según dimensiones	
+		Usar ejemplo ciclos y centros
+
 	Probar la conversion a json usando los scripts de fpcualifica.
 	Automatizar todo partiendo de un fichero csv y hasta 4 dimensiones
 
@@ -16,7 +18,7 @@ PLAN TRABAJO hstats 19Marzo2020
 
 4. Guardar los arboles para mostrarlos desde un enlace, si es q existe.
 
-
+5. Añadir buscador de datos
 
 
 
