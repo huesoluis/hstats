@@ -1,13 +1,15 @@
 #generador de json con dos niveles de anidamiento
 #eliminar del csv las primeras líneas
 import json
+import sys
 
 tree=[]
 nl=0
 lf=''
 linefinal='{'
-fcsv="ciclos_centros.csv"
-fcsv="ciclos_centros_singlequote.csv"
+#fcsv="datos_listados/out1.csv"
+
+fcsv=str(sys.argv[1]);
 
 for line in open(fcsv,'r').readlines():
     nl+=1

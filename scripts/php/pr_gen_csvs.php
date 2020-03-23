@@ -2,8 +2,6 @@
 // include configuration
 //require_once(dirname(__FILE__) . '/config.php');
 
-print_r($_POST);
-	exit();
 require_once('clases/CSVS.php');
 require_once('datos/dim_oferta.php');
 
@@ -29,16 +27,20 @@ if(isset($_SERVER["REQUEST_METHOD"]))
 }
 else
 {
-#zona de pruebas
-$fichero='datos/oferta.csv';
-$_POST['dim']=Array( "ciclos","centros","provincias");
-$listado = new \hstats\CSVS($fichero,$_POST['dim'],$dim_oferta);
-$res=$listado->makeQuery();
-if($res)
-	print_r("ok");
-else print("error");
+	#zona de pruebas
+	$ficheroorigen='datos/oferta.csv';
+	$rutafichero='datos_listados/';
+	$_POST['dim']=Array("centros", "ciclos","ciclos","Elige","provincias");
+	$listado = new \hstats\CSVS($ficheroorigen,$rutafichero,$_POST['dim'],$dim_oferta);
+	$res=$listado->makeQuery();
+	print_r("ok haciendo query");
+	if($res)
+		print_r("ok");
+	else print("error");
 
-$csv=$listado->genCsv();
+	$csv=$listado->genCsv();
+	$cjson=$listado->genJson();
+	if($cjson==1) print("TODO OK");
 }
 ?>
 

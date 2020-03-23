@@ -1,9 +1,10 @@
 $( document ).ready(function() {
 
 $('#fdim').submit(function(event) {
-	console.log('entrand ajax');
         var formData = {
-	    'd0'		: $( "#d0 option:selected" ).text()
+	    'dim0'		: $( "#d0 option:selected" ).text(),
+	    'd1'		: $( "#d1 option:selected" ).text(),
+	    'd2'		: $( "#d2 option:selected" ).text()
         };
 	$.ajax({
             type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
@@ -14,7 +15,7 @@ $('#fdim').submit(function(event) {
         })
             // using the done promise callback
             .done(function(data) {
-			console.log('ivolviendo ajax');
+			console.log('volviendo ajax');
 
                 // log data to the console so we can see
                 console.log(data); 
