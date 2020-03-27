@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
 $('#fdim').submit(function(event) {
         var formData = {
-	    'dim0'		: $( "#d0 option:selected" ).text(),
+	    'd0'		: $( "#d0 option:selected" ).text(),
 	    'd1'		: $( "#d1 option:selected" ).text(),
 	    'd2'		: $( "#d2 option:selected" ).text()
         };
@@ -11,16 +11,11 @@ $('#fdim').submit(function(event) {
             url         : 'scripts/php/pr_gen_csvs.php', // the url where we want to POST
             data        : formData, // our data object
             //dataType    : 'json', // what type of data do we expect back from the server
-            encode          : true
-        })
-            // using the done promise callback
+            encode      : true,
+	 			})
             .done(function(data) {
-			console.log('volviendo ajax');
-
                 // log data to the console so we can see
                 console.log(data); 
-
-                // here we will handle errors and validation messages
             })
 	 	.fail(function(request, status, error) {
 
