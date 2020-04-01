@@ -1,5 +1,5 @@
 <?php
-include_once('./scripts/php/datos/dim_oferta.php');
+include_once('./scripts/php/datos_origen/dim_oferta.php');
 $keys=array_keys($dim_oferta);
 ?>
 <div class="col-md-4">

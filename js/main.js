@@ -8,19 +8,15 @@ $('#fdim').submit(function(event) {
         };
 	$.ajax({
             type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-            url         : 'scripts/php/pr_gen_csvs.php', // the url where we want to POST
+            url         : 'scripts/php/pr_gen_csvs_listados.php', // the url where we want to POST
             data        : formData, // our data object
             //dataType    : 'json', // what type of data do we expect back from the server
             encode      : true,
 	 			})
             .done(function(data) {
-                // log data to the console so we can see
                 console.log(data); 
             })
 	 	.fail(function(request, status, error) {
-
-		// show any errors
-		// best to remove for production
 		console.log(error);
 	    });
 	        event.preventDefault();

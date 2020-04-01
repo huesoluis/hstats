@@ -3,9 +3,9 @@
 //require_once(dirname(__FILE__) . '/config.php');
 
 require_once('clases/CSVS.php');
-require_once('datos/dim_oferta.php');
+require_once('datos_origen/dim_oferta.php');
 
-$ficheroorigen='datos/oferta.csv';
+$ficheroorigen='datos_origen/oferta.csv';
 $rutafichero='datos_listados/';
 
 if(isset($_SERVER["REQUEST_METHOD"]))
@@ -24,7 +24,7 @@ else
 	$_POST['dim']=Array("centros","ciclos");
 }
 	$listado = new \hstats\CSVS($ficheroorigen,$rutafichero,$_POST['dim'],$dim_oferta);
-	$res=$listado->getData();
+	$res=$listado->getDataListados();
 	//$datos=$listado->makeView();
 	print("OK");
 	//print("DATOS: ".$datos);

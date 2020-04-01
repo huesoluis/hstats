@@ -16,17 +16,26 @@
 <ul class="accordion1">
   
 <?php 
-$entidad = file_get_contents('datosjson/ciclos_centros.json');
+$entidad = file_get_contents('scripts/php/datos_listados/f_centros_ciclos.json');
 $json = json_decode($entidad, true);
 $i=0;
 echo '<ul>';
 foreach ($json as $ent)
 {
 $i++;
+$keys=array_keys($ent);
+$cabecera='';
 ?>
 <li class="dencuali" data-type="dencuali">
-	<a class="toggle1 enlaces" data-type="titulo" data-toggle="collapse" data-target="#demo<?php echo $i;?>" ><?php echo $ent['codigo']."-".$ent['denominacion']."-".$ent['grado']?></a>
-		<div id="demo<?php echo $i;?>" class="collapse">
+	<a class="toggle1 enlaces" data-type="titulo" data-toggle="collapse" data-target="#n1<?php echo $i;?>" >
+		<?php
+			 foreach($keys as $key)
+				if($key!='children')
+					$cabecera.="<b>$key:</b>$ent[$key]-";
+			print(trim($cabecera,'-'));
+		?>
+	</a>
+		<div id="n1<?php echo $i;?>" class="collapse">
 			<?php 
 			if(sizeof($ent["children"])>=1)
 				{
@@ -39,7 +48,7 @@ $i++;
 						{
 						$keys=array_keys($sbent);
 						print("<div class='hijo' style='padding-left:30px'>");
-							print("<a data-toggle='collapse' data-target='#h$hijo'><b>NUEVO CENTRO: ".$sbent['codigo']."</b></a>");
+							print("<a data-toggle='collapse' data-target='#h$hijo'><b>".$sbent[$keys[0]]."</b></a>");
 								print("<div id='h$hijo' class='collapse' style='padding-left:30px'>");
 									$hijo++;
 									foreach($sbent as $k=>$val)
@@ -48,11 +57,6 @@ $i++;
 										print(" : ");
 										print_r($val);
 										print("<br>");
-										/*
-										$keys=array_keys($elto);
-										foreach($keys as $key=>$val)
-											print($val.":".$elto[$val]."<br>");
-										*/
 										}
 								print("</div>");
 						print("</div>");
