@@ -1,5 +1,6 @@
 function show_graph(vfile,vsel,nombre)
 {
+	console.log("generando graph"+vsel);
 	var len=vfile.length;
 	$.get(vfile, function(csv) {
 		selector=vsel;
@@ -22,7 +23,10 @@ function show_graph(vfile,vsel,nombre)
 					}
 				}
 		    });
-		});
+		}).fail(function(jqXHR, textStatus, errorThrown) {
+    // alert( "error" );
+    console.log("Error: (" + errorThrown + ')');
+  })
 }
                   
 function show_big(selector,file,link)

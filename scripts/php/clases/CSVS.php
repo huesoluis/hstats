@@ -19,14 +19,13 @@ class CSVS {
   public function getDataGraficos(){
 			//generamos la conslta
 			$consulta=$this->makeQueryGraficos();
-			return $consulta;
 			//creamos los ficheros de datos
 			$this->tmp=$this->crearFichero($this->nficherodestino,'tmp');
 			$this->fjson=$this->crearFichero($this->nficherodestino,'json');
 			$this->fcsv=$this->crearFichero($this->nficherodestino,'txt');
 			//generamos csv y json	
-			$csv=$this->genCsv();
-			$cjson=$this->genJson();
+			$csv=$this->genCsv('grficos');
+		return $csv;
 	}
   public function getDataListados(){
 			//generamos la conslta
@@ -36,7 +35,7 @@ class CSVS {
 			$this->fjson=$this->crearFichero($this->nficherodestino,'json');
 			$this->fcsv=$this->crearFichero($this->nficherodestino,'txt');
 			//generamos csv y json	
-			$csv=$this->genCsv();
+			$csv=$this->genCsv('listados');
 			$cjson=$this->genJson();
 	}
   public function crearFichero($f,$ext){
@@ -85,9 +84,6 @@ class CSVS {
 	$nfil=0;
 	if($d==1)
 		{
-		//print("dim1");
-		//$filtros=$this->get_filtros($posicion,"string");
-		//if(strlen($filtros)=='') $nfil=1;
 		$sql="SELECT ";
 		$sql.=$dim1." ,count(*) nal ";
 		$sql.="FROM $this->ficheroorigen ";
@@ -130,6 +126,7 @@ class CSVS {
 			}
 		$sql=$sqlinicial." FROM ".$sql;
 		}
+	$this->query=$sql;
 	return $sql;
 	}
   public function makeQueryListados(){
@@ -178,15 +175,23 @@ class CSVS {
 			//print_r($this->query);exit();
 			return 1;
 	}
-  public function genCsv($fam='',$sql=''){
+  public function genCsv($tipo='graficos'){
 	$rutafichero=$this->ruta.'/'.$this->nficherodestino;
-	$qquery='q -H -d ";" "'.$this->query.'">'.$this->tmp;
-	$comando_comillas='tr "\'" \'"\'< '.$this->tmp.'>'.$this->fcsv;
-	$comando_comillas='sed "s/\'/\"/g" '.$this->tmp.'>'.$this->fcsv;
-	print($comando_comillas);
-	$res=shell_exec ($qquery );
-	$resc=shell_exec ($comando_comillas);
-	if($resc)
+	$resc=1;
+	if($tipo=='listados')
+	{
+		$qquery='q -H -d ";" "'.$this->query.'">'.$this->tmp;
+		$resq=shell_exec ($qquery );
+		print($qquery);
+		$comando_comillas='sed "s/\'/\"/g" '.$this->tmp.'>'.$this->fcsv;
+		$resc=shell_exec ($comando_comillas);
+	}
+	else{
+		$qquery='q -H -d ";" "'.$this->query.'">'.$this->fcsv;
+		$resq=shell_exec ($qquery );
+		print($qquery);
+		}
+	if($resc and $resq)
 		return 1;
 	else return 0;
   }
