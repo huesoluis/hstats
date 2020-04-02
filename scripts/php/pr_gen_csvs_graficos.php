@@ -17,8 +17,9 @@ else
 {
 	#zona de pruebas
 	$_POST['dim']=Array("centros", "ciclos","ciclos","Elige","provincias");
-	$_POST['dim']=Array("centro");
-	$listado = new \hstats\CSVS($ficheroorigen,$rutafichero,$_POST['dim'],$dim_matricula);
+	$_POST['dim']=Array("sexo","provincia");
+	$tabla='test';
+	$listado = new \hstats\CSVS($ficheroorigen,$rutafichero,$_POST['dim'],$dim_matricula,$tabla,"graficos");
 	$res=$listado->getDataGraficos();
 	//print($res);
 }

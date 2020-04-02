@@ -1,40 +1,30 @@
 <?php 
+
 namespace hstats;
-include 'config.php';
 class CSVS {
   public $dim_form; 
   public $dim_campos; 
   public $ficheroorigen; 
   public $query; 
-  public function __construct($ficheroorigen='',$ruta='',$dim_form='',$dim_campos=array(),$tabla='',$tipo='graficos'){
-    	$this->c =$this->dbconnect(DB_HOST, DB_USER, DB_PASSWORD);
+  public function __construct($ficheroorigen='',$ruta='',$dim_form='',$dim_campos=array()){
     	$this->ficheroorigen = $ficheroorigen;
     	$this->dim_form = $dim_form;
     	$this->dim_campos = $dim_campos;
 	$this->ruta=$ruta;
-	$this->nficherodestino="f".$this->makeNombreFicheroDestino($tipo);
+	$this->nficherodestino="f";
 	$this->fcsv='';
 	$this->fjson='';
 	$this->tmp='';
-	$this->tabla= $tabla;
 	}
-  private function dbconnect() 
-	{
-    	$conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD,DB_DB) or die ("<br/>No conexion servidor");
-	$this->c=$conn;     
-	mysqli_select_db($conn,DB_DB) or die ("<br/>No se puedo seleccionar la bases de datos");
-	return $conn;
-  	}
   public function getDataGraficos(){
 			//generamos la conslta
 			$consulta=$this->makeQueryGraficos();
-			
 			//creamos los ficheros de datos
-			//$this->tmp=$this->crearFichero($this->nficherodestino,'tmp');
-			//$this->fjson=$this->crearFichero($this->nficherodestino,'json');
-			//$this->fcsv=$this->crearFichero($this->nficherodestino,'txt');
+			$this->tmp=$this->crearFichero($this->nficherodestino,'tmp');
+			$this->fjson=$this->crearFichero($this->nficherodestino,'json');
+			$this->fcsv=$this->crearFichero($this->nficherodestino,'txt');
 			//generamos csv y json	
-			$csv=$this->genCsv('graficos');
+			$csv=$this->genCsv('grficos');
 		return $csv;
 	}
   public function getDataListados(){
@@ -70,26 +60,19 @@ class CSVS {
 					}
 			return;
 	}
-  public function makeNombreFicheroDestino($tipo='graficos'){
-			$f='';
+  public function makeNombreFicheroDestino(){
 			foreach($this->dim_form as $fn)
-				$f.="_".$fn;
-			return $f."_graficos";
-	}
-  public function getClavesDim($d){
-			$sql_csv="SELECT distinct($d) FROM $this->ficheroorigen";
-			$sql_mysql="SELECT distinct($d) FROM $this->tabla";
-			$res=$this->executeQuery('datos_tmp/qtemp.sql',$sql_mysql,'mysql');				
-			$ares=explode(PHP_EOL,$res);
-			array_pop($ares);
-			array_shift($ares);
-			return $ares;
+				$this->nficherodestino.="_".$fn;
+			return;
 	}
   public function makeQueryGraficos(){
+			//detectar campos nominales, empiezan con g_ y puede marcan la separacion entre niveles
+			//para ello el fichero original csv, debe marcar dichos campos. No importa el orden pero los campos restantes deben ser vinculados, es decir si un campo nominal es nombre_ciclo, el resto de campo sdel ciclo como codigo_cidclo, numero_horas etc... deben ir a continuación
 			$pred='';
 			$this->limpiaForm();
 			$this->makeNombreFicheroDestino();
 			$i=0;
+			$select="SELECT ";
 			if(sizeof($this->dim_campos)==0 || sizeof($this->dim_form)==0) return 0;
 			//numero de dimensiones
 			$d=sizeof($this->dim_form);
@@ -104,36 +87,40 @@ class CSVS {
 				$sql="SELECT ";
 				$sql.=$dim1." ,count(*) nal ";
 				$sql.="FROM $this->ficheroorigen ";
+				//if($nfil==0) $sql.="WHERE ".$dim1." in (".$filtros.") ";
 				$sql.="GROUP BY ".$dim1;
 				}
-			if($d==2)
-				{
-				$dim2=$this->dim_form[1];
-				$claves_dim2=$this->getClavesDim($dim2);
-				print("dim 2");
-				$nv=0;
-				$nva=-1;
-				$nc=0;
-				$select="SELECT t0.$dim1, ";
-				foreach($claves_dim2 as $cd)
-					{
-					$nc++;
-					$select.="t$nc.num as $cd,";
-					}
-				$select=trim($select,',');
-				$sql="$select FROM (SELECT $dim1, COUNT(*) as num FROM $this->tabla GROUP BY $dim1) as t0 LEFT JOIN ";
-				$ncampos=sizeof($claves_dim2);
-				$n=0;
-				foreach($claves_dim2 as $cd)
-				{
-					$n++;
-					$sql.="(SELECT $dim1,COUNT(*) as num FROM $this->tabla WHERE $dim2='$cd'  GROUP BY $dim1) as t$n";
-					$tmp=$n-1;
-					$sql.=" ON t$n.$dim1=t0.$dim1 ";	
-					if($n<$ncampos)
-						$sql.=" LEFT JOIN ";
+	if($d==2)
+		{
+		$dim2=$this->dim_form[1];
+		$nv=0;
+		$nva=-1;
+		$on=0;
+		$sqlinicial="SELECT t1.".$dim1;
+		foreach($filtros2 as $filtro2)
+			{
+			$nv++;
+			$nva++;
+			$sql.="(SELECT ";
+			$sql.=$dim1." ,count(*) nal ";
+			$sql.="FROM GIR_MATRICULA ";
+			if($sf1!=0)
+				{ 
+				$sql.="WHERE ".$dim1." in (".$sfiltros1.") ";
+				$sql.=" and ".$dim2." in ('".$filtro2."') ";
 				}
+			else
+				{
+				$sql.=" WHERE ".$dim2." in ('".$filtro2."') ";
 				}
+			if($f3!='') $sql.=" and ".$this->dimension3." in ('".$f3."')";
+			$sql.=" GROUP BY ".$dim1.") as t".$nv;
+			$sqlinicial.=",t".$nv.".nal as  nal".$filtro2;
+			if( $on==1){ $sql.=" ON t".$nv.".".$dim1."=t".$nva.".".$dim1;$on=0;}
+			if( $on==0 and $nv<$sf2){ $sql.=" LEFT JOIN ";$on=1;}
+			}
+		$sql=$sqlinicial." FROM ".$sql;
+		}
 	$this->query=$sql;
 	return $sql;
 	}
@@ -143,6 +130,7 @@ class CSVS {
 			$pred='';
 			$this->limpiaForm();
 			$this->makeNombreFicheroDestino();
+			//print_r($this->nficherodestino);exit();
 			$i=0;
 			$select="SELECT ";
 			if(sizeof($this->dim_campos)==0 || sizeof($this->dim_form)==0) return 0;
@@ -179,40 +167,26 @@ class CSVS {
 				}
 			$select=trim($select,',');
 			$this->query=$select;
+			//print_r($this->query);exit();
 			return 1;
 	}
-  public function executeQuery($f,$q,$tipo='file'){
-	if($tipo=='file')
-		{
-		$qquery='q -H -d ";" "'.$q.'" > '.$f;
-		$qquery='q -H -d ";" "'.$q.'"';
-		}
-	else
-		{
-		$qquery='mysql -u'.DB_USER.' -p'.DB_PASSWORD.' '.DB_DB.' -e "'.$q.'"';
-		}
-	$resq=shell_exec ($qquery );
-	return $resq;
-	}
-
   public function genCsv($tipo='graficos'){
 	$rutafichero=$this->ruta.'/'.$this->nficherodestino;
 	$resc=1;
 	if($tipo=='listados')
 	{
-		$resq=$executeQuery($this->tmp,$this->query);
+		$qquery='q -H -d ";" "'.$this->query.'">'.$this->tmp;
+		$resq=shell_exec ($qquery );
+		print($qquery);
 		$comando_comillas='sed "s/\'/\"/g" '.$this->tmp.'>'.$this->fcsv;
 		$resc=shell_exec ($comando_comillas);
 	}
 	else{
-		$rutafichero=$this->ruta.'/'.$this->nficherodestino.'.csv';
-		$resq=$this->executeQuery($this->nficherodestino,$this->query,'mysql');
-		$cadd=preg_replace('/\t/',',',$resq);
-		$fp = fopen($rutafichero, 'w');
-		fwrite($fp,$cadd);
-		fclose($fp);
+		$qquery='q -H -d ";" "'.$this->query.'">'.$this->fcsv;
+		$resq=shell_exec ($qquery );
+		print($qquery);
 		}
-	if($resq)
+	if($resc and $resq)
 		return 1;
 	else return 0;
   }

@@ -1,4 +1,4 @@
-grado;codciclo;nombreciclo;curso;turno;Nombre;Nº Exp.;Nº Doc.;centro;Nº Matriculados;Localidad;Sexo;provincia
+grado;codciclo;nombreciclo;curso;turno;nombre;nexp;ndoc;centro;matricula;localidad;sexo;provincia
 Ciclos Formativos de Formación Profesional de Grado Medio;ADG201;Gestión Administrativa;1;Diurno;Aaron;2,00E+13;18463108L;44003211;1;Teruel;H;Teruel
 Ciclos Formativos de Formación Profesional de Grado Medio;ADG201;Gestión Administrativa;1;Diurno;Aaron;2,01E+13;73221636D;50011525;1;Zaragoza;H;Zaragoza
 Ciclos Formativos de Formación Profesional de Grado Medio;ADG201;Gestión Administrativa;1;Diurno;Aaron;2,01E+13;21745240M;50009129;1;Ejea de los Caballeros;H;Zaragoza
