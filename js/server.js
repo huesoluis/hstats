@@ -18,7 +18,7 @@ else
 	{ 
 	var adato = data.split(":");	
 	var fcsv = adato[1];	
-	//var fcsv = "scripts/php/datos_salida/f_centro.csv";	
+	var fcsv = "scripts/php/datos_graficos/f_sexo_provincia_graficos.csv";	
 	if(adato[0]!=3)
 	{
 		console.log(data);

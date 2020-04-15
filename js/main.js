@@ -8,14 +8,61 @@ $('#fdim').submit(function(event) {
         };
 	$.ajax({
             type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-            url         : 'scripts/php/pr_gen_csvs_listados.php', // the url where we want to POST
+            url         : 'scripts/php/pr_gen_graficos.php', // the url where we want to POST
             data        : formData, // our data object
-            //dataType    : 'json', // what type of data do we expect back from the server
             encode      : true,
 	 			})
             .done(function(data) {
-                console.log(data); 
-            })
+		console.log("DATOS RECIBIDOS: "+data);
+		var fcsv = "scripts/php/"+data;	
+		adato=data.split(":");
+		if(adato[0]!=3)
+		{
+			$("#graficos3").remove();
+			$("#zgraficos").show();
+			show_graph(adato[1],'#big-gra');
+		}
+		else if(adato[0]==3)
+		{
+			console.log("DIMENSION: "+adato[0]);
+			console.log("FICHEROS: "+adato[1]);
+			ficheros=adato[1].split("#");
+			ficheros.shift();
+			console.log("ARRAY FICHEROS: "+ficheros);
+			$("#graficos3").remove();
+			$("#zgraficos").show();
+			console.log("generando grafico principal: "+ficheros[1]);
+			var nombregrafico=ficheros[0].split('_');
+			nombregrafico=nombregrafico[4].replace('.csv','');
+			show_graph(ficheros[0],'#big-gra',nombregrafico);
+			ficheros.shift();
+			$("#graficos3").remove();
+			//graficos pequeños
+			var html='';
+			$('.big-gra').hide();
+			console.log(ficheros.length);
+			var nficheros=ficheros.length;
+			for (k = 0,m=1; k < nficheros; k++,m++) 
+			{
+				console.log(k);
+				p=k-1;
+				if(k==0 || k%4==0) html +="<div class='row' id='graficos3'>";
+				html +="<div class='col-md-4'><div class='sma-gra' id='sma-gra"+k+"'></div></div>";
+				if(m%4==0) html +="</div>";
+			}
+
+			if(ficheros.length<4 || ficheros.length%4!=0) html+='</div>';
+			$(html).insertAfter($("#zgraficos"));
+			//$("#zgraficos").hide();
+		
+			$('.sma-gra').each(function(i){
+				var nombregrafico=ficheros[i].split('_');
+				nombregrafico=nombregrafico[4].replace('.csv','');
+				show_graph(ficheros[i],'#sma-gra'+i,nombregrafico);
+
+				});
+		}
+		})
 	 	.fail(function(request, status, error) {
 		console.log(error);
 	    });

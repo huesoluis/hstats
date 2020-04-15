@@ -1,6 +1,10 @@
 <?php
-include_once('./scripts/php/datos_origen/dim_oferta.php');
-$keys=array_keys($dim_oferta);
+//include_once('./scripts/php/datos_origen/dim_oferta.php');
+//$keys=array_keys($dim_oferta);
+//si el formualrio es para graficos
+include_once('./scripts/php/datos_origen/dim_graficos.php');
+//$keys=array_keys($dim_graficos);
+$keys=$dim_graficos;
 ?>
 <div class="col-md-4">
 <div class="input-group mb-3">
@@ -8,7 +12,7 @@ $keys=array_keys($dim_oferta);
     <option selected>Elige dato representar</option>
 <?php
 	foreach($keys as $d=>$v)
-    		echo '<option value="'.$v.'">'.$v.'</option>';
+    		echo '<option value="'.$d.'">'.$d.'</option>';
 ?>
   </select>
 </div>
@@ -19,7 +23,7 @@ $keys=array_keys($dim_oferta);
     <option value="0" selected>Elige dato representar</option>
 <?php
 	foreach($keys as $d=>$v)
-    		echo '<option value="'.$v.'">'.$v.'</option>';
+    		echo '<option value="'.$d.'">'.$d.'</option>';
 ?>
   </select>
 </div>
@@ -30,7 +34,7 @@ $keys=array_keys($dim_oferta);
     <option value="0" selected>Elige dato representar</option>
 <?php
 	foreach($keys as $d=>$v)
-    		echo '<option value="'.$v.'">'.$v.'</option>';
+    		echo '<option value="'.$d.'">'.$d.'</option>';
 ?>
   </select>
 </div>

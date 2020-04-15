@@ -2,6 +2,7 @@ function show_graph(vfile,vsel,nombre)
 {
 	console.log("generando graph"+vsel);
 	var len=vfile.length;
+	console.log(vfile);
 	$.get(vfile, function(csv) {
 		selector=vsel;
 		    $(selector).highcharts({
@@ -25,7 +26,7 @@ function show_graph(vfile,vsel,nombre)
 		    });
 		}).fail(function(jqXHR, textStatus, errorThrown) {
     // alert( "error" );
-    console.log("Error: (" + errorThrown + ')');
+    console.log("Error: ("+textStatus + errorThrown + ')');
   })
 }
                   

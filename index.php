@@ -56,7 +56,7 @@
 					<form id="fdim">
 					<div class="row">
 							<?php include "includes/dimensiones.php"; ?>
-					        	<button type="submit" class="btn btn-success">Submit <span class="fa fa-arrow-right"></span></button>
+					        	<button type="submit" class="btn btn-success">GENERAR DATOS<span class="fa fa-arrow-right"></span></button>
 					</div>
 					<!--<div class="row">
 						<?php include "includes/filtros.html"; ?>
@@ -65,13 +65,13 @@
 					</form>
                 	<div class="row">
                 		<div class="col-md-12">
-					<button class="btn btn-default" id="bgenlist">GENERAR LISTADOS</button>
+					<button class="btn btn-default" id="bgenlist">VER LISTADOS</button>
                     			<div class="row" id="zlistados">
 						<div class="col-md-12">
 							<div>lppal<div id="shiva">LISTADO DINAMICO</div></div>
 						</div>
                 			</div>
-					<button class="btn btn-default" id="bgengra">GENERAR GRAFICOS</button>
+					<button class="btn btn-default" id="bgengra">VER GRAFICOS</button>
                     			<div class="row" id="zgraficos">
 						<div class="col-md-12">
 							<div id="gppal">gppal<div id="shiva">TOTAL ALUMNOS FP CURSO 2019: <span class="count">19509</span></div></div>
