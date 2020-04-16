@@ -1,245 +1,62 @@
-
-consulta completa en EXECUTE: mysql -uhstats -phstats HSTATS -e "SELECT distinct(centro) FROM test LIMIT 3"
-
-Resultado en EXECUTE: centro
-44003211
-50011525
-50009129
-
-Saliendo de EXECUTE
-SELECT t0.nombreciclo, IFNULL(t1.num,0) as al44003211,IFNULL(t2.num,0) as al50011525,IFNULL(t3.num,0) as al50009129 FROM (SELECT nombreciclo, IFNULL(COUNT(*),0) as num FROM test GROUP BY nombreciclo) as t0 LEFT JOIN (SELECT nombreciclo,IFNULL(COUNT(*),0) as num FROM test WHERE centro='44003211'  GROUP BY nombreciclo) as t1 ON t1.nombreciclo=t0.nombreciclo  LEFT JOIN (SELECT nombreciclo,IFNULL(COUNT(*),0) as num FROM test WHERE centro='50011525'  GROUP BY nombreciclo) as t2 ON t2.nombreciclo=t0.nombreciclo  LEFT JOIN (SELECT nombreciclo,IFNULL(COUNT(*),0) as num FROM test WHERE centro='50009129'  GROUP BY nombreciclo) as t3 ON t3.nombreciclo=t0.nombreciclo ORDER BY al44003211 desc, al50011525 desc, al50009129 desc
-consulta en genData:
-SELECT t0.nombreciclo, IFNULL(t1.num,0) as al44003211,IFNULL(t2.num,0) as al50011525,IFNULL(t3.num,0) as al50009129 FROM (SELECT nombreciclo, IFNULL(COUNT(*),0) as num FROM test GROUP BY nombreciclo) as t0 LEFT JOIN (SELECT nombreciclo,IFNULL(COUNT(*),0) as num FROM test WHERE centro='44003211'  GROUP BY nombreciclo) as t1 ON t1.nombreciclo=t0.nombreciclo  LEFT JOIN (SELECT nombreciclo,IFNULL(COUNT(*),0) as num FROM test WHERE centro='50011525'  GROUP BY nombreciclo) as t2 ON t2.nombreciclo=t0.nombreciclo  LEFT JOIN (SELECT nombreciclo,IFNULL(COUNT(*),0) as num FROM test WHERE centro='50009129'  GROUP BY nombreciclo) as t3 ON t3.nombreciclo=t0.nombreciclo ORDER BY al44003211 desc, al50011525 desc, al50009129 descgenerando grafico en datos_graficos//f_nombreciclo_centro_graficos.csv
-consulta en GENCSV: SELECT t0.nombreciclo, IFNULL(t1.num,0) as al44003211,IFNULL(t2.num,0) as al50011525,IFNULL(t3.num,0) as al50009129 FROM (SELECT nombreciclo, IFNULL(COUNT(*),0) as num FROM test GROUP BY nombreciclo) as t0 LEFT JOIN (SELECT nombreciclo,IFNULL(COUNT(*),0) as num FROM test WHERE centro='44003211'  GROUP BY nombreciclo) as t1 ON t1.nombreciclo=t0.nombreciclo  LEFT JOIN (SELECT nombreciclo,IFNULL(COUNT(*),0) as num FROM test WHERE centro='50011525'  GROUP BY nombreciclo) as t2 ON t2.nombreciclo=t0.nombreciclo  LEFT JOIN (SELECT nombreciclo,IFNULL(COUNT(*),0) as num FROM test WHERE centro='50009129'  GROUP BY nombreciclo) as t3 ON t3.nombreciclo=t0.nombreciclo ORDER BY al44003211 desc, al50011525 desc, al50009129 desc
-
-consulta completa en EXECUTE: mysql -uhstats -phstats HSTATS -e "SELECT t0.nombreciclo, IFNULL(t1.num,0) as al44003211,IFNULL(t2.num,0) as al50011525,IFNULL(t3.num,0) as al50009129 FROM (SELECT nombreciclo, IFNULL(COUNT(*),0) as num FROM test GROUP BY nombreciclo) as t0 LEFT JOIN (SELECT nombreciclo,IFNULL(COUNT(*),0) as num FROM test WHERE centro='44003211'  GROUP BY nombreciclo) as t1 ON t1.nombreciclo=t0.nombreciclo  LEFT JOIN (SELECT nombreciclo,IFNULL(COUNT(*),0) as num FROM test WHERE centro='50011525'  GROUP BY nombreciclo) as t2 ON t2.nombreciclo=t0.nombreciclo  LEFT JOIN (SELECT nombreciclo,IFNULL(COUNT(*),0) as num FROM test WHERE centro='50009129'  GROUP BY nombreciclo) as t3 ON t3.nombreciclo=t0.nombreciclo ORDER BY al44003211 desc, al50011525 desc, al50009129 desc"
-
-Resultado en EXECUTE: nombreciclo	al44003211	al50011525	al50009129
-GestiÃ³n Administrativa	103	51	30
-AtenciÃ³n a Personas en situaciÃ³n de Dependencia	49	0	0
-AdministraciÃ³n y Finanzas	48	54	34
-EducaciÃ³n Infantil (FormaciÃ³n Profesional)	36	0	0
-IntegraciÃ³n social	34	0	0
-TÃ©cnico Superior en MediaciÃ³n Comunicativa	17	0	0
-Transporte y LogÃ­stica	17	0	0
-Cuidados Auxiliares de EnfermerÃ­a	0	172	0
-TÃ©cnico Superior en Higiene Bucodental	0	65	0
-TÃ©cnico Superior en Radioterapia y DosimetrÃ­a	0	59	0
-TÃ©cnico Superior en Imagen para el DiagnÃ³stico y Medicina Nuclear	0	56	0
-DietÃ©tica	0	55	0
-TÃ©cnico Superior en DocumentaciÃ³n y AdministraciÃ³n Sanitarias	0	54	0
-Mantenimiento ElectromecÃ¡nico	0	0	33
-MecatrÃ³nica Industrial	0	0	23
-PeluquerÃ­a y CosmÃ©tica Capilar	0	0	14
-Actividades Comerciales	0	0	0
-EducaciÃ³n y Control Ambiental	0	0	0
-Marketing y publicidad	0	0	0
-TÃ©cnico de ElectrÃ³mecanica de Maquinaria	0	0	0
-CoordinaciÃ³n de Emergencias y ProtecciÃ³n Civil	0	0	0
-Instalaciones de ProducciÃ³n de Calor	0	0	0
-Proyectos de obra civil	0	0	0
-EstÃ©tica y belleza	0	0	0
-Planta QuÃ­mica	0	0	0
-Acondicionamiento fÃ­sico	0	0	0
-Sonido para Audiovisuales y espectÃ¡culos	0	0	0
-Construcciones MetÃ¡licas	0	0	0
-InstalaciÃ³n y Amueblamiento	0	0	0
-Proyectos de EdificaciÃ³n	0	0	0
-Asistencia a la direcciÃ³n	0	0	0
-EstÃ©tica Integral y Bienestar	0	0	0
-Aceites de Oliva y Vinos	0	0	0
-DiseÃ±o y ediciÃ³n de publicaciones impresas y multimedia	0	0	0
-Mantenimiento ElectrÃ³nico	0	0	0
-Soldadura y CaldererÃ­a	0	0	0
-ConstrucciÃ³n	0	0	0
-ImpresiÃ³n GrÃ¡fica	0	0	0
-PromociÃ³n de igualdad de gÃ©nero	0	0	0
-AsesorÃ­a de Imagen Personal y corporativa	0	0	0
-EnseÃ±anza y animaciÃ³n sociodeportiva	0	0	0
-Patronaje y Moda	0	0	0
-TÃ©cnico Superior en Laboratorio ClÃ­nico y BiomÃ©dico	0	0	0
-DiseÃ±o y Amueblamiento	0	0	0
-Mantenimiento de Instalaciones TÃ©rmicas y de Fluidos	0	0	0
-Sistemas MicroinformÃ¡ticos y Redes	0	0	0
-Conformado por moldeo de metales y polimeros	0	0	0
-IluminaciÃ³n, captaciÃ³n y tratamiento de la imagen	0	0	0
-ProgramaciÃ³n de la producciÃ³n en moldeo de metales y polÃ­meros	0	0	0
-Aprovechamiento y ConservaciÃ³n del Medio Natural	0	0	0
-EnergÃ­as Renovables	0	0	0
-PanaderÃ­a, ReposterÃ­a y ConfiterÃ­a	0	0	0
-DiseÃ±o en FabricaciÃ³n MecÃ¡nica	0	0	0
-Mantenimiento AeromecÃ¡nico	0	0	0
-Sistemas ElectrotÃ©cnicos y Automatizados	0	0	0
-ConfecciÃ³n y Moda	0	0	0
-GuÃ­a, InformaciÃ³n y Asistencia TurÃ­sticas	0	0	0
-ProgramaciÃ³n de la ProducciÃ³n en FabricaciÃ³n MecÃ¡nica	0	0	0
-Animaciones 3D, juegos y entornos interactivos	0	0	0
-Emergencias y protecciÃ³n civil	0	0	0
-Paisajismo y medio rural	0	0	0
-DirecciÃ³n de Servicios de RestauraciÃ³n	0	0	0
-Laboratorio de AnÃ¡lisis y de Control de Calidad	0	0	0
-Sistemas de Telecomunicaciones e InformÃ¡ticos	0	0	0
-ConducciÃ³n de Actividades FÃ­sico-Deportivas en el Medio Natural	0	0	0
-GestiÃ³n Forestal y del Medio Natural	0	0	0
-ProducciÃ³n de Audiovisuales y espectÃ¡culos	0	0	0
-AnimaciÃ³n sociocultural y turÃ­stica	0	0	0
-Emergencias Sanitarias	0	0	0
-OrganizaciÃ³n y Control de Obras de ConstrucciÃ³n	0	0	0
-TÃ©cnico Superior en GanaderÃ­a y Asistencia en Sanidad Animal	0	0	0
-DirecciÃ³n de Cocina	0	0	0
-JardinerÃ­a y FloristerÃ­a	0	0	0
-Servicios en RestauraciÃ³n	0	0	0
-Comercio Internacional	0	0	0
-GestiÃ³n de ventas y espacios comerciales	0	0	0
-ProducciÃ³n Agropecuaria	0	0	0
-AnimaciÃ³n de Actividades FÃ­sicas y Deportivas	0	0	0
-Electromedicina clÃ­nica	0	0	0
-Operaciones de Laboratorio	0	0	0
-Salud Ambiental	0	0	0
-Cocina y GastronomÃ­a	0	0	0
-GestiÃ³n de Alojamientos TurÃ­sticos	0	0	0
-Procesos y Calidad en la Industria Alimentaria	0	0	0
-Agencias de Viajes y GestiÃ³n de Eventos	0	0	0
-ElectromecÃ¡nica de VehÃ­culos AutomÃ³viles	0	0	0
-Obras de Interior, DecoraciÃ³n y RehabilitaciÃ³n	0	0	0
-TÃ©cnico Superior en AnatomÃ­a PatolÃ³gica y CitodiagnÃ³stico	0	0	0
-Desarrollo de Aplicaciones WEB	0	0	0
-Instalaciones FrigorÃ­ficas y de ClimatizaciÃ³n	0	0	0
-RealizaciÃ³n de proyectos Audiovisuales y espectÃ¡culos	0	0	0
-CarrocerÃ­a	0	0	0
-PrevenciÃ³n de Riesgos Profesionales	0	0	0
-Vitivinicultura	0	0	0
-ElaboraciÃ³n de Productos Alimenticios	0	0	0
-TÃ©cnico en Excavaciones y Sondeos	0	0	0
-Desarrollo de Aplicaciones Multiplataforma	0	0	0
-Instalaciones ElÃ©ctricas y AutomÃ¡ticas	0	0	0
-QuÃ­mica Industrial	0	0	0
-AutomociÃ³n	0	0	0
-Farmacia y Parafarmacia	0	0	0
-PreimpresiÃ³n Digital	0	0	0
-Video, disc-jockey y sonido	0	0	0
-AdministraciÃ³n de Sistemas InformÃ¡ticos en Red	0	0	0
-Eficiencia EnergÃ©tica y EnergÃ­a Solar TÃ©rmica	0	0	0
-Mecanizado	0	0	0
-TÃ©cnico en CarpinterÃ­a y Mueble	0	0	0
-Instalaciones de Telecomunicaciones	0	0	0
-QuÃ­mica Ambiental	0	0	0
-AutomatizaciÃ³n y RobÃ³tica Industrial	0	0	0
-Estilismo y direcciÃ³n de peluquerÃ­a	0	0	0
-PrÃ³tesis Dentales	0	0	0
-
-Saliendo de EXECUTE
-escribiendo en fichero resultado: nombreciclo;al44003211;al50011525;al50009129
-GestiÃ³n Administrativa;103;51;30
-AtenciÃ³n a Personas en situaciÃ³n de Dependencia;49;0;0
-AdministraciÃ³n y Finanzas;48;54;34
-EducaciÃ³n Infantil (FormaciÃ³n Profesional);36;0;0
-IntegraciÃ³n social;34;0;0
-TÃ©cnico Superior en MediaciÃ³n Comunicativa;17;0;0
-Transporte y LogÃ­stica;17;0;0
-Cuidados Auxiliares de EnfermerÃ­a;0;172;0
-TÃ©cnico Superior en Higiene Bucodental;0;65;0
-TÃ©cnico Superior en Radioterapia y DosimetrÃ­a;0;59;0
-TÃ©cnico Superior en Imagen para el DiagnÃ³stico y Medicina Nuclear;0;56;0
-DietÃ©tica;0;55;0
-TÃ©cnico Superior en DocumentaciÃ³n y AdministraciÃ³n Sanitarias;0;54;0
-Mantenimiento ElectromecÃ¡nico;0;0;33
-MecatrÃ³nica Industrial;0;0;23
-PeluquerÃ­a y CosmÃ©tica Capilar;0;0;14
-Actividades Comerciales;0;0;0
-EducaciÃ³n y Control Ambiental;0;0;0
-Marketing y publicidad;0;0;0
-TÃ©cnico de ElectrÃ³mecanica de Maquinaria;0;0;0
-CoordinaciÃ³n de Emergencias y ProtecciÃ³n Civil;0;0;0
-Instalaciones de ProducciÃ³n de Calor;0;0;0
-Proyectos de obra civil;0;0;0
-EstÃ©tica y belleza;0;0;0
-Planta QuÃ­mica;0;0;0
-Acondicionamiento fÃ­sico;0;0;0
-Sonido para Audiovisuales y espectÃ¡culos;0;0;0
-Construcciones MetÃ¡licas;0;0;0
-InstalaciÃ³n y Amueblamiento;0;0;0
-Proyectos de EdificaciÃ³n;0;0;0
-Asistencia a la direcciÃ³n;0;0;0
-EstÃ©tica Integral y Bienestar;0;0;0
-Aceites de Oliva y Vinos;0;0;0
-DiseÃ±o y ediciÃ³n de publicaciones impresas y multimedia;0;0;0
-Mantenimiento ElectrÃ³nico;0;0;0
-Soldadura y CaldererÃ­a;0;0;0
-ConstrucciÃ³n;0;0;0
-ImpresiÃ³n GrÃ¡fica;0;0;0
-PromociÃ³n de igualdad de gÃ©nero;0;0;0
-AsesorÃ­a de Imagen Personal y corporativa;0;0;0
-EnseÃ±anza y animaciÃ³n sociodeportiva;0;0;0
-Patronaje y Moda;0;0;0
-TÃ©cnico Superior en Laboratorio ClÃ­nico y BiomÃ©dico;0;0;0
-DiseÃ±o y Amueblamiento;0;0;0
-Mantenimiento de Instalaciones TÃ©rmicas y de Fluidos;0;0;0
-Sistemas MicroinformÃ¡ticos y Redes;0;0;0
-Conformado por moldeo de metales y polimeros;0;0;0
-IluminaciÃ³n, captaciÃ³n y tratamiento de la imagen;0;0;0
-ProgramaciÃ³n de la producciÃ³n en moldeo de metales y polÃ­meros;0;0;0
-Aprovechamiento y ConservaciÃ³n del Medio Natural;0;0;0
-EnergÃ­as Renovables;0;0;0
-PanaderÃ­a, ReposterÃ­a y ConfiterÃ­a;0;0;0
-DiseÃ±o en FabricaciÃ³n MecÃ¡nica;0;0;0
-Mantenimiento AeromecÃ¡nico;0;0;0
-Sistemas ElectrotÃ©cnicos y Automatizados;0;0;0
-ConfecciÃ³n y Moda;0;0;0
-GuÃ­a, InformaciÃ³n y Asistencia TurÃ­sticas;0;0;0
-ProgramaciÃ³n de la ProducciÃ³n en FabricaciÃ³n MecÃ¡nica;0;0;0
-Animaciones 3D, juegos y entornos interactivos;0;0;0
-Emergencias y protecciÃ³n civil;0;0;0
-Paisajismo y medio rural;0;0;0
-DirecciÃ³n de Servicios de RestauraciÃ³n;0;0;0
-Laboratorio de AnÃ¡lisis y de Control de Calidad;0;0;0
-Sistemas de Telecomunicaciones e InformÃ¡ticos;0;0;0
-ConducciÃ³n de Actividades FÃ­sico-Deportivas en el Medio Natural;0;0;0
-GestiÃ³n Forestal y del Medio Natural;0;0;0
-ProducciÃ³n de Audiovisuales y espectÃ¡culos;0;0;0
-AnimaciÃ³n sociocultural y turÃ­stica;0;0;0
-Emergencias Sanitarias;0;0;0
-OrganizaciÃ³n y Control de Obras de ConstrucciÃ³n;0;0;0
-TÃ©cnico Superior en GanaderÃ­a y Asistencia en Sanidad Animal;0;0;0
-DirecciÃ³n de Cocina;0;0;0
-JardinerÃ­a y FloristerÃ­a;0;0;0
-Servicios en RestauraciÃ³n;0;0;0
-Comercio Internacional;0;0;0
-GestiÃ³n de ventas y espacios comerciales;0;0;0
-ProducciÃ³n Agropecuaria;0;0;0
-AnimaciÃ³n de Actividades FÃ­sicas y Deportivas;0;0;0
-Electromedicina clÃ­nica;0;0;0
-Operaciones de Laboratorio;0;0;0
-Salud Ambiental;0;0;0
-Cocina y GastronomÃ­a;0;0;0
-GestiÃ³n de Alojamientos TurÃ­sticos;0;0;0
-Procesos y Calidad en la Industria Alimentaria;0;0;0
-Agencias de Viajes y GestiÃ³n de Eventos;0;0;0
-ElectromecÃ¡nica de VehÃ­culos AutomÃ³viles;0;0;0
-Obras de Interior, DecoraciÃ³n y RehabilitaciÃ³n;0;0;0
-TÃ©cnico Superior en AnatomÃ­a PatolÃ³gica y CitodiagnÃ³stico;0;0;0
-Desarrollo de Aplicaciones WEB;0;0;0
-Instalaciones FrigorÃ­ficas y de ClimatizaciÃ³n;0;0;0
-RealizaciÃ³n de proyectos Audiovisuales y espectÃ¡culos;0;0;0
-CarrocerÃ­a;0;0;0
-PrevenciÃ³n de Riesgos Profesionales;0;0;0
-Vitivinicultura;0;0;0
-ElaboraciÃ³n de Productos Alimenticios;0;0;0
-TÃ©cnico en Excavaciones y Sondeos;0;0;0
-Desarrollo de Aplicaciones Multiplataforma;0;0;0
-Instalaciones ElÃ©ctricas y AutomÃ¡ticas;0;0;0
-QuÃ­mica Industrial;0;0;0
-AutomociÃ³n;0;0;0
-Farmacia y Parafarmacia;0;0;0
-PreimpresiÃ³n Digital;0;0;0
-Video, disc-jockey y sonido;0;0;0
-AdministraciÃ³n de Sistemas InformÃ¡ticos en Red;0;0;0
-Eficiencia EnergÃ©tica y EnergÃ­a Solar TÃ©rmica;0;0;0
-Mecanizado;0;0;0
-TÃ©cnico en CarpinterÃ­a y Mueble;0;0;0
-Instalaciones de Telecomunicaciones;0;0;0
-QuÃ­mica Ambiental;0;0;0
-AutomatizaciÃ³n y RobÃ³tica Industrial;0;0;0
-Estilismo y direcciÃ³n de peluquerÃ­a;0;0;0
-PrÃ³tesis Dentales;0;0;0
-2:scripts/php/datos_graficos//f_nombreciclo_centro_graficos.csv
+array(1) {
+  [0]=>
+  array(3) {
+    ["codciclo"]=>
+    string(6) "ADG201"
+    ["nombreciclo"]=>
+    string(25) "GestiÃ³n Administrativa"
+    ["children"]=>
+    array(10) {
+      [0]=>
+      array(1) {
+        ["centro"]=>
+        string(8) "22000809"
+      }
+      [1]=>
+      array(1) {
+        ["centro"]=>
+        string(8) "22000809"
+      }
+      [2]=>
+      array(1) {
+        ["centro"]=>
+        string(8) "22000809"
+      }
+      [3]=>
+      array(1) {
+        ["centro"]=>
+        string(8) "22000809"
+      }
+      [4]=>
+      array(1) {
+        ["centro"]=>
+        string(8) "22000809"
+      }
+      [5]=>
+      array(1) {
+        ["centro"]=>
+        string(8) "22000809"
+      }
+      [6]=>
+      array(1) {
+        ["centro"]=>
+        string(8) "22000809"
+      }
+      [7]=>
+      array(1) {
+        ["centro"]=>
+        string(8) "22000809"
+      }
+      [8]=>
+      array(1) {
+        ["centro"]=>
+        string(8) "22000809"
+      }
+      [9]=>
+      array(1) {
+        ["centro"]=>
+        string(8) "22000809"
+      }
+    }
+  }
+}

@@ -3,9 +3,9 @@
 //require_once(dirname(__FILE__) . '/config.php');
 
 require_once('clases/CSVS.php');
-require_once('datos_origen/dim_oferta.php');
+require_once('datos_origen/dim_listados.php');
 
-$ficheroorigen='datos_origen/oferta.csv';
+$ficheroorigen='';
 $rutafichero='datos_listados/';
 
 if(isset($_SERVER["REQUEST_METHOD"]))
@@ -21,10 +21,10 @@ else
 {
 	#zona de pruebas
 	$_POST['dim']=Array("centros", "ciclos","ciclos","Elige","provincias");
-	$_POST['dim']=Array("centros","ciclos");
+	$_POST['dim']=Array("ciclo","centro");
 }
-	$listado = new \hstats\CSVS($ficheroorigen,$rutafichero,$_POST['dim'],$dim_oferta);
-	$res=$listado->getDataListados();
+	$listado = new \hstats\CSVS($ficheroorigen,$rutafichero,$_POST['dim'],$dim_listados,'test',"listados");
+	$res=$listado->genDataListados();
 	//$datos=$listado->makeView();
 	print("OK");
 	//print("DATOS: ".$datos);

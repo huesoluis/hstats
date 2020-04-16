@@ -27,7 +27,7 @@ else
 	$_RRPOST['dim']=Array("provincia","sexo","nombreciclo");
 	$_RRPOST['dim']=Array("sexo","provincia","nombreciclo");
 	$_RRPOST['dim']=Array("nombreciclo","sexo","provincia");
-	//$_RRPOST['dim']=Array("provincia","sexo");
+	$_RRPOST['dim']=Array("centro","sexo");
 }
 
 $listado = new \hstats\CSVS($ficheroorigen,$rutafichero,$_RRPOST['dim'],$dim_graficos,$tabla,"graficos");

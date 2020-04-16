@@ -240,7 +240,7 @@ class CSVS {
 		}
 	else
 		{
-		$qquery='mysql -u'.DB_USER.' -p'.DB_PASSWORD.' '.DB_DB.' -N -e "'.$q.'"';
+		$qquery='mysql -u'.DB_USER.' -p'.DB_PASSWORD.' '.DB_DB.' -e "'.$q.'"';
 		//print(PHP_EOL."consulta completa en EXECUTE: $qquery".PHP_EOL);
 	
 		}

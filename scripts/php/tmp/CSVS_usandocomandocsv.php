@@ -14,11 +14,14 @@ class CSVS {
     	$this->limpiaForm();
 	$this->dimension=sizeof($this->dim_form);
 	$this->ruta=$ruta;
-	$this->nficherodestino="f".$this->makeNombreFicheroDestino($tipo);
+	$this->nficherodestino=$this->makeNombreFicheroDestino($tipo);
+	//print_r($this->dim_form); exit();
+	//print($this->nficherodestino);
 	$this->fcsv='';
 	$this->fjson='';
 	$this->tmp='';
 	$this->tabla= $tabla;
+	
 	}
   private function dbconnect() 
 	{
@@ -28,18 +31,23 @@ class CSVS {
 	return $conn;
   	}
   public function getDataGraficos(){
-			//generamos la conslta
-			$consulta=$this->makeQueryGraficos();
-			if($consulta=='0') return 'FORMULARIO VACIO';	
-			//creamos los ficheros de datos
-			//$this->tmp=$this->crearFichero($this->nficherodestino,'tmp');
-			//$this->fjson=$this->crearFichero($this->nficherodestino,'json');
-			//$this->fcsv=$this->crearFichero($this->nficherodestino,'txt');
-			//generamos csv y json	
-			$csv=$this->genCsv('graficos');
-		return $this->dimension.':scripts/php/'.$csv;
+		//generamos la conslta
+		if($this->dimension<=2)
+			$consulta=$this->makeQueryGraficos2d(2);
+		else
+		{
+			$consulta=$this->makeQueryGraficos3d();
+			if($consulta) return $this->dimension.':'.$consulta; 
+		}
+		if($consulta=='0') return 'FORMULARIO VACIO';	
+		//creamos los ficheros de datos
+		//print($consulta);exit();
+		
+		$csv=$this->genCsv('graficos');
+		if(!$csv) return 0;
+	return $this->dimension.':scripts/php/'.$csv;
 	}
-  public function getDataListados(){
+  public function genDataListados(){
 			//generamos la conslta
 			$consulta=$this->makeQueryListados();
 			//creamos los ficheros de datos
@@ -48,6 +56,7 @@ class CSVS {
 			$this->fcsv=$this->crearFichero($this->nficherodestino,'txt');
 			//generamos csv y json	
 			$csv=$this->genCsv('listados');
+			return;
 			$cjson=$this->genJson();
 	}
   public function crearFichero($f,$ext){
@@ -64,7 +73,7 @@ class CSVS {
   public function limpiaForm(){
 			//claves disponibles
 			$dimclaves=array_keys($this->dim_campos);
-			$dimclaves=$this->dim_campos;
+			//$dimclaves=$this->dim_campos;
 			//limpiamos el array de campos de formulario y geenramos nombre para el fichero de salida
 			$this->dim_form=array_unique($this->dim_form);
 			foreach($this->dim_form as $key=>$df)
@@ -75,14 +84,20 @@ class CSVS {
 			if(sizeof($this->dim_form)==0) return 0;
 			return 1;
 	}
-  public function makeNombreFicheroDestino($tipo='graficos'){
-			$f='';
+  public function makeNombreFicheroDestino($tipo='graficos',$d=2,$dim3=''){
+			$f='f';
+			$i=0;
 			foreach($this->dim_form as $fn)
+				{
+				$i++;
 				$f.="_".$fn;
-			return $f."_graficos";
+				if($i==$d) break;
+				}
+			$this->nficherodestino=$f.'_'.$dim3."_$tipo";
+		return $f.'_'.$dim3."_$tipo";
 	}
   public function getClavesDim($d,$numero=3){
-			$sql_csv="SELECT distinct($d) FROM $this->ficheroorigen";
+			//$sql_csv="SELECT distinct($d) FROM $this->ficheroorigen";
 			$sql_mysql="SELECT distinct($d) FROM $this->tabla LIMIT $numero";
 			$res=$this->executeQuery('datos_tmp/qtemp.sql',$sql_mysql,'mysql');				
 			$ares=explode(PHP_EOL,$res);
@@ -90,14 +105,27 @@ class CSVS {
 			array_shift($ares);
 			return $ares;
 	}
-  public function makeQueryGraficos(){
+  public function makeQueryGraficos3d(){
+			//si estamos en 3d haremos un grafico de 2d para cada valor de la última dimension
+			$indicedim3=$this->dim_form[2];
+			$valordim3=$this->dim_campos[$indicedim3];
+			$claves_dim3=$this->getClavesDim($valordim3,3);
+			//print_r($claves_dim3);exit();
+			$csv='';
+			foreach($claves_dim3 as $cd)
+				{
+				$sql=$this->makeQueryGraficos2d(2,$cd,$indicedim3,$cd);
+				$csv.='#scripts/php/'.$this->genCsv('graficos');
+				}
+			return $csv;
+	}	
+  public function makeQueryGraficos2d($d=1,$cd3='',$clave3d='',$valor3d=''){
 			$pred='';
 			if($this->limpiaForm()==0) return '0';
-			$this->makeNombreFicheroDestino();
+			$this->makeNombreFicheroDestino('graficos',$d,$cd3);
 			$i=0;
 			if(sizeof($this->dim_campos)==0 || sizeof($this->dim_form)==0) return 0;
 			//numero de dimensiones
-			$d=sizeof($this->dim_form);
 			//campos disponibles como dimensiones
 			$dimclaves=array_keys($this->dim_campos);
 	
@@ -113,35 +141,44 @@ class CSVS {
 			
 				}
 			if($d==2)
-				{
-				$dim2=$this->dim_form[1];
+				{ 
+				$where='';
+				if($clave3d!='')
+					$where=" WHERE $clave3d='$valor3d' ";
+				$indicedim2=$this->dim_form[1];
+				$dim2=$this->dim_campos[$indicedim2];
 				$claves_dim2=$this->getClavesDim($dim2,3);
 				//print_r($claves_dim2);print($dim2);exit();
 				$nv=0;
 				$nva=-1;
 				$nc=0;
 				$select="SELECT t0.$dim1, ";
+				//creamos la clausuala para ordenar la consulta
+				//$order=" ORDER BY ";
 				foreach($claves_dim2 as $cd)
 					{
+					$rcd=preg_replace('/\s/', '', $cd);
+					$rcd=preg_replace('/-/', '', $rcd);
 					$nc++;
-					$select.="IFNULL(t$nc.num,0) as al$cd,";
+					$select.="IFNULL(t$nc.num,0) as al$rcd,";
+				//	$order.="al$rcd desc, ";
 					}
 				$select=trim($select,',');
-				$sql="$select FROM (SELECT $dim1, IFNULL(COUNT(*),0) as num FROM $this->tabla GROUP BY $dim1) as t0 LEFT JOIN ";
+				//$order=trim($order,', ');
+				$sql="$select FROM (SELECT $dim1, IFNULL(COUNT(*),0) as num FROM $this->tabla $where GROUP BY $dim1 LIMIT 3) as t0 LEFT JOIN ";
 				$ncampos=sizeof($claves_dim2);
 				$n=0;
 				foreach($claves_dim2 as $cd)
 				{
 					$n++;
-					$sql.="(SELECT $dim1,IFNULL(COUNT(*),0) as num FROM $this->tabla WHERE $dim2='$cd'  GROUP BY $dim1) as t$n";
+					$sql.="(SELECT $dim1,IFNULL(COUNT(*),0) as num FROM $this->tabla WHERE $dim2='$cd'  GROUP BY $dim1 LIMIT 3) as t$n";
 					$tmp=$n-1;
 					$sql.=" ON t$n.$dim1=t0.$dim1 ";	
 					if($n<$ncampos)
 						$sql.=" LEFT JOIN ";
-				} 
+				}
 				}
 	$this->query=$sql;
-	print($sql);
 	return $sql;
 	}
   public function makeQueryListados(){
@@ -152,8 +189,12 @@ class CSVS {
 			$this->makeNombreFicheroDestino();
 			$i=0;
 			$select="SELECT ";
+			print("CONSTRUYENDO CONSULTA: ");
+			print_r($this->dim_campos);
+			print_r($this->dim_form);
 			if(sizeof($this->dim_campos)==0 || sizeof($this->dim_form)==0) return 0;
 			//campos disponibles como dimensiones
+			print("dim campos: ");print_r($this->dim_campos);exit();
 			$dimclaves=array_keys($this->dim_campos);
 			foreach($this->dim_form as $v)
 				{
@@ -167,6 +208,7 @@ class CSVS {
 					{
 					if(sizeof($this->dim_campos[$v])>=1) 
 						{
+							print("dim campos: ");print_r($this->dim_campos[$v]);exit();
 							foreach($this->dim_campos[$v] as $c)
 								$select.="quote('$c')||':'||"."quote($c)||','||";
 						}	
@@ -185,6 +227,7 @@ class CSVS {
 				}
 			$select=trim($select,',');
 			$this->query=$select;
+			print_r($select);exit();
 			return 1;
 	}
   public function executeQuery($f,$q,$tipo='file'){
@@ -196,26 +239,33 @@ class CSVS {
 	else
 		{
 		$qquery='mysql -u'.DB_USER.' -p'.DB_PASSWORD.' '.DB_DB.' -e "'.$q.'"';
+		//print(PHP_EOL."consulta completa en EXECUTE: $qquery".PHP_EOL);
 	
 		}
 	$resq=shell_exec ($qquery );
+	//print(PHP_EOL."Resultado en EXECUTE: $resq".PHP_EOL);
+	//print("Saliendo de EXECUTE".PHP_EOL);
 	return $resq;
 	}
 
   public function genCsv($tipo='graficos'){
 	$rutafichero=$this->ruta.'/'.$this->nficherodestino;
-	$resc=1;
+	$resq=1;
+	print("consulta: ".$this->query);
 	if($tipo=='listados')
 	{
-		$resq=$executeQuery($this->tmp,$this->query);
+		$resq=$this->executeQuery($this->tmp,$this->query);
 		$comando_comillas='sed "s/\'/\"/g" '.$this->tmp.'>'.$this->fcsv;
-		$resc=shell_exec ($comando_comillas);
+		$resq=shell_exec ($comando_comillas);
 	}
 	else{
 		$rutafichero=$this->ruta.'/'.$this->nficherodestino.'.csv';
+		//print("generando grafico en $rutafichero");
+		//print(PHP_EOL."consulta en GENCSV: $this->query".PHP_EOL);
 		$resq=$this->executeQuery($this->nficherodestino,$this->query,'mysql');
 		$cadd=preg_replace('/\t/',';',$resq);
 		$fp = fopen($rutafichero, 'w');
+		//print("escribiendo en fichero resultado: $cadd");
 		fwrite($fp,$cadd);
 		fclose($fp);
 		}
@@ -238,7 +288,7 @@ class CSVS {
 			{
 				echo 'Caught exception: ',  $e->getMessage(), "\n";
 			}
-			print_r($comando_json);print("Respuesta: ".$res);exit();
+			//print_r($comando_json);print("Respuesta: ".$res);exit();
 			$comando_comprobacion="php comprobacion_json.php ".$this->fjson;
 			$rescjson=shell_exec ($comando_comprobacion );
 			
