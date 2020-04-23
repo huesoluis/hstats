@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: latin-1 -*-
+# -*- coding: utf-8 -*-
 #generador de json con dos niveles de anidamiento
 #eliminar del csv las primeras líneas
 import json
@@ -10,16 +10,10 @@ tree=[]
 nl=0
 lf=''
 linefinal='{'
-#fcsv="datos_listados/out1.csv"
 fcsv=str(sys.argv[1])
 dir='/datos/websfp/desarrollo/hstats/scripts/php/'
-#fcsv="datos_listados/f_centros_ciclos.pru"
-#fcsv1=dir+fcsv
-fcsv=dir+fcsv
-#fcsv='datos_listados/f_centros_ciclos.txt'
 
 lineas=open(fcsv,'r')
-
 for line in lineas.readlines():
     nl+=1
     line=line.replace('\n','')
@@ -47,6 +41,3 @@ lf=lf+"]}]"
 lf=lf.replace('""','"')
 
 print(lf)
-#pjson=json.loads('{"in1":"2","in2":"2"}')
-
-#print(tree[0]['children']['nombre'])

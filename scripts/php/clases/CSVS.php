@@ -6,7 +6,7 @@ class CSVS {
   public $dim_campos; 
   public $ficheroorigen; 
   public $query; 
-  public function __construct($ficheroorigen='',$ruta='',$dim_form=array(),$dim_campos=array(),$tabla='',$tipo='graficos'){
+  public function __construct($ficheroorigen='',$ruta='',$dim_form=array(),$dim_campos=array(),$tabla='',$tipo='graficos',$post=0){
     	$this->c =$this->dbconnect(DB_HOST, DB_USER, DB_PASSWORD);
     	$this->ficheroorigen = $ficheroorigen;
 	$this->dim_form=$dim_form;
@@ -15,12 +15,32 @@ class CSVS {
 	$this->dimension=sizeof($this->dim_form);
 	$this->ruta=$ruta;
 	$this->nficherodestino=$this->makeNombreFicheroDestino($tipo);
-	//print_r($this->dim_form); exit();
 	//print($this->nficherodestino);
 	$this->fcsv='';
 	$this->fjson='';
 	$this->tmp='';
 	$this->tabla= $tabla;
+	$this->post= $post;
+	$this->conexion = new \mysqli('localhost',DB_USER,DB_PASSWORD,DB_DB);
+	
+	if (!$this->conexion->set_charset("utf8")) {
+		printf("Error loading character set utf8: %s\n", $mysqli->error);
+	    	exit();
+	}
+	if ($this->conexion->connect_error) {
+    		die("Connection failed: " . $conn->connect_error);
+	} 
+	if(!$post)
+		{
+		print("CAMPOS DIPONIBLES: ");
+		print_r($dim_campos);
+		print("CAMPOS DE FORMULARIO: ");
+		print_r($dim_form);
+		print("DIMENSION: ");
+		print_r($this->dimension);
+		print("POST: ");
+		print_r($this->post);
+		}
 	
 	}
   private function dbconnect() 
@@ -57,7 +77,7 @@ class CSVS {
 			//generamos csv y json	
 			$csv=$this->genCsv('listados');
 			$cjson=$this->genJson();
-			return 1;
+			return $this->fjson;
 	}
   public function crearFichero($f,$ext){
 			$nf=$f;
@@ -73,7 +93,6 @@ class CSVS {
   public function limpiaForm($tipo='graficos'){
 			//claves disponibles
 			$dimclaves=array_keys($this->dim_campos);
-			//$dimclaves=$this->dim_campos;
 			//limpiamos el array de campos de formulario y geenramos nombre para el fichero de salida
 			$this->dim_form=array_unique($this->dim_form);
 			foreach($this->dim_form as $key=>$df)
@@ -93,8 +112,9 @@ class CSVS {
 				$f.="_".$fn;
 				if($i==$d) break;
 				}
-			$this->nficherodestino=$f.'_'.$dim3."_$tipo";
-		return $f.'_'.$dim3."_$tipo";
+			if($dim3!='')	
+				return $f.'_'.$dim3."_$tipo";
+			else	return $f.'_'."$tipo";
 	}
   public function getClavesDim($d,$numero=3){
 			//$sql_csv="SELECT distinct($d) FROM $this->ficheroorigen";
@@ -109,8 +129,7 @@ class CSVS {
 			//si estamos en 3d haremos un grafico de 2d para cada valor de la última dimension
 			$indicedim3=$this->dim_form[2];
 			$valordim3=$this->dim_campos[$indicedim3];
-			$claves_dim3=$this->getClavesDim($valordim3,3);
-			//print_r($claves_dim3);exit();
+			$claves_dim3=$this->getClavesDim($valordim3,10);
 			$csv='';
 			foreach($claves_dim3 as $cd)
 				{
@@ -147,7 +166,7 @@ class CSVS {
 					$where=" WHERE $clave3d='$valor3d' ";
 				$indicedim2=$this->dim_form[1];
 				$dim2=$this->dim_campos[$indicedim2];
-				$claves_dim2=$this->getClavesDim($dim2,3);
+				$claves_dim2=$this->getClavesDim($dim2,10);
 				//print_r($claves_dim2);print($dim2);exit();
 				$nv=0;
 				$nva=-1;
@@ -165,13 +184,13 @@ class CSVS {
 					}
 				$select=trim($select,',');
 				//$order=trim($order,', ');
-				$sql="$select FROM (SELECT $dim1, IFNULL(COUNT(*),0) as num FROM $this->tabla $where GROUP BY $dim1 LIMIT 3) as t0 LEFT JOIN ";
+				$sql="$select FROM (SELECT $dim1, IFNULL(COUNT(*),0) as num FROM $this->tabla $where GROUP BY $dim1 LIMIT 10) as t0 LEFT JOIN ";
 				$ncampos=sizeof($claves_dim2);
 				$n=0;
 				foreach($claves_dim2 as $cd)
 				{
 					$n++;
-					$sql.="(SELECT $dim1,IFNULL(COUNT(*),0) as num FROM $this->tabla WHERE $dim2='$cd'  GROUP BY $dim1 LIMIT 3) as t$n";
+					$sql.="(SELECT $dim1,IFNULL(COUNT(*),0) as num FROM $this->tabla WHERE $dim2='$cd'  GROUP BY $dim1 LIMIT 10) as t$n";
 					$tmp=$n-1;
 					$sql.=" ON t$n.$dim1=t0.$dim1 ";	
 					if($n<$ncampos)
@@ -230,9 +249,10 @@ class CSVS {
 				}
 			*/
 			$this->query=$select;
+			//print($this->query);exit();
 			return 1;
 	}
-  public function executeQuery($f,$q,$tipo='file'){
+  public function executeQuery($f,$q,$tipo='file',$origen='cl'){
 	if($tipo=='file')
 		{
 		$qquery='q -H -d ";" "'.$q.'" > '.$f;
@@ -240,11 +260,31 @@ class CSVS {
 		}
 	else
 		{
-		$qquery='mysql -u'.DB_USER.' -p'.DB_PASSWORD.' '.DB_DB.' -N -e "'.$q.'"';
-		//print(PHP_EOL."consulta completa en EXECUTE: $qquery".PHP_EOL);
+		if($origen=='cl')
+			{
+			$qquery='mysql -u'.DB_USER.' -p'.DB_PASSWORD.' '.DB_DB.' -N -e "'.$q.'"';
+			print(PHP_EOL."consulta completa en EXECUTE: $qquery".PHP_EOL);
+			$resq=shell_exec ($qquery );
+			}
+		elseif($origen=='con')
+			{
+			$resq='';
+			$result= $this->conexion->query($q);
+			if ($result->num_rows > 0) {
+    				while($row = $result->fetch_assoc()) {
+					foreach($row as $k=>$v)
+					{
+    						$resq.=$row[$k];
+    						$resq.="\n";
+					}
+				}
+			} else {
+				    echo "0 results";
+				}
+			}
 	
 		}
-	$resq=shell_exec ($qquery );
+	print($resq);
 	return $resq;
 	}
 
@@ -254,10 +294,10 @@ class CSVS {
 	//print("consulta: ".$this->query);
 	if($tipo=='listados')
 	{
-		$resq=$this->executeQuery($this->tmp,$this->query,'sql');
-		$comando_comillas='sed "s/\'/\"/g" '.$this->tmp.'>'.$this->fcsv;
+		$resq=$this->executeQuery($this->tmp,$this->query,'sql','con');
+		if(!$this->post) print(PHP_EOL."CREANDO CSV: ".PHP_EOL);
 		$ficherodestino='/datos/websfp/desarrollo/hstats/scripts/php/'.$this->fcsv;
-		//print($resq);exit();
+		//$comando_comillas='sed "s/\'/\"/g" '.$this->tmp.'>'.$this->fcsv;
 		$fp = fopen($ficherodestino, 'w');
 		fwrite($fp,$resq);
 		fclose($fp);
@@ -279,18 +319,47 @@ class CSVS {
 		return $rutafichero;
 	else return $resq;
   }
+  public function makeUtf8(){
+			$data = file_get_contents($this->fcsv);
+			print($data);
+			$data = mb_convert_encoding($data, 'UTF-8', 'ANSI_X3.4-1968');
+			file_put_contents('temporal', $data);
+			
+			}
   public function genJson($fam='',$sql=''){
 			$res='';
-			$comando_json="python3 gen_json_dosniveles.py $this->fcsv > $this->fjson";
-			//$comando_json="/usr/bin/python3 gen_pruebas.py ".$this->fcsv.">".$this->fjson ;
+			$dirppal='/datos/websfp/desarrollo/hstats/scripts/php/';
+
+			if($this->dimension==1)
+				$pycom='/datos/websfp/desarrollo/hstats/scripts/php/gen_json_unnivel.py';
+			elseif($this->dimension==2)
+				$pycom='/datos/websfp/desarrollo/hstats/scripts/php/gen_json_dosniveles.py';
+			elseif($this->dimension==3)
+				return;
+				#$pycom='/datos/websfp/desarrollo/hstats/scripts/php/gen_json_tresniveles.py';
+				
+
+			//$comando_json="/usr/bin/python3 $com $dirppal$this->fcsv > $dirppal$this->fjson";
+			if($this->post)
+			{
+				$comando_utf8="iconv -t ascii//TRANSLIT -f utf8  $this->fcsv -o  datos_listados/utf8.csv";
+				$res1=shell_exec ($comando_utf8);
+				print("<br>GENERANDO UTF8");	
+				$comando_json="/usr/bin/python3 $pycom  datos_listados/utf8.csv > $dirppal$this->fjson";
+			}
+			else
+			{
+				print("no post");
+				$comando_json="/usr/bin/python3 $pycom $this->fcsv > $dirppal$this->fjson";
+			}
 			try{
 				$res=shell_exec ($comando_json );
+				//$res=exec ($comando_json );
 			}
 			catch (Exception $e) 
 			{
 				echo 'Caught exception: ',  $e->getMessage(), "\n";
 			}
-			//print_r($comando_json);print("Respuesta: ".$res);exit();
 			//$comando_comprobacion="php comprobacion_json.php ".$this->fjson;
 			//$rescjson=shell_exec ($comando_comprobacion );
 			

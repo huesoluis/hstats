@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/estedu.css">
+  <link rel="stylesheet" href="css/listados.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -35,9 +36,9 @@
 	</div>
 	<div class="row">
 		<div class="col-md-3">
-			General
+			GRÁFICOS
 			<?php include "includes/menulateral_general.html"; ?>
-			Listados
+			LISTADOS
 			<?php include "includes/menulateral_listados.html"; ?>
 			Comparativas
 			<?php include "includes/menulateral_comparativas.html"; ?>
@@ -47,32 +48,32 @@
 		<div class="col-md-9">
 			<div class="row">
 				<div class="col-md-9">
-					<form id="flistados">
-						<div class="row">
-							<select id="dimensiones" name="dimensiones">
-							</select> 
-						</div>
-					</form>
-					<form id="fdim">
-					<div class="row">
-							<?php include "includes/dimensiones.php"; ?>
-					        	<button type="submit" class="btn btn-success">GENERAR DATOS<span class="fa fa-arrow-right"></span></button>
+					<form id="formgeneral">
+					<div id="filagraficos" class="row">
+							<?php include "includes/dimensiones_graficos.php"; ?>
+					</div>
+					<div id="filalistados" class="row">
+							<?php include "includes/dimensiones_listados.php"; ?>
+					</div>
+					<div id="filasubmit" class="row">
+					        	<button type="submit" class="btn btn-success">GENERAR <span value="listados" id="tipoinfo">LISTADOS</span><span class="fa fa-arrow-right"></span></button>
 					</div>
 					<!--<div class="row">
-						<?php include "includes/filtros.html"; ?>
+						<?php // include "includes/filtros.html"; ?>
                 			</div>
 					-->
 					</form>
                 	<div class="row">
                 		<div class="col-md-12">
-					<button class="btn btn-default" id="bgenlist">VER LISTADOS</button>
-                    			<div class="row" id="zlistados">
+                    			<div class="row clistados" id="slistados">
 						<div class="col-md-12">
-							<div>lppal<div id="shiva">LISTADO DINAMICO</div></div>
+							<div id="lppal">lppal<div id="shiva">TOTAL ALUMNOS FP CURSO 2019: <span class="count">19509</span></div></div>
+							<div id="big-list">
+							</div>
 						</div>
                 			</div>
-					<button class="btn btn-default" id="bgengra">VER GRAFICOS</button>
-                    			<div class="row" id="zgraficos">
+					
+                    			<div class="row cgraficos" id="zgraficos">
 						<div class="col-md-12">
 							<div id="gppal">gppal<div id="shiva">TOTAL ALUMNOS FP CURSO 2019: <span class="count">19509</span></div></div>
 							<div id="big-gra"></div>

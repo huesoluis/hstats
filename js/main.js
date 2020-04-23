@@ -1,19 +1,71 @@
 $( document ).ready(function() {
 
-$('#fdim').submit(function(event) {
-        var formData = {
+//nada mas cargar el doc ocultamos la seccion de listados
+$("#filagraficos").hide();
+$(".cgraficos").hide();
+
+$('body').on('click', '#lcentros', function(e)
+{
+	$("#filalistados").show();
+	$("#filagraficos").hide();
+	
+	$("#tipoinfo").text("LISTADOS");
+	$("#tipoinfo").attr('value','listados');
+	
+	$(".clistados").show();
+	$(".cgraficos").hide();
+}
+);
+$('body').on('click', '#gmatricula', function(e)
+{
+	$("#filalistados").hide();
+	$("#filagraficos").show();
+	
+	$("#tipoinfo").text("GRÁFICOS");
+	$("#tipoinfo").attr('value','graficos');
+	
+	$(".clistados").hide();
+	$(".cgraficos").show();
+}
+);
+
+//FUNCION PARA GENERAR LOS GRAFICOS/LISTADOS
+$('#formgeneral').submit(function(event) {
+        var formData_graficos = {
 	    'd0'		: $( "#d0 option:selected" ).text(),
 	    'd1'		: $( "#d1 option:selected" ).text(),
 	    'd2'		: $( "#d2 option:selected" ).text()
         };
+        var formData_listados = {
+	    'd0'		: $( "#dl0 option:selected" ).text(),
+	    'd1'		: $( "#dl1 option:selected" ).text(),
+	    'd2'		: $( "#dl2 option:selected" ).text()
+        };
+	
+	//obtenemos el tipo de info en forma de graficos o listados
+	var tipo= $("#tipoinfo").attr('value');
+	var script="pr_gen_graficos.php";
+	var path='';
+	var fdata=formData_graficos;
+	if(tipo=='listados')
+		{
+		script="pr_gen_listados.php";
+		fdata=formData_listados;
+		}
+	path='scripts/php/'+script;
+	console.log("RUTA: "+path);
 	$.ajax({
             type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-            url         : 'scripts/php/pr_gen_graficos.php', // the url where we want to POST
-            data        : formData, // our data object
+            url         : path, // the url where we want to POST
+            data        : fdata, // our data object
             encode      : true,
-	 			})
+	    contentType: "application/x-www-form-urlencoded;charset=utf-8",
+				})
             .done(function(data) {
-		console.log("DATOS RECIBIDOS: "+data);
+		console.log(data);	
+		$("#big-list").append(data);
+		return;		
+		console.log("TIPO: "+tipo+" SCRIPT: "+script);
 		var fcsv = "scripts/php/"+data;	
 		adato=data.split(":");
 		if(adato[0]!=3)

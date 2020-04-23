@@ -1,3 +1,3 @@
 <?php
-$dim_graficos=array('nombreciclo'=>'codciclo','centro'=>'centro','sexo'=>'sexo','provincia'=>'provincia');
+$dim_graficos=array('ciclo'=>'codciclo','centro'=>'centro','sexo'=>'sexo','provincia'=>'provincia');
 ?>

@@ -1,7 +1,4 @@
 <?php 
-// include configuration
-//require_once(dirname(__FILE__) . '/config.php');
-
 require_once('clases/CSVS.php');
 require_once('datos_origen/dim_listados.php');
 
@@ -10,24 +7,26 @@ $rutafichero='datos_listados/';
 
 if(isset($_SERVER["REQUEST_METHOD"]))
 {
+	$post=1;
 	if($_SERVER["REQUEST_METHOD"] == "POST") 
 	{
 	http_response_code(200);
 	foreach($_POST as $k=>$v)
 		$_POST['dim'][]=$_POST[$k];
 	}
+print_r($_POST);
 }
 else
 {
+	$post=0;
 	#zona de pruebas
 	$_POST['dim']=Array("centros", "ciclos","ciclos","Elige","provincias");
 	$_POST['dim']=Array("ciclo","centro");
+	$_POST['dim']=Array("ciclo");
 }
-	$listado = new \hstats\CSVS($ficheroorigen,$rutafichero,$_POST['dim'],$dim_listados,'test',"listados");
-	$res=$listado->genDataListados();
-	//$datos=$listado->makeView();
-	print("OK");
-	//print("DATOS: ".$datos);
-	//if($cjson==1) print(PHP_EOL."TODO OK");
+	$listado = new \hstats\CSVS($ficheroorigen,$rutafichero,$_POST['dim'],$dim_listados,'ofertafp1920',"listados",$post);
+	$resfile=$listado->genDataListados();
+	print($resfile);
+//	require_once('gen_listadoshtml.php');
 ?>
 
