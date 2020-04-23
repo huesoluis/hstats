@@ -8,8 +8,6 @@ linefinal='{'
 
 fcsv='out.csv'
 
-
-
 #hijo=0
 for line in open(fcsv,'r').readlines():
 #for line in open('prueba1.csv','r').readlines():

@@ -20,9 +20,9 @@ else
 {
 	$post=0;
 	#zona de pruebas
-	$_POST['dim']=Array("centros", "ciclos","ciclos","Elige","provincias");
 	$_POST['dim']=Array("ciclo","centro");
-	$_POST['dim']=Array("ciclo");
+	$_POST['dim']=Array("ciclo","centro");
+	$_POST['dim']=Array("ciclo", "centro","provincia");
 }
 	$listado = new \hstats\CSVS($ficheroorigen,$rutafichero,$_POST['dim'],$dim_listados,'ofertafp1920',"listados",$post);
 	$resfile=$listado->genDataListados();

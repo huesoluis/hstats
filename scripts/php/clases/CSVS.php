@@ -14,7 +14,11 @@ class CSVS {
     	$this->limpiaForm();
 	$this->dimension=sizeof($this->dim_form);
 	$this->ruta=$ruta;
-	$this->nficherodestino=$this->makeNombreFicheroDestino($tipo);
+	if($tipo=='listados')
+		$this->nficherodestino=$this->makeNombreFicheroDestinoListados();
+	else
+		$this->nficherodestino=$this->makeNombreFicheroDestino($tipo);
+
 	//print($this->nficherodestino);
 	$this->fcsv='';
 	$this->fjson='';
@@ -61,7 +65,6 @@ class CSVS {
 			}
 			if($consulta=='0') return 'FORMULARIO VACIO';	
 			//creamos los ficheros de datos
-			//print($consulta);exit();
 			
 			$csv=$this->genCsv('graficos');
 			if(!$csv) return 0;
@@ -103,6 +106,16 @@ class CSVS {
 			if(sizeof($this->dim_form)==0) return 0;
 			return 1;
 	}
+  public function makeNombreFicheroDestinoListados(){
+			$f='f';
+			$i=0;
+			foreach($this->dim_form as $fn)
+				{
+				$i++;
+				$f.="_".$fn;
+				}
+			return $f.'_'."listados";
+	}
   public function makeNombreFicheroDestino($tipo='graficos',$d=2,$dim3=''){
 			$f='f';
 			$i=0;
@@ -129,7 +142,7 @@ class CSVS {
 			//si estamos en 3d haremos un grafico de 2d para cada valor de la última dimension
 			$indicedim3=$this->dim_form[2];
 			$valordim3=$this->dim_campos[$indicedim3];
-			$claves_dim3=$this->getClavesDim($valordim3,10);
+			$claves_dim3=$this->getClavesDim($valordim3,50);
 			$csv='';
 			foreach($claves_dim3 as $cd)
 				{
@@ -166,8 +179,7 @@ class CSVS {
 					$where=" WHERE $clave3d='$valor3d' ";
 				$indicedim2=$this->dim_form[1];
 				$dim2=$this->dim_campos[$indicedim2];
-				$claves_dim2=$this->getClavesDim($dim2,10);
-				//print_r($claves_dim2);print($dim2);exit();
+				$claves_dim2=$this->getClavesDim($dim2,50);
 				$nv=0;
 				$nva=-1;
 				$nc=0;
@@ -184,13 +196,13 @@ class CSVS {
 					}
 				$select=trim($select,',');
 				//$order=trim($order,', ');
-				$sql="$select FROM (SELECT $dim1, IFNULL(COUNT(*),0) as num FROM $this->tabla $where GROUP BY $dim1 LIMIT 10) as t0 LEFT JOIN ";
+				$sql="$select FROM (SELECT $dim1, IFNULL(COUNT(*),0) as num FROM $this->tabla $where GROUP BY $dim1 LIMIT 50) as t0 LEFT JOIN ";
 				$ncampos=sizeof($claves_dim2);
 				$n=0;
 				foreach($claves_dim2 as $cd)
 				{
 					$n++;
-					$sql.="(SELECT $dim1,IFNULL(COUNT(*),0) as num FROM $this->tabla WHERE $dim2='$cd'  GROUP BY $dim1 LIMIT 10) as t$n";
+					$sql.="(SELECT $dim1,IFNULL(COUNT(*),0) as num FROM $this->tabla WHERE $dim2='$cd'  GROUP BY $dim1 LIMIT 50) as t$n";
 					$tmp=$n-1;
 					$sql.=" ON t$n.$dim1=t0.$dim1 ";	
 					if($n<$ncampos)
@@ -237,8 +249,7 @@ class CSVS {
 				}
 			$order=trim($order,',');
 			$select=substr($select,0,-7);
-			$select=$select.') FROM '.$this->tabla.' ORDER BY '.$order.' LIMIT 10';
-			//print("SELECT PARCIAL: ");print_r($select.PHP_EOL);exit();
+			$select=$select.') FROM '.$this->tabla.' ORDER BY '.$order.' LIMIT 50';
 			/*
 			foreach($this->dim_form as $v)
 				{
@@ -249,7 +260,6 @@ class CSVS {
 				}
 			*/
 			$this->query=$select;
-			//print($this->query);exit();
 			return 1;
 	}
   public function executeQuery($f,$q,$tipo='file',$origen='cl'){
@@ -296,6 +306,8 @@ class CSVS {
 	{
 		$resq=$this->executeQuery($this->tmp,$this->query,'sql','con');
 		if(!$this->post) print(PHP_EOL."CREANDO CSV: ".PHP_EOL);
+		if(!$this->post) print($this->fcsv.PHP_EOL);
+		//print($this->query);
 		$ficherodestino='/datos/websfp/desarrollo/hstats/scripts/php/'.$this->fcsv;
 		//$comando_comillas='sed "s/\'/\"/g" '.$this->tmp.'>'.$this->fcsv;
 		$fp = fopen($ficherodestino, 'w');
@@ -314,7 +326,6 @@ class CSVS {
 		fwrite($fp,$cadd);
 		fclose($fp);
 		}
-		//print("en gencsv".PHP_EOL.$this->query.PHP_EOL);exit();
 	if($resq)
 		return $rutafichero;
 	else return $resq;
@@ -335,16 +346,13 @@ class CSVS {
 			elseif($this->dimension==2)
 				$pycom='/datos/websfp/desarrollo/hstats/scripts/php/gen_json_dosniveles.py';
 			elseif($this->dimension==3)
-				return;
-				#$pycom='/datos/websfp/desarrollo/hstats/scripts/php/gen_json_tresniveles.py';
-				
+				$pycom='/datos/websfp/desarrollo/hstats/scripts/php/gen_json_tresniveles.py';
 
 			//$comando_json="/usr/bin/python3 $com $dirppal$this->fcsv > $dirppal$this->fjson";
 			if($this->post)
 			{
 				$comando_utf8="iconv -t ascii//TRANSLIT -f utf8  $this->fcsv -o  datos_listados/utf8.csv";
 				$res1=shell_exec ($comando_utf8);
-				print("<br>GENERANDO UTF8");	
 				$comando_json="/usr/bin/python3 $pycom  datos_listados/utf8.csv > $dirppal$this->fjson";
 			}
 			else
@@ -382,7 +390,6 @@ class CSVS {
 			{
 				echo 'Caught exception: ',  $e->getMessage(), "\n";
 			}
-			//print_r($comando_json);print("Respuesta: ".$res);exit();
 			$comando_comprobacion="php comprobacion_json.php ".$this->fjson;
 			$rescjson=shell_exec ($comando_comprobacion );
 			

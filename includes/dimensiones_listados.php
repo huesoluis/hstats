@@ -2,7 +2,7 @@
 //si el formualrio es para graficos
 include_once('./scripts/php/datos_origen/dim_listados.php');
 //$keys=array_keys($dim_graficos);
-$keys=$dim_graficos;
+$keys=$dim_listados;
 ?>
 <div class="col-md-4" id="dimlistados">
 	<div class="input-group mb-3">

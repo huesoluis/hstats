@@ -1,4 +1,5 @@
 import json
+import sys
 
 tree=[]
 nl=0
@@ -6,15 +7,14 @@ lf=''
 ft=1
 linefinal='{'
 
-fcsv='out.csv'
-
-
+fcsv=str(sys.argv[1])
+dir='/datos/websfp/desarrollo/hstats/scripts/php/'
 
 #hijo=0
 for line in open(fcsv,'r').readlines():
 #for line in open('prueba1.csv','r').readlines():
     nl+=1
-    if(nl<=6): continue 
+    #if(nl<=6): continue 
     line=line.replace('\n','')
     l2=line
     l3=l2.split('-n-')
@@ -25,7 +25,7 @@ for line in open(fcsv,'r').readlines():
     children1=l3[1]
     children2=l3[2]
     
-    if(nl==7): 
+    if(nl==1): 
         lf="[{"+lactual
         lf+=",\"children1\":[{"+children1
         lant=lactual
