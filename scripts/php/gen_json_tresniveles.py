@@ -27,7 +27,7 @@ for line in open(fcsv,'r').readlines():
     
     if(nl==1): 
         lf="[{"+lactual
-        lf+=",\"children1\":[{"+children1
+        lf+=",\"children\":[{"+children1
         lant=lactual
         lantchildren1=children1
         lf+=",\"children2\":[{"+children2+"}"
@@ -41,9 +41,8 @@ for line in open(fcsv,'r').readlines():
         else:
             lf+="]},{"+children1
             lf+=",\"children2\":[{"+children2+"}"
-            #{"+children1+",\"children\":[{"+children2+"}"
     else:
-        lf+="]}]},{"+lactual+",\"children1\":[{"+children1
+        lf+="]}]},{"+lactual+",\"children\":[{"+children1
         lf+=",\"children2\":[{"+children2+"}"
         ft=0
     lant=lactual

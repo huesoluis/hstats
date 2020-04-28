@@ -6,9 +6,12 @@ $ficheroorigen='datos_origen/mat_alumnosfp2019.csv';
 $rutafichero='datos_graficos/';
 
 $tabla='test';
+$tabla='matriculafp1920';
+$post=0;
 
 if(isset($_SERVER["REQUEST_METHOD"]))
 {
+$post=1;
 	if($_SERVER["REQUEST_METHOD"] == "POST") 
 	{
 	http_response_code(200);
@@ -28,12 +31,13 @@ else
 	$_RRPOST['dim']=Array("sexo","provincia","nombreciclo");
 	$_RRPOST['dim']=Array("nombreciclo","sexo","provincia");
 	$_RRPOST['dim']=Array("centro","sexo");
+	$_RRPOST['dim']=Array("ciclo","centro");
+	$_RRPOST['dim']=Array("ciclo","sexo","centro");
+	//$_RRPOST['dim']=Array("ciclo");
 }
 
-$listado = new \hstats\CSVS($ficheroorigen,$rutafichero,$_RRPOST['dim'],$dim_graficos,$tabla,"graficos");
+$listado = new \hstats\CSVS($ficheroorigen,$rutafichero,$_RRPOST['dim'],$dim_graficos,$tabla,"graficos",1);
 $res=$listado->getDataGraficos();
-print(PHP_EOL);
 print($res);
-print(PHP_EOL);
 ?>
 

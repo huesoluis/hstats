@@ -16,10 +16,9 @@ class CSVS {
 	$this->ruta=$ruta;
 	if($tipo=='listados')
 		$this->nficherodestino=$this->makeNombreFicheroDestinoListados();
-	else
+	elseif($tipo=='graficos' and $this->dimension<=2)
 		$this->nficherodestino=$this->makeNombreFicheroDestino($tipo);
 
-	//print($this->nficherodestino);
 	$this->fcsv='';
 	$this->fjson='';
 	$this->tmp='';
@@ -54,10 +53,21 @@ class CSVS {
 	mysqli_select_db($conn,DB_DB) or die ("<br/>No se puedo seleccionar la bases de datos");
 	return $conn;
   	}
+
+  public function quitarAcentos($s){
+		//Reemplazamos la A y a
+		$cadena = str_replace(
+		array('Á','á','É','é', 'Í','í','Ó','ó','Ú','ú','Ñ','ñ','.'),
+		array('A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U','u','N','n',''),
+		$s
+		);
+		$cadena = utf8_encode($cadena);	
+		return $cadena;
+	}
   public function getDataGraficos(){
 			//generamos la conslta
 			if($this->dimension<=2)
-				$consulta=$this->makeQueryGraficos2d(2);
+				$consulta=$this->makeQueryGraficos2d($this->dimension);
 			else
 			{
 				$consulta=$this->makeQueryGraficos3d();
@@ -65,7 +75,6 @@ class CSVS {
 			}
 			if($consulta=='0') return 'FORMULARIO VACIO';	
 			//creamos los ficheros de datos
-			
 			$csv=$this->genCsv('graficos');
 			if(!$csv) return 0;
 		return $this->dimension.':scripts/php/'.$csv;
@@ -126,16 +135,18 @@ class CSVS {
 				if($i==$d) break;
 				}
 			if($dim3!='')	
-				return $f.'_'.$dim3."_$tipo";
+				{
+				return $f.'_'.$this->quitarAcentos(str_replace(' ','_',$dim3))."_$tipo";
+				}
 			else	return $f.'_'."$tipo";
 	}
   public function getClavesDim($d,$numero=3){
 			//$sql_csv="SELECT distinct($d) FROM $this->ficheroorigen";
-			$sql_mysql="SELECT distinct($d) FROM $this->tabla LIMIT $numero";
-			$res=$this->executeQuery('datos_tmp/qtemp.sql',$sql_mysql,'mysql');				
+			$sql_mysql="SELECT distinct($d) FROM $this->tabla WHERE $d is not null LIMIT $numero";
+			$res=$this->executeQuery('datos_tmp/qtemp.sql',$sql_mysql,'sql');				
 			$ares=explode(PHP_EOL,$res);
 			array_pop($ares);
-			array_shift($ares);
+			//array_shift($ares);
 			return $ares;
 	}
   public function makeQueryGraficos3d(){
@@ -146,8 +157,12 @@ class CSVS {
 			$csv='';
 			foreach($claves_dim3 as $cd)
 				{
-				$sql=$this->makeQueryGraficos2d(2,$cd,$indicedim3,$cd);
-				$csv.='#scripts/php/'.$this->genCsv('graficos');
+				$sql=$this->makeQueryGraficos2d(2,$cd,$valordim3,$cd);
+				
+				$this->nficherodestino=$this->makeNombreFicheroDestino('graficos',2,$cd);
+				$csvtmp=$this->genCsv('graficos');
+				//si obtenemos una ruta de fcihero no vacia (pq no hay datos)
+				if($csvtmp!='')	$csv.='#scripts/php/'.$csvtmp;
 				}
 			return $csv;
 	}	
@@ -157,11 +172,10 @@ class CSVS {
 			$this->makeNombreFicheroDestino('graficos',$d,$cd3);
 			$i=0;
 			if(sizeof($this->dim_campos)==0 || sizeof($this->dim_form)==0) return 0;
-			//numero de dimensiones
 			//campos disponibles como dimensiones
 			$dimclaves=array_keys($this->dim_campos);
 	
-			$dim1=$this->dim_form[0];
+			$dim1=$this->dim_campos[$this->dim_form[0]];
 			$sql='';
 			$nfil=0;
 			if($d==1)
@@ -174,18 +188,21 @@ class CSVS {
 				}
 			if($d==2)
 				{ 
-				$where='';
+				$whereppal='';
+				$wheresec='';
 				if($clave3d!='')
-					$where=" WHERE $clave3d='$valor3d' ";
+					{
+					$whereppal=" WHERE $clave3d='$valor3d' ";
+					$wheresec=" and $clave3d='$valor3d' ";
+					}
 				$indicedim2=$this->dim_form[1];
 				$dim2=$this->dim_campos[$indicedim2];
 				$claves_dim2=$this->getClavesDim($dim2,50);
 				$nv=0;
 				$nva=-1;
 				$nc=0;
-				$select="SELECT t0.$dim1, ";
+				$select="SELECT IFNULL(t0.$dim1,'NODATA') as $dim1,  ";
 				//creamos la clausuala para ordenar la consulta
-				//$order=" ORDER BY ";
 				foreach($claves_dim2 as $cd)
 					{
 					$rcd=preg_replace('/\s/', '', $cd);
@@ -196,13 +213,13 @@ class CSVS {
 					}
 				$select=trim($select,',');
 				//$order=trim($order,', ');
-				$sql="$select FROM (SELECT $dim1, IFNULL(COUNT(*),0) as num FROM $this->tabla $where GROUP BY $dim1 LIMIT 50) as t0 LEFT JOIN ";
+				$sql="$select FROM (SELECT $dim1, IFNULL(COUNT(*),0) as num FROM $this->tabla $whereppal GROUP BY $dim1 LIMIT 50) as t0 LEFT JOIN ";
 				$ncampos=sizeof($claves_dim2);
 				$n=0;
 				foreach($claves_dim2 as $cd)
 				{
 					$n++;
-					$sql.="(SELECT $dim1,IFNULL(COUNT(*),0) as num FROM $this->tabla WHERE $dim2='$cd'  GROUP BY $dim1 LIMIT 50) as t$n";
+					$sql.="(SELECT $dim1,IFNULL(COUNT(*),0) as num FROM $this->tabla WHERE $dim2='$cd' $wheresec  GROUP BY $dim1 LIMIT 50) as t$n";
 					$tmp=$n-1;
 					$sql.=" ON t$n.$dim1=t0.$dim1 ";	
 					if($n<$ncampos)
@@ -221,6 +238,7 @@ class CSVS {
 			$i=0;
 			$select="SELECT CONCAT( ";
 			$order='';
+			$groupby='';
 			//campos disponibles como dimensiones
 			$dimclaves=array_keys($this->dim_campos);
 			//obtenemos los campos informativos de cada campo principal
@@ -233,14 +251,19 @@ class CSVS {
 							$k=0;
 							foreach($this->dim_campos[$v] as $k=>$c)
 							{
+							$groupby.=$c.",";
 							if($k>0)
+							{
 								$select.="',\\\"$c\\\":'";
+							}
 							else
+							{
 								$select.="'\\\"$c\\\":'";
-								$select.=",'\\\"',";
-								$select.="$c";
-								$select.=",'\\\"',";
-								$order.="$c,";
+							}
+							$select.=",'\\\"',";
+							$select.="$c";
+							$select.=",'\\\"',";
+							$order.="$c,";
 							$k++;
 							}
 						}	
@@ -249,7 +272,7 @@ class CSVS {
 				}
 			$order=trim($order,',');
 			$select=substr($select,0,-7);
-			$select=$select.') FROM '.$this->tabla.' ORDER BY '.$order.' LIMIT 50';
+			$select=$select.') FROM '.$this->tabla.' GROUP BY '.trim($groupby,",").' HAVING COUNT(*)>1 ORDER BY '.$order.' LIMIT 50';
 			/*
 			foreach($this->dim_form as $v)
 				{
@@ -262,7 +285,7 @@ class CSVS {
 			$this->query=$select;
 			return 1;
 	}
-  public function executeQuery($f,$q,$tipo='file',$origen='cl'){
+  public function executeQuery($f,$q,$tipo='file',$origen='cl',$head='si'){
 	if($tipo=='file')
 		{
 		$qquery='q -H -d ";" "'.$q.'" > '.$f;
@@ -270,44 +293,50 @@ class CSVS {
 		}
 	else
 		{
-		if($origen=='cl')
+		if($origen=='cl') //si se ejecuta dese linea de comandos
 			{
 			$qquery='mysql -u'.DB_USER.' -p'.DB_PASSWORD.' '.DB_DB.' -N -e "'.$q.'"';
-			print(PHP_EOL."consulta completa en EXECUTE: $qquery".PHP_EOL);
 			$resq=shell_exec ($qquery );
 			}
 		elseif($origen=='con')
 			{
 			$resq='';
+			$cabecera='';
+			$i=1;
 			$result= $this->conexion->query($q);
 			if ($result->num_rows > 0) {
     				while($row = $result->fetch_assoc()) {
 					foreach($row as $k=>$v)
 					{
-    						$resq.=$row[$k];
-    						$resq.="\n";
+						if($i==1 and $head=='si')
+						{
+							$cabecera=implode(';',array_keys($row));
+    							$resq.=$cabecera;
+    							$resq.="\n";
+							$i=0;
+						}
+    						$resq.=$row[$k].";";
 					}
+    						$resq=substr($resq,0,-1);
+    						$resq.="\n";
 				}
 			} else {
-				    echo "0 results";
+				 if(!$this->post)  echo "0 results $q";
 				}
 			}
 	
 		}
-	print($resq);
 	return $resq;
 	}
 
   public function genCsv($tipo='graficos'){
 	$rutafichero=$this->ruta.'/'.$this->nficherodestino;
-	$resq=1;
-	//print("consulta: ".$this->query);
+	$resq='';
 	if($tipo=='listados')
 	{
-		$resq=$this->executeQuery($this->tmp,$this->query,'sql','con');
+		$resq=$this->executeQuery($this->tmp,$this->query,'sql','con','no');
 		if(!$this->post) print(PHP_EOL."CREANDO CSV: ".PHP_EOL);
 		if(!$this->post) print($this->fcsv.PHP_EOL);
-		//print($this->query);
 		$ficherodestino='/datos/websfp/desarrollo/hstats/scripts/php/'.$this->fcsv;
 		//$comando_comillas='sed "s/\'/\"/g" '.$this->tmp.'>'.$this->fcsv;
 		$fp = fopen($ficherodestino, 'w');
@@ -317,22 +346,20 @@ class CSVS {
 	}
 	else{
 		$rutafichero=$this->ruta.'/'.$this->nficherodestino.'.csv';
-		//print("generando grafico en $rutafichero");
-		//print(PHP_EOL."consulta en GENCSV: $this->query".PHP_EOL);
-		$resq=$this->executeQuery($this->nficherodestino,$this->query,'mysql');
+		$resq=$this->executeQuery($this->nficherodestino,$this->query,'sql','con');
 		$cadd=preg_replace('/\t/',';',$resq);
-		$fp = fopen($rutafichero, 'w');
-		//print("escribiendo en fichero resultado: $cadd");
-		fwrite($fp,$cadd);
-		fclose($fp);
+		if(strlen($cadd)>1) 
+		{
+			$fp = fopen($rutafichero, 'w');
+			fwrite($fp,$cadd);
+			fclose($fp);
 		}
-	if($resq)
-		return $rutafichero;
-	else return $resq;
+		else $rutafichero='';
+		}
+	return $rutafichero;
   }
   public function makeUtf8(){
 			$data = file_get_contents($this->fcsv);
-			print($data);
 			$data = mb_convert_encoding($data, 'UTF-8', 'ANSI_X3.4-1968');
 			file_put_contents('temporal', $data);
 			

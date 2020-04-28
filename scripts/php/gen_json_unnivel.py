@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: latin-1 -*-
-#generador de json con dos niveles de anidamiento
-#eliminar del csv las primeras líneas
 import json
 import sys
 import codecs
@@ -10,10 +6,8 @@ tree=[]
 nl=0
 lf=''
 linefinal='{'
-#fcsv=str(sys.argv[1])
+fcsv=str(sys.argv[1])
 dir='/datos/websfp/desarrollo/hstats/scripts/php/'
-
-fcsv='p.csv';
 
 lineas=open(fcsv,'r')
 for line in lineas.readlines():

@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
 #generador de json con dos niveles de anidamiento
 #eliminar del csv las primeras líneas
 import json
