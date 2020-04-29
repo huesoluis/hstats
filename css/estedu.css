@@ -10,8 +10,12 @@ text-align:center;
 {
 padding-top: 10px;
 }
+.nav-link{
+color:black;
+}
 .nav-link[data-toggle].collapsed:after {
     content: "▾";
+color:black;
 }
 .nav-link[data-toggle]:not(.collapsed):after {
     content: "▴";

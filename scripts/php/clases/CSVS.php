@@ -4,11 +4,11 @@ include 'config.php';
 class CSVS {
   public $dim_form; 
   public $dim_campos; 
-  public $ficheroorigen; 
   public $query; 
-  public function __construct($ficheroorigen='',$ruta='',$dim_form=array(),$dim_campos=array(),$tabla='',$tipo='graficos',$post=0){
-    	$this->c =$this->dbconnect(DB_HOST, DB_USER, DB_PASSWORD);
-    	$this->ficheroorigen = $ficheroorigen;
+  public function __construct($ruta='',$dim_form=array(),$dim_campos=array(),$tabla='',$tipo='graficos',$post=0){
+	require_once("tablas.php");
+    	$this->tablahtml=$tablahtml;
+	$this->c =$this->dbconnect(DB_HOST, DB_USER, DB_PASSWORD);
 	$this->dim_form=$dim_form;
     	$this->dim_campos = $dim_campos;
     	$this->limpiaForm();
@@ -21,7 +21,7 @@ class CSVS {
 
 	$this->fcsv='';
 	$this->fjson='';
-	$this->tmp='';
+	$this->tmp='nofile';
 	$this->tabla= $tabla;
 	$this->post= $post;
 	$this->conexion = new \mysqli('localhost',DB_USER,DB_PASSWORD,DB_DB);
@@ -63,6 +63,93 @@ class CSVS {
 		);
 		$cadena = utf8_encode($cadena);	
 		return $cadena;
+	}
+  public function makeTabla($t,$ad3=array(),$aresc=array()){
+		$th='<table class="table table-striped"><thead><tr>';
+
+		if($this->dimension==3)
+		{
+			$f=0;
+			foreach($aresc as $t)
+			{
+			if($t=='') continue;
+				$i=0;
+				$array_datos=explode(PHP_EOL,$t);
+				if($f==0){
+						$th.='<th>'.$this->dim_form[2].'</th>';
+						$cabecera=explode(';',$array_datos[0]);
+						foreach($cabecera as $c)
+							$th.='<th>'.$c.'</th>';
+						//print_r($th);exit();
+						$th.='</tr></thead>';
+						$th.='<tbody>';
+					}
+				foreach($array_datos as $a)
+				{
+					$i++;
+					if($i==1 || strlen($a)==0) continue;
+					$fdatos=explode(';',$a);
+					$th.='<tr>';	
+					if($i==2) $th.='<td>'.$ad3[$f].'</td>';	
+					else $th.='<td></td>';	
+					foreach($fdatos as $fd)
+						$th.='<td>'.$fd.'</td>';	
+					$th.='</tr>';	
+				}
+			
+				$f++;
+			}
+			$th.='</tbody><table>';
+		}
+		elseif($this->dim>=2)
+		{
+			$array_datos=explode(PHP_EOL,$t);
+			array_pop($array_datos);
+			$i=0;	
+			$cabecera=explode(';',$array_datos[0]);
+			
+			foreach($cabecera as $c)
+				$th.='<th>'.$c.'</th>';
+			$th.='</tr></thead>';
+			$th.='<tbody>';
+		
+			foreach($array_datos as $a)
+			{
+				$i++;
+				if($i==1) continue;
+				$fdatos=explode(';',$a);
+				$th.='<tr>';	
+				foreach($fdatos as $fd)
+					$th.='<td>'.$fd.'</td>';	
+				$th.='</tr>';	
+			}
+			 $th.='</tbody><table>';
+		}
+		return $th;
+
+	}
+  public function getDataTablas(){
+		$resq='';
+		$aresconsultas=array();
+		$clavesdim3=array();
+		if($this->dimension<=2)
+		{
+			$consulta=$this->makeQueryGraficos2d($this->dimension);
+			$resq=$this->executeQuery($this->tmp,$this->query,'sql','con','si');
+		}
+		else
+		{
+			$indicedim3=$this->dim_form[2];
+			$valordim3=$this->dim_campos[$indicedim3];
+			$claves_dim3=$this->getClavesDim($valordim3,50);
+			$aconsultas=$this->makeQueryTablas3d();
+			foreach($aconsultas as $co)
+				{
+				$aresconsultas[]=$this->executeQuery($this->tmp,$co,'sql','con','si');
+				}
+		}
+		$this->tablahtml=$this->makeTabla($resq,$claves_dim3,$aresconsultas);
+	return $this->tablahtml;
 	}
   public function getDataGraficos(){
 			//generamos la conslta
@@ -141,7 +228,6 @@ class CSVS {
 			else	return $f.'_'."$tipo";
 	}
   public function getClavesDim($d,$numero=3){
-			//$sql_csv="SELECT distinct($d) FROM $this->ficheroorigen";
 			$sql_mysql="SELECT distinct($d) FROM $this->tabla WHERE $d is not null LIMIT $numero";
 			$res=$this->executeQuery('datos_tmp/qtemp.sql',$sql_mysql,'sql');				
 			$ares=explode(PHP_EOL,$res);
@@ -149,6 +235,19 @@ class CSVS {
 			//array_shift($ares);
 			return $ares;
 	}
+  public function makeQueryTablas3d(){
+			//si estamos en 3d haremos un grafico de 2d para cada valor de la última dimension
+			$indicedim3=$this->dim_form[2];
+			$valordim3=$this->dim_campos[$indicedim3];
+			$claves_dim3=$this->getClavesDim($valordim3,50);
+			$asql=array();
+			foreach($claves_dim3 as $cd)
+				{
+				$sql=$this->makeQueryGraficos2d(2,$cd,$valordim3,$cd);
+				$asql[]=$sql;
+				}
+			return $asql;
+	}	
   public function makeQueryGraficos3d(){
 			//si estamos en 3d haremos un grafico de 2d para cada valor de la última dimension
 			$indicedim3=$this->dim_form[2];
@@ -209,10 +308,8 @@ class CSVS {
 					$rcd=preg_replace('/-/', '', $rcd);
 					$nc++;
 					$select.="IFNULL(t$nc.num,0) as al$rcd,";
-				//	$order.="al$rcd desc, ";
 					}
 				$select=trim($select,',');
-				//$order=trim($order,', ');
 				$sql="$select FROM (SELECT $dim1, IFNULL(COUNT(*),0) as num FROM $this->tabla $whereppal GROUP BY $dim1 LIMIT 50) as t0 LEFT JOIN ";
 				$ncampos=sizeof($claves_dim2);
 				$n=0;
@@ -310,6 +407,7 @@ class CSVS {
 					{
 						if($i==1 and $head=='si')
 						{
+							
 							$cabecera=implode(';',array_keys($row));
     							$resq.=$cabecera;
     							$resq.="\n";

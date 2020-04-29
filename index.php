@@ -19,6 +19,7 @@
   <script type="text/javascript" src="https://code.highcharts.com/modules/data.js"></script>
   
   <script src="js/main.js"></script>
+  <script src="js/tools.js"></script>
   <script src="js/server.js"></script>
   <script src="js/gen_graph.js"></script>
 </head>
@@ -37,12 +38,14 @@
 	<div class="row">
 		<div class="col-md-3">
 			GRÁFICOS
-			<?php include "includes/menulateral_general.html"; ?>
+			<?php include "includes/menulateral_graficos.html"; ?>
 			LISTADOS
 			<?php include "includes/menulateral_listados.html"; ?>
-			Comparativas
+			TABLAS
+			<?php include "includes/menulateral_tablas.html"; ?>
+			COMPARATIVAS
 			<?php include "includes/menulateral_comparativas.html"; ?>
-			Evolutivas
+			EVOLUTIVAS
 			<?php include "includes/menulateral_evolutivas.html"; ?>
 		</div>
 		<div class="col-md-9">
@@ -55,25 +58,36 @@
 					<div id="filalistados" class="row">
 							<?php include "includes/dimensiones_listados.php"; ?>
 					</div>
-					<div id="filasubmit" class="row">
-					        	<button type="submit" class="btn btn-success">GENERAR <span value="listados" id="tipoinfo">LISTADOS</span><span class="fa fa-arrow-right"></span></button>
+					<div id="filatablas" class="row">
+							<?php include "includes/dimensiones_tablas.php"; ?>
+					</div>
+					<div id="submit" class="row">
+					        	<button type="submit" class="btn btn-success">GENERAR <span value="listados" id="tipoinfo">TABLAS</span><span class="fa fa-arrow-right"></span></button>
 					</div>
 					<!--<div class="row">
 						<?php // include "includes/filtros.html"; ?>
                 			</div>
 					-->
 					</form>
+			<!--AREA VISUALIZACION DE DATOS-->
                 	<div class="row">
                 		<div class="col-md-12">
-                    			<div class="row clistados" id="slistados">
+                    			<div class="row class_listados" id="slistados">
 						<div class="col-md-12">
 							<div id="lppal">lppal<div id="shiva">TOTAL ALUMNOS FP CURSO 2019: <span class="count">19509</span></div></div>
 							<div id="big-list">
 							</div>
 						</div>
                 			</div>
+                    			<div class="row class_tablas" id="stablas">
+						<div class="col-md-12">
+							<div id="lppal">lppal<div id="shiva">TOTAL ALUMNOS FP CURSO 2019: <span class="count">19509</span></div></div>
+							<div id="big-tabla">
+							</div>
+						</div>
+                			</div>
 					
-                    			<div class="row cgraficos" id="zgraficos">
+                    			<div class="row class_graficos" id="zgraficos">
 						<div class="col-md-12">
 							<div id="gppal">gppal<div id="shiva">TOTAL ALUMNOS FP CURSO 2019: <span class="count">19509</span></div></div>
 							<div id="big-gra"></div>

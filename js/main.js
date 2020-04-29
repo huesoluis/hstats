@@ -1,16 +1,24 @@
 $( document ).ready(function() {
 
 //nada mas cargar el doc ocultamos la seccion de listados
-$("#filagraficos").hide();
-$(".cgraficos").hide();
+$("[id*=fila]").hide();
+$("#filatablas").show();
+$("[class*='class_']").hide();
 
-$('body').on('click', '#lcentros', function(e)
+$(".class_tablas").show();
+$("#tipoinfo").attr('value','tablas');
+
+//ACCIONES MENU LATERAL
+//$('body').on('click', '.menu_graficos, .menu_listados,.menu_tablas', function(e)
+$('body').on('click', '.nav-link', function(e)
 {
-	$("#filalistados").show();
-	$("#filagraficos").hide();
-	
-	$("#tipoinfo").text("LISTADOS");
-	$("#tipoinfo").attr('value','listados');
+	var clase=$(this).attr("data-menu");
+	var categoria=clase.replace('menu_','');
+	var filamostrar="fila"+categoria;
+	$("[id*=fila]").hide();
+	$("#"+filamostrar).show();
+	$("#tipoinfo").text(categoria.toUpperCase());
+	$("#tipoinfo").attr('value',categoria);
 	
 	$(".clistados").show();
 	$(".cgraficos").hide();
@@ -19,14 +27,14 @@ $('body').on('click', '#lcentros', function(e)
 
 $('body').on('click', '#gmatricula', function(e)
 {
-	$("#filalistados").hide();
+	$("[id*=fila]").hide();
 	$("#filagraficos").show();
 	
 	$("#tipoinfo").text("GRÁFICOS");
 	$("#tipoinfo").attr('value','graficos');
 	
-	$(".clistados").hide();
-	$(".cgraficos").show();
+	$("[class*='class_']").hide();
+	$(".class_graficos").show();
 }
 );
 
@@ -42,6 +50,11 @@ $('#formgeneral').submit(function(event) {
 	    'd1'		: $( "#dl1 option:selected" ).text(),
 	    'd2'		: $( "#dl2 option:selected" ).text()
         };
+        var formData_tablas = {
+	    'd0'		: $( "#d20 option:selected" ).text(),
+	    'd1'		: $( "#d21 option:selected" ).text(),
+	    'd2'		: $( "#d22 option:selected" ).text()
+        };
 	
 	//obtenemos el tipo de info en forma de graficos o listados
 	var tipo= $("#tipoinfo").attr('value');
@@ -52,8 +65,12 @@ $('#formgeneral').submit(function(event) {
 	if(tipo=='listados')
 		{
 		script="pr_gen_listados.php";
-		
 		fdata=formData_listados;
+		}
+	else if(tipo=='tablas')
+		{
+		script="pr_gen_tablas.php";
+		fdata=formData_tablas;
 		}
 	path='scripts/php/'+script;
 	$.ajax({
@@ -64,16 +81,22 @@ $('#formgeneral').submit(function(event) {
 	    contentType: "application/x-www-form-urlencoded;charset=utf-8",
 		})
             .done(function(data) {
+		console.log("tipo: "+tipo);
 		if(tipo=='listados')
 		{
 		$("#big-list").empty();
 		$("#big-list").append(data);
 		return;		
 		}
+		else if(tipo=='tablas')
+		{
+		$("#big-tabla").empty();
+		$("#big-tabla").append(data);
+		return;		
+		}
 		else
 		{
 			console.log("GENERANDO GRAFICOS");
-			console.log(data);
 			console.log("TIPO: "+tipo+" SCRIPT: "+script);
 			var fcsv = "scripts/php/"+data;	
 			adato=data.split(":");

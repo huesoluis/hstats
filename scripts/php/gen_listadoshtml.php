@@ -16,9 +16,12 @@ $chpn=1;
 $listadoshtml.= '<ul>';
 	foreach ($json as $ent)
 	{
-	if($chpn==1) $listadoshtml.=show_cabecera($ent)."<hr>";
+	if($chpn==1){
+			$listadoshtml.=show_cabecera($ent)."<hr>";
+			$listadoshtml.='<input type="text" class="form-control filtro" nivel="pnivel" id="filtropn"  placeholder="Introduce datos del registro a buscar">';
+		     }
 	$chpn++;
-	$listadoshtml.="<a class='toggle1 enlaces' data-type='titulo' data-toggle='collapse' data-target='#n1_$i' >";
+	$listadoshtml.="<a class='toggle1 pnivel' data-type='titulo' data-toggle='collapse' data-target='#n1_$i' >";
 		$listadoshtml.=	show_table($ent,1);
 	$listadoshtml.="</a>";
 	$i++;
@@ -30,9 +33,12 @@ $listadoshtml.= '<ul>';
 					
 					foreach ($ent['children'] as $sbent)
 					{
-						if($chsn==1) $listadoshtml.=show_cabecera($sbent)."<hr>";
+						if($chsn==1){
+								 $listadoshtml.=show_cabecera($sbent)."<hr>";
+								$listadoshtml.='<input type="text" class="form-control filtro" nivel="snivel" id="filtrosn"  placeholder="Introduce datos del registro a buscar">';
+							     }
 						$chsn++;
-						$listadoshtml.="<a class='toggle1 enlaces' data-type='titulo' data-toggle='collapse' data-target='#n2_$j' >";
+						$listadoshtml.="<a class='toggle1 snivel' data-type='titulo' data-toggle='collapse' data-target='#n2_$j' >";
 							$listadoshtml.=show_table($sbent,1);
 						$listadoshtml.="</a>";
 						$j++;
@@ -45,9 +51,12 @@ $listadoshtml.= '<ul>';
 								$chtn=1;
 									foreach ($sbent['children2'] as $tbent)
 									{
-										if($chtn==1) $listadoshtml.=show_cabecera($tbent)."<hr>";
+									if($chtn==1){
+							       	        $listadoshtml.=show_cabecera($tbent)."<hr>";
+					                      		$listadoshtml.='<input type="text" class="form-control filtro" nivel="tnivel" id="filtrotn"  placeholder="Introduce datos del registro a buscar">';
+							     		}
 										$chtn++;
-										$listadoshtml.="<a class='toggle1 enlaces' data-type='titulo' data-toggle='collapse' data-target='#n3_$k' >";
+										$listadoshtml.="<a class='toggle1 tnivel' data-type='titulo' data-toggle='collapse' data-target='#n3_$k' >";
 											$listadoshtml.=show_table($tbent,1);
 										$listadoshtml.="</a>";
 										$k++;
