@@ -2,7 +2,6 @@
 require_once('clases/CSVS.php');
 require_once('datos_origen/dim_listados.php');
 
-$ficheroorigen='';
 $rutafichero='datos_listados/';
 
 if(isset($_SERVER["REQUEST_METHOD"]))
@@ -22,15 +21,15 @@ else
 	$_POST['dim']=Array("ciclo","centro");
 	$_POST['dim']=Array("ciclo","Elige","ciclo", "centro","provincia");
 	$_POST['dim']=Array("centro","ciclo");
-	$_POST['dim']=Array("ciclo","sexo","provincia");
+	$_POST['dim']=Array("grado","centro","ciclo");
 }
 	$dim_form=limpiaForm('listados',$dim_listados,$_POST['dim']);
-	$listado = new \hstats\CSVS($ficheroorigen,$rutafichero,$_POST['dim'],$dim_listados,'ofertafp1920',"listados",$post);
+	$listado = new \hstats\CSVS($rutafichero,$_POST['dim'],$dim_listados,'ofertafp1920',"listados",$post);
 	$resfile=$listado->genDataListados();
+	
 	//calculamos fichero de datos genrado para mostrar los datos
 	$fjson=makeNombreFicheroDestinoListados($dim_form);
 	//$fjson="datos_listados/f_ciclos_Centros_pruebas.json";
-	print("RESPUESTA ");
 	print($fjson);
 	//if($post==1)require_once('gen_listadoshtml.php');
 	require_once('gen_listadoshtml.php');

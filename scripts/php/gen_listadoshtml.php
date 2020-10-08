@@ -53,7 +53,7 @@ $listadoshtml.= '<ul>';
 									{
 									if($chtn==1){
 							       	        $listadoshtml.=show_cabecera($tbent)."<hr>";
-					                      		$listadoshtml.='<input type="text" class="form-control filtro" nivel="tnivel" id="filtrotn"  placeholder="Introduce datos del registro a buscar">';
+					                    $listadoshtml.='<input type="text" class="form-control filtro" nivel="tnivel" id="filtrotn"  placeholder="Introduce datos del registro a buscar">';
 							     		}
 										$chtn++;
 										$listadoshtml.="<a class='toggle1 tnivel' data-type='titulo' data-toggle='collapse' data-target='#n3_$k' >";

@@ -1,6 +1,7 @@
 function show_graph(vfile,vsel,nombre)
 {
-	console.log("generando graph"+vsel);
+	console.log("generando graph SELECTOR: "+vsel);
+	console.log("generando graph FICHERO: "+vfile);
 	var len=vfile.length;
 	console.log(vfile);
 	$.get(vfile, function(csv) {
@@ -10,7 +11,12 @@ function show_graph(vfile,vsel,nombre)
 				enabled: false
 				},
 			chart: 	{
-				type: 'column'
+				zoomType: 'x',
+				type: 'column',
+				scrollablePlotArea: {
+            minWidth: 700,
+            scrollPositionX: 1
+        }
 				},
 			data: {
 			    csv: csv
@@ -40,7 +46,7 @@ function show_big(selector,file,link)
 			$("#big").highcharts
 			({
 				credits: {enabled: true},
-				chart: {type: 'bar'},
+				chart: {type: 'column'},
 				data: {csv: csv},
 				title: {
 					text: link

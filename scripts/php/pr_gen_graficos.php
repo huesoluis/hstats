@@ -2,7 +2,6 @@
 require_once('clases/CSVS.php');
 require_once('datos_origen/dim_graficos.php');
 
-$ficheroorigen='datos_origen/mat_alumnosfp2019.csv';
 $rutafichero='datos_graficos/';
 
 $tabla='test';
@@ -33,10 +32,11 @@ else
 	$_RRPOST['dim']=Array("centro","sexo");
 	$_RRPOST['dim']=Array("ciclo","centro");
 	$_RRPOST['dim']=Array("ciclo","sexo","centro");
+	$_RRPOST['dim']=Array("ciclo","sexo");
 	//$_RRPOST['dim']=Array("ciclo");
 }
 
-$listado = new \hstats\CSVS($ficheroorigen,$rutafichero,$_RRPOST['dim'],$dim_graficos,$tabla,"graficos",1);
+$listado = new \hstats\CSVS($rutafichero,$_RRPOST['dim'],$dim_graficos,$tabla,"graficos",$post);
 $res=$listado->getDataGraficos();
 print($res);
 ?>

@@ -1,5 +1,13 @@
 $( document ).ready(function() {
+
+
+$('body').on('click', '#mlateral', function(e){
+console.log("ocultando menu");
+$('#menulateral').toggle();
+$('.ftopmlateral').toggle();
+});
 /////////////////////////////////////////////////////////////////////////////////////////////////
+
 //FILTRO REGISTROS
 $('body').on('keyup', '#filtropn ,#filtrosn', function(e){
 	var expression = false;
@@ -7,7 +15,7 @@ $('body').on('keyup', '#filtropn ,#filtrosn', function(e){
         var nivel = $(this).attr("nivel");
 	console.log(nivel);
         if(value.length<=2){
-            $(".enlaces").each(function () {
+            $("."+nivel).each(function () {
 	    			$(this).show();
 	    			});
 	    			}

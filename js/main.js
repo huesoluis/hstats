@@ -15,8 +15,14 @@ $('body').on('click', '.nav-link', function(e)
 	var clase=$(this).attr("data-menu");
 	var categoria=clase.replace('menu_','');
 	var filamostrar="fila"+categoria;
+	var seccionmostrar="class_"+categoria;
+	
 	$("[id*=fila]").hide();
+	$("[class*='class_']").hide();
+	
 	$("#"+filamostrar).show();
+	$("."+seccionmostrar).show();
+	
 	$("#tipoinfo").text(categoria.toUpperCase());
 	$("#tipoinfo").attr('value',categoria);
 	
@@ -74,13 +80,13 @@ $('#formgeneral').submit(function(event) {
 		}
 	path='scripts/php/'+script;
 	$.ajax({
-            type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-            url         : path, // the url where we want to POST
-            data        : fdata, // our data object
+            type        : 'POST',
+            url         : path,
+            data        : fdata,
             encode      : true,
 	    contentType: "application/x-www-form-urlencoded;charset=utf-8",
 		})
-            .done(function(data) {
+      .done(function(data) {
 		console.log("tipo: "+tipo);
 		if(tipo=='listados')
 		{
@@ -97,15 +103,18 @@ $('#formgeneral').submit(function(event) {
 		else
 		{
 			console.log("GENERANDO GRAFICOS");
-			console.log("TIPO: "+tipo+" SCRIPT: "+script);
+			console.log(data);
 			var fcsv = "scripts/php/"+data;	
 			adato=data.split(":");
 			if(adato[0]!=3)
 			{
+				atitulo=adato[1].split("_");
+				console.log("TITULO: "+atitulo);
+				var titulo="alumnos por "+atitulo[2]+ "y "+atitulo[3];
 				console.log("DIMENSION: "+adato);
 				$(".smallgraph").remove();
 				$("#zgraficos").show();
-				show_graph(adato[1],'#big-gra');
+				show_graph(adato[1],'#big-gra',titulo);
 			}
 			else if(adato[0]==3)
 			{

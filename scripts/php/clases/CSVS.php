@@ -5,18 +5,21 @@ class CSVS {
   public $dim_form; 
   public $dim_campos; 
   public $query; 
-  public function __construct($ruta='',$dim_form=array(),$dim_campos=array(),$tabla='',$tipo='graficos',$post=0){
+  public function __construct($ruta='',$dim_form=array(),$dim_campos=array(),$tabla='',$tipo='graficos',$post=0,$cevolutivo=''){
 	require_once("tablas.php");
-    	$this->tablahtml=$tablahtml;
+  
+	$this->tablahtml=$tablahtml;
 	$this->c =$this->dbconnect(DB_HOST, DB_USER, DB_PASSWORD);
 	$this->dim_form=$dim_form;
-    	$this->dim_campos = $dim_campos;
-    	$this->limpiaForm();
+  $this->dim_campos = $dim_campos;
+  $this->limpiaForm($tipo);
 	$this->dimension=sizeof($this->dim_form);
 	$this->ruta=$ruta;
+	if($cevolutivo=='') $cevolutivo='*';
+	$this->cevolutivo=$cevolutivo;
 	if($tipo=='listados')
 		$this->nficherodestino=$this->makeNombreFicheroDestinoListados();
-	elseif($tipo=='graficos' and $this->dimension<=2)
+	elseif(($tipo=='graficos' or $tipo=='evolutivos') and $this->dimension<=2)
 		$this->nficherodestino=$this->makeNombreFicheroDestino($tipo);
 
 	$this->fcsv='';
@@ -24,6 +27,8 @@ class CSVS {
 	$this->tmp='nofile';
 	$this->tabla= $tabla;
 	$this->post= $post;
+	if($tipo=='evolutivos') $this->func="SUM";
+	else $this->func="COUNT";
 	$this->conexion = new \mysqli('localhost',DB_USER,DB_PASSWORD,DB_DB);
 	
 	if (!$this->conexion->set_charset("utf8")) {
@@ -38,13 +43,13 @@ class CSVS {
 		print("CAMPOS DIPONIBLES: ");
 		print_r($dim_campos);
 		print("CAMPOS DE FORMULARIO: ");
-		print_r($dim_form);
-		print("DIMENSION: ");
+		print_r($this->dim_form);
+		print_r(count($this->dim_form));
+		print("DDIMENSION: ");
 		print_r($this->dimension);
 		print("POST: ");
 		print_r($this->post);
 		}
-	
 	}
   private function dbconnect() 
 	{
@@ -54,11 +59,18 @@ class CSVS {
 	return $conn;
   	}
 
-  public function quitarAcentos($s){
+  public function quitarAcentos($s,$t=0){
 		//Reemplazamos la A y a
+		if($t==0)
 		$cadena = str_replace(
 		array('Á','á','É','é', 'Í','í','Ó','ó','Ú','ú','Ñ','ñ','.'),
 		array('A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U','u','N','n',''),
+		$s
+		);
+		elseif($t==1)
+		$cadena = str_replace(
+		array('Á','á','É','é', 'Í','í','Ó','ó','Ú','ú','Ñ','ñ'),
+		array('A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U','u','N','n'),
 		$s
 		);
 		$cadena = utf8_encode($cadena);	
@@ -80,18 +92,20 @@ class CSVS {
 						$cabecera=explode(';',$array_datos[0]);
 						foreach($cabecera as $c)
 							$th.='<th>'.$c.'</th>';
-						//print_r($th);exit();
 						$th.='</tr></thead>';
 						$th.='<tbody>';
 					}
 				foreach($array_datos as $a)
 				{
+					$fdatos=explode(';',$a);
+					if($fdatos[0]=='NODATA' or $fdatos[1]=='NODATA') continue;
 					$i++;
 					if($i==1 || strlen($a)==0) continue;
-					$fdatos=explode(';',$a);
+					//$fdatos=explode(';',$a);
 					$th.='<tr>';	
-					if($i==2) $th.='<td>'.$ad3[$f].'</td>';	
+					if($i==2) $th.='<td><b>'.$ad3[$f].'</b></td>';	
 					else $th.='<td></td>';	
+					//if($fdatos[0]=='NODATA' or $fdatos[1]=='NODATA') continue;
 					foreach($fdatos as $fd)
 						$th.='<td>'.$fd.'</td>';	
 					$th.='</tr>';	
@@ -101,7 +115,7 @@ class CSVS {
 			}
 			$th.='</tbody><table>';
 		}
-		elseif($this->dim>=2)
+		elseif($this->dimension<=2)
 		{
 			$array_datos=explode(PHP_EOL,$t);
 			array_pop($array_datos);
@@ -118,6 +132,7 @@ class CSVS {
 				$i++;
 				if($i==1) continue;
 				$fdatos=explode(';',$a);
+				if($fdatos[0]=='NODATA' or $fdatos[1]=='NODATA') continue;
 				$th.='<tr>';	
 				foreach($fdatos as $fd)
 					$th.='<td>'.$fd.'</td>';	
@@ -131,7 +146,7 @@ class CSVS {
   public function getDataTablas(){
 		$resq='';
 		$aresconsultas=array();
-		$clavesdim3=array();
+		$claves_dim3=array();
 		if($this->dimension<=2)
 		{
 			$consulta=$this->makeQueryGraficos2d($this->dimension);
@@ -192,7 +207,7 @@ class CSVS {
   public function limpiaForm($tipo='graficos'){
 			//claves disponibles
 			$dimclaves=array_keys($this->dim_campos);
-			//limpiamos el array de campos de formulario y geenramos nombre para el fichero de salida
+			//limpiamos el array de campos de formulario y generamos nombre para el fichero de salida
 			$this->dim_form=array_unique($this->dim_form);
 			foreach($this->dim_form as $key=>$df)
 					{
@@ -200,6 +215,21 @@ class CSVS {
 								unset($this->dim_form[$key]);
 					}
 			if(sizeof($this->dim_form)==0) return 0;
+			//reseteamos los indices
+			$this->dim_form=array_values($this->dim_form);
+			//para el caso de graficos evolutivos el primer valor siempre es el año
+			if($tipo=='evolutivos') 
+				{
+				$neltos=count($this->dim_form);
+				if(!in_array('anio',$this->dim_form)) array_unshift($this->dim_form,"anio");
+				else
+					if($this->dim_form[0]=='anio' and $neltos>1)
+					{
+						$tmp=$this->dim_form[1];
+						$this->dim_form[0]=$tmp;
+						$this->dim_form[1]='anio';
+					}
+				}
 			return 1;
 	}
   public function makeNombreFicheroDestinoListados(){
@@ -257,7 +287,6 @@ class CSVS {
 			foreach($claves_dim3 as $cd)
 				{
 				$sql=$this->makeQueryGraficos2d(2,$cd,$valordim3,$cd);
-				
 				$this->nficherodestino=$this->makeNombreFicheroDestino('graficos',2,$cd);
 				$csvtmp=$this->genCsv('graficos');
 				//si obtenemos una ruta de fcihero no vacia (pq no hay datos)
@@ -267,7 +296,7 @@ class CSVS {
 	}	
   public function makeQueryGraficos2d($d=1,$cd3='',$clave3d='',$valor3d=''){
 			$pred='';
-			if($this->limpiaForm()==0) return '0';
+			//if($this->limpiaForm()==0) return '0';
 			$this->makeNombreFicheroDestino('graficos',$d,$cd3);
 			$i=0;
 			if(sizeof($this->dim_campos)==0 || sizeof($this->dim_form)==0) return 0;
@@ -280,13 +309,13 @@ class CSVS {
 			if($d==1)
 				{
 				$sql="SELECT ";
-				$sql.=$dim1." ,count(*) nal ";
+				$sql.=$dim1." ,".$this->func."(".$this->cevolutivo.") nal ";
 				$sql.="FROM $this->tabla";
 				$sql.=" GROUP BY ".$dim1." ORDER BY nal desc";
 			
 				}
 			if($d==2)
-				{ 
+				{
 				$whereppal='';
 				$wheresec='';
 				if($clave3d!='')
@@ -300,29 +329,34 @@ class CSVS {
 				$nv=0;
 				$nva=-1;
 				$nc=0;
-				$select="SELECT IFNULL(t0.$dim1,'NODATA') as $dim1,  ";
+				//quitamos caracteres como el punto q luego pueden dar error
+				$rendim1=str_replace('.','',$dim1);
+				$select="SELECT IFNULL(t0.$dim1,'NODATA') AS '$rendim1',  ";
 				//creamos la clausuala para ordenar la consulta
 				foreach($claves_dim2 as $cd)
 					{
 					$rcd=preg_replace('/\s/', '', $cd);
 					$rcd=preg_replace('/-/', '', $rcd);
+					$rcd=str_replace('.', '', $rcd);
+					//$rcd=$this->quitarAcentos($rcd);
 					$nc++;
-					$select.="IFNULL(t$nc.num,0) as al$rcd,";
+					$select.="IFNULL(t$nc.num,0) AS 'al$rcd',";
 					}
 				$select=trim($select,',');
-				$sql="$select FROM (SELECT $dim1, IFNULL(COUNT(*),0) as num FROM $this->tabla $whereppal GROUP BY $dim1 LIMIT 50) as t0 LEFT JOIN ";
+				$sql="$select FROM (SELECT $dim1, IFNULL(".$this->func."(".$this->cevolutivo."),0) as num FROM $this->tabla $whereppal GROUP BY $dim1 LIMIT 300) as t0 LEFT JOIN ";
 				$ncampos=sizeof($claves_dim2);
 				$n=0;
 				foreach($claves_dim2 as $cd)
 				{
 					$n++;
-					$sql.="(SELECT $dim1,IFNULL(COUNT(*),0) as num FROM $this->tabla WHERE $dim2='$cd' $wheresec  GROUP BY $dim1 LIMIT 50) as t$n";
+					$sql.="(SELECT $dim1, IFNULL(".$this->func."(".$this->cevolutivo."),0) as num FROM $this->tabla WHERE $dim2='$cd' $wheresec  GROUP BY $dim1 LIMIT 300) as t$n";
 					$tmp=$n-1;
 					$sql.=" ON t$n.$dim1=t0.$dim1 ";	
 					if($n<$ncampos)
 						$sql.=" LEFT JOIN ";
 				}
 				}
+	//file_put_contents('csvtemp.txt', $sql);
 	$this->query=$sql;
 	return $sql;
 	}
@@ -369,16 +403,7 @@ class CSVS {
 				}
 			$order=trim($order,',');
 			$select=substr($select,0,-7);
-			$select=$select.') FROM '.$this->tabla.' GROUP BY '.trim($groupby,",").' HAVING COUNT(*)>1 ORDER BY '.$order.' LIMIT 50';
-			/*
-			foreach($this->dim_form as $v)
-				{
-				if(in_array($v,$dimclaves))
-					{
-					$select.=$this->dim_campos[$v][0].',';
-					}
-				}
-			*/
+			$select=$select.') FROM '.$this->tabla.' GROUP BY '.trim($groupby,",").' HAVING COUNT(*)>1 ORDER BY '.$order.' LIMIT 300';
 			$this->query=$select;
 			return 1;
 	}
@@ -401,6 +426,7 @@ class CSVS {
 			$cabecera='';
 			$i=1;
 			$result= $this->conexion->query($q);
+			//print($q);exit();
 			if ($result->num_rows > 0) {
     				while($row = $result->fetch_assoc()) {
 					foreach($row as $k=>$v)
