@@ -1,0 +1,62 @@
+<div class="row hoja"><div class="card col-md-6"><p class="card-text">Estadísticas MAFALDA-LAS VIÑAS</p><p class="card-text"><small class="text-muted">19 alumnos</small></p><table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th>Enseñanza</th>
+        <th>Alumnos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Infantil</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Primaria</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>ESO</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Bachillerato</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>FP</td>
+        <td>0</td>
+      </tr>
+    </tbody>
+  </table>
+	<img class="card-img-top" src="assets/img/shimg.jpg" alt="imagen sh">
+	<div class="card-body">
+		<h5 class="card-title"></h5>
+	</div>
+</div>
+<div class="card col-md-6">
+	<div class="card-body row">
+		<div class="col-md-6">
+			<h5 class="card-title">Datos Generales</h5>
+			<p class="card-text text-muted"><a href="">Web Centro</a></p>
+			<p class="card-text">Avda Navarra 50010, Zaragoza</p>
+			<p class="card-text">Comarca zaragoza</p>
+			<p class="card-text text-muted">Zona escolar 2</p>
+		</div>
+		<div class="col-md-6">
+			<h5 class="card-title">Datos electrónicos</h5>
+			<p class="card-text text-muted"><a href="">Santiago Hernandez</a></p>
+			<p class="card-text">976656564</p>
+			<p class="card-text">mail@gmai.com</p>
+		</div>
+	</div>
+	<div class="card-img-top" id="mapacentro" style="width:100%;height:400px;"></div>
+</div>
+<script>
+var uluru = { lat: 41.6575155, lng: -0.9160625 };
+var mapcentro = new google.maps.Map(document.getElementById("mapacentro"), 
+{
+	zoom: 14,
+	center: uluru,
+});
+</script>
+</div>

@@ -33,14 +33,12 @@ else
 	$_RRPOST['dim']=Array("nombreciclo","sexo","provincia");
 	$_RRPOST['dim']=Array("centro","sexo");
 	$_RRPOST['dim']=Array("ciclo","sexo","centro");
-	$_RRPOST['dim']=Array("ciclo","grado");
 	$_RRPOST['dim']=Array("provincia","sexo","centro","centro");
 	$_RRPOST['dim']=Array("provincia","sexo","grado");
 	$_RRPOST['dim']=Array("provincia");
 	$_RRPOST['dim']=Array("ciclo","centro");
-	//$_RRPOST['dim']=Array("grado");
-	
-	//$_RRPOST['dim']=Array("ciclo");
+	$_RRPOST['dim']=Array("provincia","sexo","grado");
+	$_RRPOST['dim']=Array("ciclo","grado");
 }
 $listado = new \hstats\CSVS($rutafichero,$_RRPOST['dim'],$dim_tablas,$tabla,"tablas",$post);
 $res=$listado->getDataTablas();

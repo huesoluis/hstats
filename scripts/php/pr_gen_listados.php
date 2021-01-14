@@ -4,6 +4,7 @@ require_once('datos_origen/dim_listados.php');
 
 $rutafichero='datos_listados/';
 
+//Distinguimos si viene de un cliente web o estamos probando en local
 if(isset($_SERVER["REQUEST_METHOD"]))
 {
 	$post=1;
@@ -22,6 +23,7 @@ else
 	$_POST['dim']=Array("ciclo","Elige","ciclo", "centro","provincia");
 	$_POST['dim']=Array("centro","ciclo");
 	$_POST['dim']=Array("grado","centro","ciclo");
+	$_POST['dim']=Array("grado","centro");
 }
 	$dim_form=limpiaForm('listados',$dim_listados,$_POST['dim']);
 	$listado = new \hstats\CSVS($rutafichero,$_POST['dim'],$dim_listados,'ofertafp1920',"listados",$post);
@@ -32,7 +34,9 @@ else
 	//$fjson="datos_listados/f_ciclos_Centros_pruebas.json";
 	print($fjson);
 	//if($post==1)require_once('gen_listadoshtml.php');
-	require_once('gen_listadoshtml.php');
+	//mostramos el codigo html para listar los datos obtenidos
+	//if($post)
+		require_once('gen_listadoshtml.php');
 
 function makeNombreFicheroDestinoListados($dim_form){
 	$f='f';

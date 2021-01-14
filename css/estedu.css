@@ -1,6 +1,7 @@
 body
 {
-background-color: #393c7f;
+/*background-color: #393c7f;*/
+background-color: #d3d3dd;
 color: white !important;
 }
 .mlateral{
@@ -18,7 +19,7 @@ color: #200f74;
 {
 text-align: center;
 font-weight: 700;
-background-color: grey;
+background-color: #47504a;;
 padding-top: 5px;
 padding-bottom: 12px;
 border: 1px solid aliceblue;
@@ -58,8 +59,6 @@ padding: 31px;
 .scard{
 color:#5c71b9;
 }
-.bcentral{
-}
 .bdimension {
     color: black;
     background: white;
@@ -76,51 +75,12 @@ padding-top: 10px;
 color:black;
 }
 
-.disabled
+.dropdown-toggle
 {
-color:#b7b2b2
-}
-.nav-link[data-toggle].collapsed:after {
-    content: "▾";
-color:black;
-}
-.nav-link[data-toggle]:not(.collapsed):after {
-    content: "▴";
-}
-.mppal
-{
-margin-left: 10%;
-display: flex;
-}
-.smppal
-{
-padding-left:1%;
-text-align:center;
-}
-.btn-secondary
-{
-width:250px;
+color:white!important;
+font-weight: bold;
 }
 
-[id*="fil"]{
-left:12%!important;
-padding-left:12px;
-}
-
-#bgengra,#bgenlist{
-background: black;
-color: aliceblue;
-}
-
-.shiva{
-tex-align:center;
-}
-.count{
-padding-left: 10%;
-    font-size: 50px;
-}
-
-.col-lg-2
-{
-max-width:30%!important
+.btn-success{
+background-color: #47504a !important;
 }

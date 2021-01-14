@@ -13,7 +13,9 @@ class CSVS {
 	$this->dim_form=$dim_form;
   $this->dim_campos = $dim_campos;
   $this->limpiaForm($tipo);
+	//dimension, hasta 3 q es el máximo
 	$this->dimension=sizeof($this->dim_form);
+
 	$this->ruta=$ruta;
 	if($cevolutivo=='') $cevolutivo='*';
 	$this->cevolutivo=$cevolutivo;
@@ -267,9 +269,33 @@ class CSVS {
 	}
   public function makeQueryTablas3d(){
 			//si estamos en 3d haremos un grafico de 2d para cada valor de la última dimension
+			$indicedim1=$this->dim_form[0];
+			$valordim1=$this->dim_campos[$indicedim1];
+			$claves_dim1=$this->getClavesDim($valordim1,500);
+
+			$indicedim2=$this->dim_form[1];
+			$valordim2=$this->dim_campos[$indicedim2];
+			$claves_dim2=$this->getClavesDim($valordim2,500);
+
 			$indicedim3=$this->dim_form[2];
 			$valordim3=$this->dim_campos[$indicedim3];
 			$claves_dim3=$this->getClavesDim($valordim3,50);
+			if($this->post==0)
+			{
+				print("GENERANDO TABLAS: TAMAÑO DIMENSION 1: ");
+print(PHP_EOL);
+				print($valordim1);
+				print(sizeof($claves_dim1));
+print(PHP_EOL);
+				print("GENERANDO TABLAS: TAMAÑO DIMENSION 2: ");
+				print($valordim2);
+				print(sizeof($claves_dim2));
+print(PHP_EOL);
+				print("GENERANDO TABLAS: TAMAÑO DIMENSION 3: ");
+				print($valordim3);
+				print(sizeof($claves_dim3));
+print(PHP_EOL);
+			}
 			$asql=array();
 			foreach($claves_dim3 as $cd)
 				{
@@ -466,7 +492,6 @@ class CSVS {
 		$fp = fopen($ficherodestino, 'w');
 		fwrite($fp,$resq);
 		fclose($fp);
-		//$resq=shell_exec ($comando_comillas);
 	}
 	else{
 		$rutafichero=$this->ruta.'/'.$this->nficherodestino.'.csv';
@@ -502,8 +527,10 @@ class CSVS {
 			//$comando_json="/usr/bin/python3 $com $dirppal$this->fcsv > $dirppal$this->fjson";
 			if($this->post)
 			{
+				$comando_delutf8="rm -f  datos_listados/utf8.csv";
+				$res0=shell_exec($comando_delutf8);
 				$comando_utf8="iconv -t ascii//TRANSLIT -f utf8  $this->fcsv -o  datos_listados/utf8.csv";
-				$res1=shell_exec ($comando_utf8);
+				$res1=shell_exec($comando_utf8);
 				$comando_json="/usr/bin/python3 $pycom  datos_listados/utf8.csv > $dirppal$this->fjson";
 			}
 			else

@@ -10,6 +10,8 @@ $("#tipoinfo").attr('value','tablas');
 
 //ACCIONES MENU LATERAL
 //$('body').on('click', '.menu_graficos, .menu_listados,.menu_tablas', function(e)
+
+
 $('body').on('click', '.nav-link', function(e)
 {
 	var clase=$(this).attr("data-menu");
@@ -44,7 +46,7 @@ $('body').on('click', '#gmatricula', function(e)
 }
 );
 
-//FUNCION PARA GENERAR LOS GRAFICOS/LISTADOS
+//FUNCION PARA GENERAR LOS GRAFICOS/LISTADOS/TABLAS
 $('#formgeneral').submit(function(event) {
         var formData_graficos = {
 	    'd0'		: $( "#d0 option:selected" ).text(),
@@ -62,6 +64,7 @@ $('#formgeneral').submit(function(event) {
 	    'd2'		: $( "#d22 option:selected" ).text()
         };
 	
+	$("#menulateral").hide();
 	//obtenemos el tipo de info en forma de graficos o listados
 	var tipo= $("#tipoinfo").attr('value');
 	var script="pr_gen_graficos.php";
@@ -88,6 +91,7 @@ $('#formgeneral').submit(function(event) {
 		})
       .done(function(data) {
 		console.log("tipo: "+tipo);
+		console.log("datos: "+data);
 		if(tipo=='listados')
 		{
 		$("#big-list").empty();
@@ -96,8 +100,10 @@ $('#formgeneral').submit(function(event) {
 		}
 		else if(tipo=='tablas')
 		{
-		$("#big-tabla").empty();
-		$("#big-tabla").append(data);
+			console.log("GENERANDO TABLAS");
+			console.log(data);
+			$("#big-tabla").empty();
+			$("#big-tabla").append(data);
 		return;		
 		}
 		else

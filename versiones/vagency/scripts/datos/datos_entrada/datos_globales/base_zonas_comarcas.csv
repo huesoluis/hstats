@@ -1,0 +1,883 @@
+Cód. RCD Centro;Centro;Zona;Comarca;Municipio;Provincia;Nº Matriculados
+22000056;VERO-ALCANADRE;Zona Adahuesca;Somontano de Barbastro;Adahuesca;Huesca;132
+22000071;ASUNCIÓN PAÑART MONTANER;Zona Aínsa-Sobrarbe;Sobrarbe;Aínsa-Sobrarbe;Huesca;278
+22000251;JOSÉ MANUEL BLECUA;Zona Alcolea de Cinca;Cinca Medio;Alcolea de Cinca;Huesca;87
+22000299;SANTOS SAMPER SARASA;Zona Almudévar;Hoya de Huesca;Almudévar;Huesca;196
+22000585;RAMÓN Y CAJAL;Zona Ayerbe;Hoya de Huesca;Ayerbe;Huesca;189
+22000706;FRANCISCO GALIAY SARAÑANA;Zona Ballobar;Bajo Cinca;Ballobar;Huesca;67
+22000721;ALTO ARAGÓN;Zona Barbastro 1;Somontano de Barbastro;Barbastro;Huesca;384
+22000731;LA MERCED;Zona Barbastro 2;Somontano de Barbastro;Barbastro;Huesca;361
+22000767;SAN VICENTE DE PAÚL;Zona Barbastro;Somontano de Barbastro;Barbastro;Huesca;95
+22000767;SAN VICENTE DE PAÚL;Zona Barbastro 2;Somontano de Barbastro;Barbastro;Huesca;187
+22000779;SAN JOSÉ DE CALASANZ;Zona Barbastro;Somontano de Barbastro;Barbastro;Huesca;145
+22000779;SAN JOSÉ DE CALASANZ;Zona Barbastro 1;Somontano de Barbastro;Barbastro;Huesca;204
+22000779;SAN JOSÉ DE CALASANZ;Zona C.F. Grado Básico (H);Somontano de Barbastro;Barbastro;Huesca;16
+22000809;HERMANOS ARGENSOLA;Zona Barbastro;Somontano de Barbastro;Barbastro;Huesca;505
+22000809;HERMANOS ARGENSOLA;Zona C.F. Grado Básico (H);Somontano de Barbastro;Barbastro;Huesca;15
+22000809;HERMANOS ARGENSOLA;Zona C.F. Grado Medio (H);Somontano de Barbastro;Barbastro;Huesca;28
+22000809;HERMANOS ARGENSOLA;Zona C.F. Grado Superior (H);Somontano de Barbastro;Barbastro;Huesca;36
+22000809;HERMANOS ARGENSOLA;Zona PCPI Huesca;Somontano de Barbastro;Barbastro;Huesca;6
+22001073;VÍCTOR MENDOZA MENDOZA;Zona Binéfar 2;La Litera;Binéfar;Huesca;594
+22001085;VIRGEN DEL ROMERAL;Zona Binéfar 2;La Litera;Binéfar;Huesca;237
+22001191;VIRGEN DE LA SOLEDAD;Zona Bolea;Hoya de Huesca;Sotonera (La);Huesca;24
+22001243;ALTO ARA;Zona Broto;Sobrarbe;Broto;Huesca;202
+22001358;CERBÍN;Zona Campo;Ribagorza;Campo;Huesca;35
+22001437;LOS ARAÑONES;Zona Canfranc;Jacetania;Canfranc;Huesca;26
+22001656;RAMÓN J. SENDER;Zona Chalamera;Bajo Cinca;Chalamera;Huesca;4
+22001875;MIGUEL SERVET;Zona Fraga 2;Bajo Cinca;Fraga;Huesca;354
+22001887;SAN JOSÉ DE CALASANZ;Zona Fraga 1;Bajo Cinca;Fraga;Huesca;437
+22001899;SANTA ANA;Zona Fraga;Bajo Cinca;Fraga;Huesca;191
+22001899;SANTA ANA;Zona Fraga 1;Bajo Cinca;Fraga;Huesca;395
+22001905;LITERA;Zona Litera;Bajo Cinca;Fraga;Huesca;14
+22001917;RAMÓN J. SENDER;Zona C.F. Grado Básico (H);Bajo Cinca;Fraga;Huesca;21
+22001917;RAMÓN J. SENDER;Zona Fraga;Bajo Cinca;Fraga;Huesca;379
+22002016;LA FUEVA;Zona Fueva (La);Sobrarbe;Fueva (La);Huesca;43
+22002119;SANTIAGO APÓSTOL;Zona Grañén;Monegros;Grañén;Huesca;119
+22002156;JOAQUÍN COSTA;Zona Graus;Ribagorza;Graus;Huesca;327
+22002168;BALTASAR GRACIÁN;Zona C.F. Grado Básico (H);Ribagorza;Graus;Huesca;16
+22002168;BALTASAR GRACIÁN;Zona Graus;Ribagorza;Graus;Huesca;263
+22002302;JUAN XXIII;Zona Huesca 6;Hoya de Huesca;Huesca;Huesca;475
+22002338;PÍO XII;Zona Educación Especial (H);Hoya de Huesca;Huesca;Huesca;11
+22002338;PÍO XII;Zona Huesca 5;Hoya de Huesca;Huesca;Huesca;243
+22002341;SANCHO RAMÍREZ;Zona Huesca 8;Hoya de Huesca;Huesca;Huesca;517
+22002351;SAN VICENTE;Zona Huesca 7;Hoya de Huesca;Huesca;Huesca;402
+22002417;SANTA ANA;Zona Huesca 7;Hoya de Huesca;Huesca;Huesca;418
+22002417;SANTA ANA;Zona Huesca 7 (Secundaria);Hoya de Huesca;Huesca;Huesca;203
+22002430;SAN BERNARDO;Zona Huesca 1;Hoya de Huesca;Huesca;Huesca;426
+22002430;SAN BERNARDO;Zona Huesca 1 (Secundaria);Hoya de Huesca;Huesca;Huesca;213
+22002466;SANTA ROSA - ALTOARAGÓN;Zona Huesca 3;Hoya de Huesca;Huesca;Huesca;426
+22002466;SANTA ROSA - ALTOARAGÓN;Zona Huesca 3 (Secundaria);Hoya de Huesca;Huesca;Huesca;210
+22002478;SAN VIATOR;Zona Huesca 2;Hoya de Huesca;Huesca;Huesca;394
+22002478;SAN VIATOR;Zona Huesca 2 (Secundaria);Hoya de Huesca;Huesca;Huesca;214
+22002491;MONTEARAGÓN;Zona C.F. Grado Básico (H);Hoya de Huesca;Huesca;Huesca;49
+22002491;MONTEARAGÓN;Zona C.F. Grado Medio (H);Hoya de Huesca;Huesca;Huesca;268
+22002491;MONTEARAGÓN;Zona C.F. Grado Superior (H);Hoya de Huesca;Huesca;Huesca;201
+22002508;RAMÓN Y CAJAL;Zona C.F. Grado Básico (H);Hoya de Huesca;Huesca;Huesca;28
+22002508;RAMÓN Y CAJAL;Zona C.F. Grado Medio (H);Hoya de Huesca;Huesca;Huesca;58
+22002508;RAMÓN Y CAJAL;Zona C.F. Grado Superior (H);Hoya de Huesca;Huesca;Huesca;39
+22002508;RAMÓN Y CAJAL;Zona Huesca 4 (Secundaria);Hoya de Huesca;Huesca;Huesca;540
+22002508;RAMÓN Y CAJAL;Zona Huesca BTO;Hoya de Huesca;Huesca;Huesca;285
+22002508;RAMÓN Y CAJAL;Zona Huesca BTO Arte;Hoya de Huesca;Huesca;Huesca;13
+22002511;PIRÁMIDE;Zona C.F. Grado Básico (H);Hoya de Huesca;Huesca;Huesca;29
+22002511;PIRÁMIDE;Zona Educación Especial (H);Hoya de Huesca;Huesca;Huesca;10
+22002511;PIRÁMIDE;Zona Huesca 2 (Secundaria);Hoya de Huesca;Huesca;Huesca;636
+22002511;PIRÁMIDE;Zona Huesca BTO;Hoya de Huesca;Huesca;Huesca;265
+22002511;PIRÁMIDE;Zona PCPI Huesca;Hoya de Huesca;Huesca;Huesca;11
+22002521;SIERRA DE GUARA;Zona C.F. Grado Básico (H);Hoya de Huesca;Huesca;Huesca;31
+22002521;SIERRA DE GUARA;Zona C.F. Grado Medio (H);Hoya de Huesca;Huesca;Huesca;399
+22002521;SIERRA DE GUARA;Zona C.F. Grado Superior (H);Hoya de Huesca;Huesca;Huesca;295
+22002521;SIERRA DE GUARA;Zona Huesca 7 (Secundaria);Hoya de Huesca;Huesca;Huesca;403
+22002521;SIERRA DE GUARA;Zona Huesca BTO;Hoya de Huesca;Huesca;Huesca;125
+22002569;ALCORAZ;Zona Huesca 3;Hoya de Huesca;Huesca;Huesca;376
+22002673;SAN JUAN DE LA PEÑA;Zona Jaca;Jacetania;Jaca;Huesca;567
+22002703;ESCUELAS PÍAS;Zona C.F. Grado Medio (H);Jacetania;Jaca;Huesca;20
+22002703;ESCUELAS PÍAS;Zona Jaca;Jacetania;Jaca;Huesca;598
+22002727;DOMINGO MIRAL;Zona Jaca;Jacetania;Jaca;Huesca;413
+22002740;INSTITUTO DE FORMACIÓN AGROAMBIENTAL;Zona C.F. Grado Medio (H);Jacetania;Jaca;Huesca;31
+22002740;INSTITUTO DE FORMACIÓN AGROAMBIENTAL;Zona C.F. Grado Superior (H);Jacetania;Jaca;Huesca;59
+22002843;MONEGROS NORTE;Zona Lanaja;Monegros;Lanaja;Huesca;92
+22003100;SAN GINÉS;Zona Lupiñén-Ortilla;Hoya de Huesca;Lupiñén-Ortilla;Huesca;16
+22003215;JOAQUÍN COSTA;Zona Monzon 1;Cinca Medio;Monzón;Huesca;419
+22003239;SANTO DOMINGO SAVIO;Zona C.F. Grado Básico (H);Cinca Medio;Monzón;Huesca;26
+22003239;SANTO DOMINGO SAVIO;Zona C.F. Grado Medio (H);Cinca Medio;Monzón;Huesca;97
+22003239;SANTO DOMINGO SAVIO;Zona C.F. Grado Superior (H);Cinca Medio;Monzón;Huesca;81
+22003239;SANTO DOMINGO SAVIO;Zona Monzón;Cinca Medio;Monzón;Huesca;412
+22003252;SANTA ANA;Zona Monzon 1;Cinca Medio;Monzón;Huesca;407
+22003276;MINTE;Zona Monzon 2;Cinca Medio;Monzón;Huesca;203
+22003288;JOSÉ MOR DE FUENTES;Zona C.F. Grado Básico (H);Cinca Medio;Monzón;Huesca;43
+22003288;JOSÉ MOR DE FUENTES;Zona C.F. Grado Medio (H);Cinca Medio;Monzón;Huesca;82
+22003288;JOSÉ MOR DE FUENTES;Zona C.F. Grado Superior (H);Cinca Medio;Monzón;Huesca;39
+22003288;JOSÉ MOR DE FUENTES;Zona Monzón;Cinca Medio;Monzón;Huesca;710
+22003343;SAN GREGORIO;Zona Ontiñena;Bajo Cinca;Ontiñena;Huesca;16
+22003586;CINCA-CINQUETA;Zona Plan;Sobrarbe;Plan;Huesca;77
+22003835;MONTECORONA;Zona Educación Especial (H);Alto Gallego;Sabiñánigo;Huesca;8
+22003835;MONTECORONA;Zona Sabiñánigo 1;Alto Gallego;Sabiñánigo;Huesca;365
+22003847;PUENTE SARDAS;Zona Sabiñánigo 2;Alto Gallego;Sabiñánigo;Huesca;191
+22003860;SANTA ANA;Zona Sabiñánigo 1;Alto Gallego;Sabiñánigo;Huesca;154
+22003902;SAN ALBERTO MAGNO;Zona C.F. Grado Medio (H);Alto Gallego;Sabiñánigo;Huesca;39
+22003902;SAN ALBERTO MAGNO;Zona C.F. Grado Superior (H);Alto Gallego;Sabiñánigo;Huesca;13
+22003902;SAN ALBERTO MAGNO;Zona Sabiñánigo 1;Alto Gallego;Sabiñánigo;Huesca;347
+22003926;MIGUEL SERVET;Zona Senegue;Alto Gallego;Sabiñánigo;Huesca;5
+22004104;LA LAGUNA;Zona Sariñena;Monegros;Sariñena;Huesca;329
+22004189;ALBERTO GALINDO;Zona Sena;Monegros;Sena;Huesca;35
+22004271;SAN MIGUEL;Zona Tamarite de Litera;La Litera;Tamarite de Litera;Huesca;245
+22004566;COLLARADA;Zona Villanúa;Jacetania;Villanúa;Huesca;49
+22004578;MIGUEL SERVET;Zona Villanueva de Sigena;Monegros;Villanueva de Sigena;Huesca;8
+22004608;SAN JUAN BAUTISTA;Zona Zaidín;Bajo Cinca;Zaidín;Huesca;142
+22004611;MARTÍNEZ VARGAS;Zona Barbastro;Somontano de Barbastro;Barbastro;Huesca;391
+22004611;MARTÍNEZ VARGAS;Zona C.F. Grado Básico (H);Somontano de Barbastro;Barbastro;Huesca;22
+22004611;MARTÍNEZ VARGAS;Zona C.F. Grado Medio (H);Somontano de Barbastro;Barbastro;Huesca;123
+22004611;MARTÍNEZ VARGAS;Zona C.F. Grado Superior (H);Somontano de Barbastro;Barbastro;Huesca;269
+22004633;EL PARQUE;Zona Huesca 4;Hoya de Huesca;Huesca;Huesca;429
+22004773;LUCAS MALLADA;Zona Huesca 1 (Secundaria);Hoya de Huesca;Huesca;Huesca;323
+22004773;LUCAS MALLADA;Zona Huesca BTO;Hoya de Huesca;Huesca;Huesca;160
+22004839;MONTE OROEL;Zona Jaca;Jacetania;Jaca;Huesca;227
+22004840;ARAGÓN;Zona Monzon 2;Cinca Medio;Monzón;Huesca;399
+22004888;BAJO CINCA;Zona C.F. Grado Básico (H);Bajo Cinca;Fraga;Huesca;19
+22004888;BAJO CINCA;Zona C.F. Grado Medio (H);Bajo Cinca;Fraga;Huesca;45
+22004888;BAJO CINCA;Zona C.F. Grado Superior (H);Bajo Cinca;Fraga;Huesca;62
+22004888;BAJO CINCA;Zona Fraga;Bajo Cinca;Fraga;Huesca;438
+22004891;BIELLO ARAGÓN;Zona C.F. Grado Básico (H);Alto Gallego;Sabiñánigo;Huesca;24
+22004891;BIELLO ARAGÓN;Zona C.F. Grado Medio (H);Alto Gallego;Sabiñánigo;Huesca;30
+22004891;BIELLO ARAGÓN;Zona C.F. Grado Superior (H);Alto Gallego;Sabiñánigo;Huesca;72
+22004891;BIELLO ARAGÓN;Zona Educación Especial (H);Alto Gallego;Sabiñánigo;Huesca;3
+22004891;BIELLO ARAGÓN;Zona PCPI Huesca;Alto Gallego;Sabiñánigo;Huesca;7
+22004891;BIELLO ARAGÓN;Zona Sabiñánigo 1;Alto Gallego;Sabiñánigo;Huesca;211
+22004906;PEDRO I;Zona Barbastro 3;Somontano de Barbastro;Barbastro;Huesca;441
+22004943;NTRA. SRA. DE GUAYENTE;Zona C.F. Grado Básico (H);Ribagorza;Sahún;Huesca;5
+22004943;NTRA. SRA. DE GUAYENTE;Zona C.F. Grado Medio (H);Ribagorza;Sahún;Huesca;21
+22005030;MONEGROS-GASPAR LAX;Zona C.F. Grado Básico (H);Monegros;Sariñena;Huesca;15
+22005030;MONEGROS-GASPAR LAX;Zona C.F. Grado Medio (H);Monegros;Sariñena;Huesca;9
+22005030;MONEGROS-GASPAR LAX;Zona Sariñena;Monegros;Sariñena;Huesca;298
+22005054;VIRGEN DE LOS RÍOS;Zona Caldearenas;Alto Gallego;Caldearenas;Huesca;21
+22005121;SAN LORENZO;Zona C.F. Grado Básico (H);Hoya de Huesca;Huesca;Huesca;28
+22005121;SAN LORENZO;Zona C.F. Grado Medio (H);Hoya de Huesca;Huesca;Huesca;87
+22005121;SAN LORENZO;Zona C.F. Grado Superior (H);Hoya de Huesca;Huesca;Huesca;131
+22005121;SAN LORENZO;Zona PCPI Huesca;Hoya de Huesca;Huesca;Huesca;10
+22005145;ESCUELA DE ARTE DE HUESCA;Zona Huesca BTO Arte;Hoya de Huesca;Huesca;Huesca;122
+22005157;LA ALEGRÍA;Zona Educación Especial (H);Cinca Medio;Monzón;Huesca;54
+22005157;LA ALEGRÍA;Zona PCPI Huesca;Cinca Medio;Monzón;Huesca;6
+22005200;PEDRO J. RUBIO;Zona Huesca 2;Hoya de Huesca;Huesca;Huesca;619
+22005340;VALLE DEL GUARGA;Zona Aineto;Alto Gallego;Sabiñánigo;Huesca;10
+22005388;SIERRA DE SAN QUÍLEZ;Zona Binéfar 1;La Litera;Binéfar;Huesca;532
+22005388;SIERRA DE SAN QUÍLEZ;Zona C.F. Grado Básico (H);La Litera;Binéfar;Huesca;41
+22005388;SIERRA DE SAN QUÍLEZ;Zona C.F. Grado Medio (H);La Litera;Binéfar;Huesca;57
+22005388;SIERRA DE SAN QUÍLEZ;Zona C.F. Grado Superior (H);La Litera;Binéfar;Huesca;19
+22005391;LA LLITERA;Zona C.F. Grado Básico (H);La Litera;Tamarite de Litera;Huesca;10
+22005391;LA LLITERA;Zona C.F. Grado Medio (H);La Litera;Tamarite de Litera;Huesca;34
+22005391;LA LLITERA;Zona C.F. Grado Superior (H);La Litera;Tamarite de Litera;Huesca;19
+22005391;LA LLITERA;Zona Tamarite de Litera;La Litera;Tamarite de Litera;Huesca;327
+22005406;SOBRARBE;Zona Aínsa-Sobrarbe;Sobrarbe;Aínsa-Sobrarbe;Huesca;326
+22005406;SOBRARBE;Zona C.F. Grado Medio (H);Sobrarbe;Aínsa-Sobrarbe;Huesca;31
+22005431;DE PAÚLES DE SARSA;Zona Paules de Sarsa;Sobrarbe;Aínsa-Sobrarbe;Huesca;6
+22005674;LA LLITERA;Zona Albelda;La Litera;Albelda;Huesca;102
+22005686;MONTESNEGROS;Zona Peñalba;Monegros;Peñalba;Huesca;78
+22005698;A REDOLADA;Zona Peralta de Alcofea;Somontano de Barbastro;Peralta de Alcofea;Huesca;53
+22005704;BAJA RIBAGORZA;Zona Capella;Ribagorza;Capella;Huesca;73
+22005716;ESTADILLA-FONZ;Zona Fonz;Cinca Medio;Fonz;Huesca;133
+22005728;MONTEARAGÓN;Zona Chimillas;Hoya de Huesca;Chimillas;Huesca;243
+22005731;ALTO GÁLLEGO;Zona Biescas;Alto Gallego;Biescas;Huesca;257
+22005741;EL TRÉBOL;Zona Binaced;Cinca Medio;Binaced;Huesca;186
+22005765;PIRINEOS;Zona C.F. Grado Básico (H);Jacetania;Jaca;Huesca;16
+22005765;PIRINEOS;Zona C.F. Grado Medio (H);Jacetania;Jaca;Huesca;63
+22005765;PIRINEOS;Zona C.F. Grado Superior (H);Jacetania;Jaca;Huesca;15
+22005765;PIRINEOS;Zona Jaca;Jacetania;Jaca;Huesca;282
+22005789;RÍO ARAGÓN;Zona Puente la Reina de Jaca;Jacetania;Santa Cilia;Huesca;172
+22005807;RIBERA DEL CINCA;Zona Torrente de Cinca;Bajo Cinca;Torrente de Cinca;Huesca;120
+22005819;DE ALTORRICÓN;Zona Altorricón;La Litera;Altorricón;Huesca;151
+22005820;ARCO IRIS;Zona Conchel;Cinca Medio;Monzón;Huesca;139
+22005832;ALBEOS;Zona Belver de Cinca;Bajo Cinca;Belver de Cinca;Huesca;214
+22005844;VIOLADA MONEGROS;Zona Tardienta;Monegros;Tardienta;Huesca;187
+22005856;LA SABINA;Zona Robres;Monegros;Robres;Huesca;76
+22005868;MONEGROS-HOYA;Zona Lalueza;Monegros;Lalueza;Huesca;85
+22005881;ALTA RIBAGORZA;Zona Benasque;Ribagorza;Benasque;Huesca;307
+22006083;PIRÁMIDE;Zona Almudévar;Hoya de Huesca;Almudévar;Huesca;86
+22006095;DE CASTEJÓN DE SOS;Zona Castejón de Sos;Ribagorza;Castejón de Sos;Huesca;178
+22006101;MONTES NEGROS;Zona Grañén;Monegros;Grañén;Huesca;94
+22006113;CINCA-ALCANADRE;Zona Alcolea de Cinca;Cinca Medio;Alcolea de Cinca;Huesca;155
+22006125;BIELLO ARAGÓN;Zona Biescas;Alto Gallego;Biescas;Huesca;58
+22006137;VALLE DE BENASQUE;Zona Benasque;Ribagorza;Benasque;Huesca;32
+22010001;SAN JORGE;Zona Educación Especial (H);Hoya de Huesca;Huesca;Huesca;44
+22010323;PIRINEOS-PYRÉNÉES;Zona Huesca 1;Hoya de Huesca;Huesca;Huesca;574
+22010712;PIRÁMIDE;Zona C.F. Grado Medio (H);Hoya de Huesca;Huesca;Huesca;206
+22010712;PIRÁMIDE;Zona C.F. Grado Superior (H);Hoya de Huesca;Huesca;Huesca;286
+22010839;MONZÓN III;Zona Monzon 2;Cinca Medio;Monzón;Huesca;330
+22010876;MARÍA MOLINER;Zona Fraga 1;Bajo Cinca;Fraga;Huesca;315
+22010967;KATIA ACÍN;Zona Binéfar 1;La Litera;Binéfar;Huesca;108
+22010980;BENABARRE;Zona Benabarre;Ribagorza;Benabarre;Huesca;125
+22010992;ARÉN;Zona Arén;Ribagorza;Arén;Huesca;15
+22011005;MONTANUY;Zona Montanuy;Ribagorza;Montanuy;Huesca;20
+44000121;ROMÁN GARCÍA;Zona Albalate del Arzobispo;Bajo Martín;Albalate del Arzobispo;Teruel;176
+44000246;EMILIO DÍAZ;Zona Alcañiz;Bajo Aragón;Alcañiz;Teruel;630
+44000261;SAN VALERO;Zona Alcañiz;Bajo Aragón;Alcañiz;Teruel;277
+44000271;LA INMACULADA;Zona Alcañiz;Bajo Aragón;Alcañiz;Teruel;278
+44000325;EL JUSTICIA DE ARAGÓN;Zona Alcorisa;Bajo Aragón;Alcorisa;Teruel;314
+44000465;JUAN RAMÓN ALEGRE;Zona Andorra;Andorra - Sierra de Arcos;Andorra;Teruel;378
+44000799;RICARDO MALLÉN;Zona Calamocha;Jiloca;Calamocha;Teruel;438
+44000829;VIRGEN DEL PILAR;Zona Calanda;Bajo Aragón;Calanda;Teruel;292
+44001159;ASTRÓNOMO ZARZOSO;Zona Cella;Teruel;Cella;Teruel;189
+44001378;ANTONIO GARGALLO MOYA;Zona Escucha;Cuencas mineras;Escucha;Teruel;57
+44001706;LUIS TURÓN;Zona Híjar;Bajo Martín;Híjar;Teruel;141
+44002061;VALERO SERRANO;Zona Mas de las Matas;Bajo Aragón;Mas de las Matas;Teruel;91
+44002152;NTRA. SRA. DEL PILAR;Zona Monreal del Campo;Jiloca;Monreal del Campo;Teruel;290
+44002191;COMARCA CUENCAS MINERAS;Zona Montalbán;Cuencas mineras;Montalbán;Teruel;103
+44002221;SAN MIGUEL;Zona Mora de Rubielos;Gúdar - Javalambre;Mora de Rubielos;Teruel;132
+44002541;TERUEL UNO;Zona Perales del Alfambra;Teruel;Perales del Alfambra;Teruel;98
+44002942;DE SARRIÓN;Zona Sarrión;Gúdar - Javalambre;Sarrión;Teruel;141
+44003028;DE SAN BLAS;Zona C.F. Grado Básico (T);Teruel;Teruel;Teruel;19
+44003028;DE SAN BLAS;Zona C.F. Grado Medio (T);Teruel;Teruel;Teruel;123
+44003028;DE SAN BLAS;Zona C.F. Grado Superior (T);Teruel;Teruel;Teruel;97
+44003041;LA SALLE-SAN JOSÉ;Zona Teruel 1;Teruel;Teruel;Teruel;421
+44003041;LA SALLE-SAN JOSÉ;Zona Teruel 1 ESO;Teruel;Teruel;Teruel;196
+44003077;LAS VIÑAS;Zona Teruel 3 ESO;Teruel;Teruel;Teruel;202
+44003077;LAS VIÑAS;Zona Teruel 4;Teruel;Teruel;Teruel;352
+44003090;PIERRES VEDEL;Zona Teruel 3;Teruel;Teruel;Teruel;152
+44003107;MIGUEL VALLÉS;Zona Teruel 3;Teruel;Teruel;Teruel;253
+44003120;LAS ANEJAS;Zona Teruel 4;Teruel;Teruel;Teruel;604
+44003156;VICTORIA DÍEZ;Zona Teruel 2;Teruel;Teruel;Teruel;174
+44003156;VICTORIA DÍEZ;Zona Teruel 2 ESO;Teruel;Teruel;Teruel;92
+44003171;LA PURÍSIMA Y SANTOS MÁRTIRES;Zona Teruel 2 ESO;Teruel;Teruel;Teruel;96
+44003171;LA PURÍSIMA Y SANTOS MÁRTIRES;Zona Teruel 3;Teruel;Teruel;Teruel;172
+44003211;SANTA EMERENCIANA;Zona C.F. Grado Básico (T);Teruel;Teruel;Teruel;8
+44003211;SANTA EMERENCIANA;Zona C.F. Grado Medio (T);Teruel;Teruel;Teruel;166
+44003211;SANTA EMERENCIANA;Zona C.F. Grado Superior (T);Teruel;Teruel;Teruel;184
+44003211;SANTA EMERENCIANA;Zona Teruel 2 ESO;Teruel;Teruel;Teruel;289
+44003211;SANTA EMERENCIANA;Zona Teruel BTO;Teruel;Teruel;Teruel;153
+44003223;SEGUNDO DE CHOMÓN;Zona C.F. Grado Básico (T);Teruel;Teruel;Teruel;56
+44003223;SEGUNDO DE CHOMÓN;Zona C.F. Grado Medio (T);Teruel;Teruel;Teruel;212
+44003223;SEGUNDO DE CHOMÓN;Zona C.F. Grado Superior (T);Teruel;Teruel;Teruel;148
+44003223;SEGUNDO DE CHOMÓN;Zona Teruel 1 ESO;Teruel;Teruel;Teruel;313
+44003223;SEGUNDO DE CHOMÓN;Zona Teruel BTO;Teruel;Teruel;Teruel;139
+44003235;VEGA DEL TURIA;Zona C.F. Grado Básico (T);Teruel;Teruel;Teruel;18
+44003235;VEGA DEL TURIA;Zona C.F. Grado Medio (T);Teruel;Teruel;Teruel;317
+44003235;VEGA DEL TURIA;Zona C.F. Grado Superior (T);Teruel;Teruel;Teruel;86
+44003235;VEGA DEL TURIA;Zona Teruel 2 ESO;Teruel;Teruel;Teruel;261
+44003235;VEGA DEL TURIA;Zona Teruel BTO;Teruel;Teruel;Teruel;189
+44003247;FRANCÉS DE ARANDA;Zona C.F. Grado Básico (T);Teruel;Teruel;Teruel;11
+44003247;FRANCÉS DE ARANDA;Zona C.F. Grado Medio (T);Teruel;Teruel;Teruel;63
+44003247;FRANCÉS DE ARANDA;Zona C.F. Grado Superior (T);Teruel;Teruel;Teruel;119
+44003247;FRANCÉS DE ARANDA;Zona Teruel 3 ESO;Teruel;Teruel;Teruel;319
+44003247;FRANCÉS DE ARANDA;Zona Teruel BTO;Teruel;Teruel;Teruel;141
+44003259;ARBOLEDA;Zona Educación Especial (T);Teruel;Teruel;Teruel;45
+44003259;ARBOLEDA;Zona PCPI Teruel;Teruel;Teruel;Teruel;10
+44003272;ENSANCHE;Zona Teruel 2;Teruel;Teruel;Teruel;550
+44003284;ESCUELA DE ARTE DE TERUEL;Zona Teruel BTO Arte;Teruel;Teruel;Teruel;52
+44003636;VILLA DE UTRILLAS;Zona Utrillas;Cuencas mineras;Utrillas;Teruel;245
+44003715;VICENTE FERRER RAMOS;Zona Valderrobres;Matarraña;Valderrobres;Teruel;218
+44004045;VALLE DEL JILOCA;Zona C.F. Grado Básico (T);Jiloca;Calamocha;Teruel;17
+44004045;VALLE DEL JILOCA;Zona C.F. Grado Medio (T);Jiloca;Calamocha;Teruel;12
+44004045;VALLE DEL JILOCA;Zona Calamocha;Jiloca;Calamocha;Teruel;321
+44004148;GLORIA FUERTES;Zona Educación Especial (T);Andorra - Sierra de Arcos;Andorra;Teruel;64
+44004148;GLORIA FUERTES;Zona PCPI Teruel;Andorra - Sierra de Arcos;Andorra;Teruel;17
+44004239;PEDRO LAÍN ENTRALGO;Zona Híjar;Bajo Martín;Híjar;Teruel;170
+44004306;LA FUENFRESCA;Zona Teruel 1;Teruel;Teruel;Teruel;595
+44004471;REGALLO;Zona Puigmoreno;Bajo Aragón;Alcañiz;Teruel;30
+44004483;JAVALAMBRE;Zona Manzanera;Gúdar - Javalambre;Manzanera;Teruel;126
+44004495;SIERRA DE ALBARRACÍN;Zona Tramacastilla;Albarracín;Tramacastilla;Teruel;53
+44004550;FERNANDO LÁZARO CARRETER;Zona C.F. Grado Básico (T);Cuencas mineras;Utrillas;Teruel;24
+44004550;FERNANDO LÁZARO CARRETER;Zona C.F. Grado Medio (T);Cuencas mineras;Utrillas;Teruel;47
+44004550;FERNANDO LÁZARO CARRETER;Zona C.F. Grado Superior (T);Cuencas mineras;Utrillas;Teruel;36
+44004550;FERNANDO LÁZARO CARRETER;Zona Utrillas;Cuencas mineras;Utrillas;Teruel;246
+44004562;MANUEL FRANCO ROYO;Zona Andorra;Andorra - Sierra de Arcos;Andorra;Teruel;213
+44004598;MATARRAÑA;Zona C.F. Grado Básico (T);Matarraña;Valderrobres;Teruel;19
+44004598;MATARRAÑA;Zona C.F. Grado Medio (T);Matarraña;Valderrobres;Teruel;29
+44004598;MATARRAÑA;Zona Valderrobres;Matarraña;Valderrobres;Teruel;372
+44004616;MAESTRAZGO GÚDAR;Zona Mosqueruela;Gúdar - Javalambre;Mosqueruela;Teruel;77
+44004628;TURIA;Zona San Blas;Teruel;Teruel;Teruel;167
+44004653;PABLO SERRANO;Zona Andorra Secundaria;Andorra - Sierra de Arcos;Andorra;Teruel;407
+44004653;PABLO SERRANO;Zona C.F. Grado Básico (T);Andorra - Sierra de Arcos;Andorra;Teruel;50
+44004653;PABLO SERRANO;Zona C.F. Grado Medio (T);Andorra - Sierra de Arcos;Andorra;Teruel;61
+44004653;PABLO SERRANO;Zona C.F. Grado Superior (T);Andorra - Sierra de Arcos;Andorra;Teruel;80
+44004665;SALVADOR VICTORIA;Zona C.F. Grado Básico (T);Jiloca;Monreal del Campo;Teruel;21
+44004665;SALVADOR VICTORIA;Zona C.F. Grado Medio (T);Jiloca;Monreal del Campo;Teruel;20
+44004665;SALVADOR VICTORIA;Zona Monreal del Campo;Jiloca;Monreal del Campo;Teruel;193
+44004677;PABLO ANTONIO CRESPO;Zona Aliaga;Cuencas mineras;Aliaga;Teruel;54
+44004689;GOYA;Zona Caminreal;Jiloca;Caminreal;Teruel;118
+44004690;ALTO MAESTRAZGO;Zona Cantavieja;Maestrazgo;Cantavieja;Teruel;126
+44004707;SOMONTANO-BAJO ARAGÓN;Zona Mata de los Olmos (La);Bajo Aragón;Mata de los Olmos (La);Teruel;84
+44004719;PALMIRA PLÁ;Zona Cedrillas;Teruel;Cedrillas;Teruel;91
+44004720;ARIÑO-ALLOZA;Zona Ariño;Andorra - Sierra de Arcos;Ariño;Teruel;70
+44004732;OLEA;Zona Castellote;Bajo Aragón;Castellote;Teruel;108
+44004744;ALIFARA;Zona Fresneda (La);Matarraña;Fresneda (La);Teruel;87
+44004756;TASTAVÍNS;Zona Peñarroya de Tastavins;Matarraña;Peñarroya de Tastavins;Teruel;81
+44004768;DE MARTÍN DEL RÍO;Zona Martín del Río;Cuencas mineras;Martín del Río;Teruel;32
+44004771;DE MUNIESA;Zona Muniesa;Cuencas mineras;Muniesa;Teruel;66
+44004781;PÓRTICO DE ARAGÓN;Zona Rubielos de Mora;Gúdar - Javalambre;Rubielos de Mora;Teruel;136
+44004793;DE ALBARRACÍN;Zona Albarracín;Albarracín;Albarracín;Teruel;99
+44004801;BAJO MARTÍN;Zona Puebla de Híjar (La);Bajo Martín;Puebla de Híjar (La);Teruel;166
+44004811;DEL MEZQUÍN;Zona Castelserás;Bajo Aragón;Castelserás;Teruel;152
+44005062;MATARRANYA;Zona Calaceite;Matarraña;Calaceite;Teruel;121
+44005074;CUNA DEL JILOCA;Zona Santa Eulalia;Teruel;Santa Eulalia;Teruel;128
+44005098;DAMIÁN FORMENT;Zona Alcorisa;Bajo Aragón;Alcorisa;Teruel;161
+44005098;DAMIÁN FORMENT;Zona C.F. Grado Medio (T);Bajo Aragón;Alcorisa;Teruel;38
+44005104;VALLE DEL GUADALOPE;Zona C.F. Grado Medio (T);Bajo Aragón;Calanda;Teruel;13
+44005104;VALLE DEL GUADALOPE;Zona Calanda;Bajo Aragón;Calanda;Teruel;218
+44005116;GÚDAR-JAVALAMBRE;Zona C.F. Grado Básico (T);Gúdar - Javalambre;Mora de Rubielos;Teruel;9
+44005116;GÚDAR-JAVALAMBRE;Zona Mora de Rubielos;Gúdar - Javalambre;Mora de Rubielos;Teruel;187
+44005128;SIERRA PALOMERA;Zona Cella;Teruel;Cella;Teruel;164
+44005131;ALGARS;Zona Cretas;Matarraña;Cretas;Teruel;111
+44005153;CAMPO BELLO;Zona Bello;Jiloca;Bello;Teruel;18
+44005165;ERAS DEL JILOCA;Zona el Poyo del Cid;Jiloca;Calamocha;Teruel;20
+44005177;BAJO ARAGÓN;Zona Alcañiz;Bajo Aragón;Alcañiz;Teruel;724
+44005177;BAJO ARAGÓN;Zona C.F. Grado Básico (T);Bajo Aragón;Alcañiz;Teruel;50
+44005177;BAJO ARAGÓN;Zona Teruel;Bajo Aragón;Alcañiz;Teruel;318
+44005190;SEGUNDO DE CHOMÓN;Zona Cantavieja;Maestrazgo;Cantavieja;Teruel;61
+44005207;LOBETANO;Zona Albarracín;Albarracín;Albarracín;Teruel;62
+44010011;ESCUELA DE HOSTELERÍA DE TERUEL;Zona C.F. Grado Básico (T);Teruel;Teruel;Teruel;24
+44010011;ESCUELA DE HOSTELERÍA DE TERUEL;Zona C.F. Grado Medio (T);Teruel;Teruel;Teruel;58
+44010011;ESCUELA DE HOSTELERÍA DE TERUEL;Zona C.F. Grado Superior (T);Teruel;Teruel;Teruel;64
+44010100;JUAN SOBRARIAS;Zona Alcañiz;Bajo Aragón;Alcañiz;Teruel;424
+44010203;JUAN LORENZO PALMIRENO;Zona Alcañiz;Bajo Aragón;Alcañiz;Teruel;191
+44010537;BAJO ARAGÓN;Zona C.F. Grado Básico (T);Bajo Aragón;Alcañiz;Teruel;26
+44010537;BAJO ARAGÓN;Zona C.F. Grado Medio (T);Bajo Aragón;Alcañiz;Teruel;281
+44010537;BAJO ARAGÓN;Zona C.F. Grado Superior (T);Bajo Aragón;Alcañiz;Teruel;247
+44010719;BRONCHALES-ORIHUELA;Zona Orihuela del Tremedal;Albarracín;Orihuela del Tremedal;Teruel;46
+50000126;ARAGÓN;Zona Alagón;Ribera Alta del Ebro;Alagón;Zaragoza;421
+50000151;NTRA. SRA DEL CASTILLO;Zona Alagón;Ribera Alta del Ebro;Alagón;Zaragoza;291
+50000163;CONDE ARANDA;Zona Alagón;Ribera Alta del Ebro;Alagón;Zaragoza;466
+50000163;CONDE ARANDA;Zona Alagón BTO;Ribera Alta del Ebro;Alagón;Zaragoza;145
+50000291;BRIANDA DE LUNA;Zona Alfajarín;Zaragoza;Alfajarín;Zaragoza;215
+50000369;ARZOBISPO DOMÉNECH;Zona Almonacid de la Sierra;Valdejalón;Almonacid de la Sierra;Zaragoza;52
+50000370;NERTÓBRIGA;Zona Almunia de Doña Godina (La);Valdejalón;Almunia de Doña Godina (La);Zaragoza;338
+50000412;SALESIANOS LAVIAGA-CASTILLO;Zona Almunia de Doña Godina (La);Valdejalón;Almunia de Doña Godina (La);Zaragoza;323
+50000412;SALESIANOS LAVIAGA-CASTILLO;Zona C.F. Grado Básico (Z);Valdejalón;Almunia de Doña Godina (La);Zaragoza;38
+50000412;SALESIANOS LAVIAGA-CASTILLO;Zona C.F. Grado Medio (Z);Valdejalón;Almunia de Doña Godina (La);Zaragoza;126
+50000412;SALESIANOS LAVIAGA-CASTILLO;Zona C.F. Grado Superior (Z);Valdejalón;Almunia de Doña Godina (La);Zaragoza;39
+50000436;RAMÓN Y CAJAL;Zona Alpartir;Valdejalón;Alpartir;Zaragoza;42
+50000618;VIRGEN DE LA PEANA;Zona Ateca;Calatayud;Ateca;Zaragoza;95
+50000722;BELIA;Zona Belchite;Campo de Belchite;Belchite;Zaragoza;95
+50000850;CAMPO DE BORJA;Zona Borja;Campo de Borja;Borja;Zaragoza;342
+50000850;CAMPO DE BORJA;Zona Educación Especial (Z);Campo de Borja;Borja;Zaragoza;8
+50000862;SANTA ANA;Zona Borja;Campo de Borja;Borja;Zaragoza;228
+50000874;JUAN DE LANUZA;Zona Borja;Campo de Borja;Borja;Zaragoza;282
+50000874;JUAN DE LANUZA;Zona Borja BTO;Campo de Borja;Borja;Zaragoza;150
+50000874;JUAN DE LANUZA;Zona C.F. Grado Básico (Z);Campo de Borja;Borja;Zaragoza;19
+50000874;JUAN DE LANUZA;Zona C.F. Grado Medio (Z);Campo de Borja;Borja;Zaragoza;25
+50000904;DIPUTACIÓN PROVINCIAL;Zona Brea de Aragón;Aranda;Brea de Aragón;Zaragoza;98
+50001064;BALTASAR GRACIÁN;Zona Calatayud;Calatayud;Calatayud;Zaragoza;186
+50001076;FRANCISCO DE GOYA;Zona Calatayud;Calatayud;Calatayud;Zaragoza;355
+50001088;SALVADOR MINGUIJÓN;Zona Calatayud;Calatayud;Calatayud;Zaragoza;170
+50001121;SANTA ANA;Zona Calatayud;Calatayud;Calatayud;Zaragoza;586
+50001167;LEONARDO DE CHABACIER;Zona C.F. Grado Básico (Z);Calatayud;Calatayud;Zaragoza;28
+50001167;LEONARDO DE CHABACIER;Zona C.F. Grado Medio (Z);Calatayud;Calatayud;Zaragoza;121
+50001167;LEONARDO DE CHABACIER;Zona Calatayud;Calatayud;Calatayud;Zaragoza;465
+50001179;EMILIO JIMENO;Zona C.F. Grado Básico (Z);Calatayud;Calatayud;Zaragoza;25
+50001179;EMILIO JIMENO;Zona C.F. Grado Medio (Z);Calatayud;Calatayud;Zaragoza;87
+50001179;EMILIO JIMENO;Zona C.F. Grado Superior (Z);Calatayud;Calatayud;Zaragoza;95
+50001179;EMILIO JIMENO;Zona Calatayud;Calatayud;Calatayud;Zaragoza;568
+50001222;DOMINGO JIMÉNEZ BELTRÁN;Zona Calatorao;Valdejalón;Calatorao;Zaragoza;246
+50001301;SANTO CRISTO DE SANTIAGO;Zona Cariñena;Campo de Cariñena;Cariñena;Zaragoza;301
+50001349;JOAQUÍN COSTA;Zona C.F. Grado Medio (Z);Campo de Cariñena;Cariñena;Zaragoza;16
+50001349;JOAQUÍN COSTA;Zona C.F. Grado Superior (Z);Campo de Cariñena;Cariñena;Zaragoza;29
+50001349;JOAQUÍN COSTA;Zona Cariñena;Campo de Cariñena;Cariñena;Zaragoza;406
+50001350;COMPROMISO DE CASPE;Zona Caspe;Caspe;Caspe;Zaragoza;247
+50001362;SANTA ANA;Zona Caspe;Caspe;Caspe;Zaragoza;286
+50001672;LUCIO FABIO SEVERO;Zona Chiprana;Caspe;Chiprana;Zaragoza;37
+50001702;PEDRO SÁNCHEZ CIRUELO;Zona Daroca;Campo de Daroca;Daroca;Zaragoza;168
+50001763;CERVANTES;Zona Ejea de los Caballeros;Cinco Villas;Ejea de los Caballeros;Zaragoza;402
+50001775;FERRER Y RACAJ;Zona Ejea de los Caballeros;Cinco Villas;Ejea de los Caballeros;Zaragoza;213
+50001799;NTRA. SRA. DE LAS MERCEDES;Zona Ejea de los Caballeros;Cinco Villas;Ejea de los Caballeros;Zaragoza;286
+50001829;E.F.A. BOALARES;Zona C.F. Grado Básico (Z);Cinco Villas;Ejea de los Caballeros;Zaragoza;7
+50001829;E.F.A. BOALARES;Zona C.F. Grado Medio (Z);Cinco Villas;Ejea de los Caballeros;Zaragoza;18
+50001829;E.F.A. BOALARES;Zona C.F. Grado Superior (Z);Cinco Villas;Ejea de los Caballeros;Zaragoza;35
+50001830;REYES CATÓLICOS;Zona C.F. Grado Básico (Z);Cinco Villas;Ejea de los Caballeros;Zaragoza;18
+50001830;REYES CATÓLICOS;Zona C.F. Grado Medio (Z);Cinco Villas;Ejea de los Caballeros;Zaragoza;41
+50001830;REYES CATÓLICOS;Zona C.F. Grado Superior (Z);Cinco Villas;Ejea de los Caballeros;Zaragoza;73
+50001830;REYES CATÓLICOS;Zona Ejea de los Caballeros;Cinco Villas;Ejea de los Caballeros;Zaragoza;452
+50002007;GASPAR REMIRO;Zona Épila;Valdejalón;Épila;Zaragoza;443
+50002032;SAN JAVIER;Zona Escatrón;Caspe;Escatrón;Zaragoza;80
+50002123;NTRA. SRA. DEL PILAR;Zona Fayón;Caspe;Fayón;Zaragoza;36
+50002275;LUIS GARCÍA SÁINZ;Zona Fuentes de Ebro;Zaragoza;Fuentes de Ebro;Zaragoza;407
+50002329;MARÍA DOMÍNGUEZ;Zona Gallur;Ribera Alta del Ebro;Gallur;Zaragoza;216
+50002433;SAN JORGE;Zona Herrera de los Navarros;Campo de Daroca;Herrera de los Navarros;Zaragoza;35
+50002457;BENEDICTO XIII;Zona Illueca;Aranda;Illueca;Zaragoza;166
+50002512;RAMÓN Y CAJAL;Zona Joyosa (La);Ribera Alta del Ebro;Joyosa (La);Zaragoza;112
+50002810;VIRGEN DEL PORTAL;Zona Maella;Caspe;Maella;Zaragoza;142
+50002937;MANLIA;Zona Mallén;Campo de Borja;Mallén;Zaragoza;264
+50003048;MARÍA QUINTANA;Zona Mequinenza;Bajo Cinca;Mequinenza;Zaragoza;162
+50003206;LUCAS ARRIBAS;Zona Morata de Jalón;Valdejalón;Morata de Jalón;Zaragoza;43
+50003504;SAN NICASIO;Zona Novillas;Campo de Borja;Novillas;Zaragoza;18
+50003711;LA PORTALADA;Zona Zaragoza 2;Zaragoza;Pastriz;Zaragoza;76
+50003735;CERVANTES;Zona Pedrola;Ribera Alta del Ebro;Pedrola;Zaragoza;295
+50003838;SANTA MARÍA DE LA ESPERANZA;Zona Pina de Ebro;Ribera Baja del Ebro;Pina de Ebro;Zaragoza;122
+50003851;MIGUEL ARTIGAS;Zona Pinseque;Ribera Alta del Ebro;Pinseque;Zaragoza;418
+50003863;E.F.A. LA NORIA;Zona C.F. Grado Básico (Z);Ribera Alta del Ebro;Pinseque;Zaragoza;23
+50003863;E.F.A. LA NORIA;Zona C.F. Grado Medio (Z);Ribera Alta del Ebro;Pinseque;Zaragoza;38
+50003863;E.F.A. LA NORIA;Zona C.F. Grado Superior (Z);Ribera Alta del Ebro;Pinseque;Zaragoza;20
+50003981;JOAQUÍN COSTA;Zona Pradilla de Ebro;Ribera Alta del Ebro;Pradilla de Ebro;Zaragoza;12
+50004004;LOS ALBARES;Zona Puebla de Alfindén (La);Zaragoza;Puebla de Alfindén (La);Zaragoza;470
+50004031;FERNANDO EL CATÓLICO;Zona Quinto;Ribera Baja del Ebro;Quinto;Zaragoza;142
+50004053;ALFREDO MUIÑOS;Zona Remolinos;Ribera Alta del Ebro;Remolinos;Zaragoza;55
+50004077;MAESTRO MONREAL;Zona Ricla;Valdejalón;Ricla;Zaragoza;179
+50004326;DANIEL FEDERIO;Zona Sástago;Ribera Baja del Ebro;Sástago;Zaragoza;89
+50004430;SUBPRADEL;Zona Sobradiel;Ribera Alta del Ebro;Sobradiel;Zaragoza;102
+50004478;ISIDORO GIL DE JAZ;Zona Sos del Rey Católico;Cinco Villas;Sos del Rey Católico;Zaragoza;27
+50004545;JOAQUÍN COSTA;Zona Tarazona;Tarazona y el Moncayo;Tarazona;Zaragoza;184
+50004570;SAGRADA FAMILIA;Zona Tarazona;Tarazona y el Moncayo;Tarazona;Zaragoza;261
+50004594;NTRA. SRA. DEL PILAR;Zona Tarazona;Tarazona y el Moncayo;Tarazona;Zaragoza;293
+50004612;MONCAYO;Zona Educación Especial (Z);Tarazona y el Moncayo;Tarazona;Zaragoza;5
+50004612;MONCAYO;Zona Tarazona;Tarazona y el Moncayo;Tarazona;Zaragoza;401
+50004703;ALFONSO I EL BATALLADOR;Zona Tauste;Cinco Villas;Tauste;Zaragoza;484
+50004843;MONTES DEL CASTELLAR;Zona Torres de Berrellén;Ribera Alta del Ebro;Torres de Berrellén;Zaragoza;129
+50004879;TOSOS;Zona Tosos;Campo de Cariñena;Tosos;Zaragoza;9
+50004946;DE UNDUÉS DE LERDA;Zona Undués de Lerda;Cinco Villas;Undués de Lerda;Zaragoza;9
+50005011;MIGUEL ARTAZOS TAMÉ;Zona Zaragoza 4;Zaragoza;Utebo;Zaragoza;666
+50005276;PINTOR PRADILLA;Zona Villanueva de Gállego;Zaragoza;Villanueva de Gállego;Zaragoza;356
+50005291;SAN BLAS;Zona Villanueva de Huerva;Campo de Cariñena;Villanueva de Huerva;Zaragoza;14
+50005331;FERNANDO EL CATÓLICO;Zona Villarreal de Huerva;Campo de Daroca;Villarreal de Huerva;Zaragoza;39
+50005422;ÁNGEL ESCORIAZA;Zona Zaragoza 7;Zaragoza;Zaragoza;Zaragoza;128
+50005483;VIRGEN DE GUADALUPE;Zona Zaragoza 8;Zaragoza;Zaragoza;Zaragoza;155
+50005513;SAGRADA FAMILIA;Zona Zaragoza 8;Zaragoza;Zaragoza;Zaragoza;384
+50005513;SAGRADA FAMILIA;Zona Zaragoza 8 (Secundaria);Zaragoza;Zaragoza;Zaragoza;203
+50005537;MADRE MARÍA ROSA MOLAS;Zona Zaragoza 8;Zaragoza;Zaragoza;Zaragoza;630
+50005537;MADRE MARÍA ROSA MOLAS;Zona Zaragoza 8 (Secundaria);Zaragoza;Zaragoza;Zaragoza;309
+50005550;RICARDO MUR;Zona Zaragoza 4;Zaragoza;Zaragoza;Zaragoza;320
+50005562;SAN MIGUEL;Zona Zaragoza 4;Zaragoza;Zaragoza;Zaragoza;89
+50005574;GUSTAVO ADOLFO BÉCQUER;Zona Zaragoza 4;Zaragoza;Zaragoza;Zaragoza;272
+50005598;JULIÁN NIETO TAPIA;Zona Zaragoza 6;Zaragoza;Zaragoza;Zaragoza;467
+50005616;SAN ANTONIO;Zona Educación Especial (Z);Zaragoza;Zaragoza;Zaragoza;7
+50005631;HERMANOS ARGENSOLA;Zona Zaragoza 2;Zaragoza;Zaragoza;Zaragoza;216
+50005641;FERNÁNDEZ VIZARRA;Zona Zaragoza 4;Zaragoza;Zaragoza;Zaragoza;159
+50005653;MAESTRO DON PEDRO ORÓS;Zona Zaragoza 2;Zaragoza;Zaragoza;Zaragoza;100
+50005677;JUAN PABLO BONET;Zona Zaragoza 2;Zaragoza;Zaragoza;Zaragoza;321
+50005690;DE MOVERA;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;24
+50005690;DE MOVERA;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;219
+50005690;DE MOVERA;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;181
+50005707;FLORENCIO JARDIEL;Zona Zaragoza 2;Zaragoza;Zaragoza;Zaragoza;72
+50005744;ANDRÉS OLIVÁN;Zona Zaragoza 1;Zaragoza;Zaragoza;Zaragoza;216
+50005768;GUILLERMO FATÁS;Zona Zaragoza 2;Zaragoza;Zaragoza;Zaragoza;603
+50005781;LA CONCEPCIÓN;Zona Zaragoza 2;Zaragoza;Zaragoza;Zaragoza;190
+50005781;LA CONCEPCIÓN;Zona Zaragoza 2 (Secundaria);Zaragoza;Zaragoza;Zaragoza;97
+50005793;ÍTACA;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;22
+50005793;ÍTACA;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;117
+50005793;ÍTACA;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;303
+50005793;ÍTACA;Zona Zaragoza 2 (Secundaria);Zaragoza;Zaragoza;Zaragoza;865
+50005823;CONDES DE ARAGÓN;Zona Zaragoza 6;Zaragoza;Zaragoza;Zaragoza;394
+50005823;CONDES DE ARAGÓN;Zona Zaragoza 6 (Secundaria);Zaragoza;Zaragoza;Zaragoza;196
+50005872;MARIANO CASTILLO;Zona Zaragoza 2;Zaragoza;Zaragoza;Zaragoza;136
+50005896;ANA MAYAYO;Zona Zaragoza 6;Zaragoza;Zaragoza;Zaragoza;382
+50005902;ANDRÉS MANJÓN;Zona Zaragoza 6;Zaragoza;Zaragoza;Zaragoza;211
+50005914;RECARTE Y ORNAT;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;487
+50005926;CÁNDIDO DOMINGO;Zona Zaragoza 2;Zaragoza;Zaragoza;Zaragoza;348
+50005951;DOMINGO MIRAL;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;243
+50005963;FERNANDO EL CATÓLICO;Zona Zaragoza 6;Zaragoza;Zaragoza;Zaragoza;208
+50005975;GASCÓN Y MARÍN;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;203
+50005999;JERÓNIMO BLANCAS Y TOMÁS;Zona Zaragoza 6;Zaragoza;Zaragoza;Zaragoza;497
+50006001;JERÓNIMO ZURITA Y CASTRO;Zona Zaragoza 3;Zaragoza;Zaragoza;Zaragoza;278
+50006013;JOAQUÍN COSTA;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;447
+50006025;JOSÉ MARÍA MIR;Zona Zaragoza 6;Zaragoza;Zaragoza;Zaragoza;398
+50006037;LA JOTA;Zona Zaragoza 2;Zaragoza;Zaragoza;Zaragoza;404
+50006037;LA JOTA;Zona Zaragoza 2 (Secundaria);Zaragoza;Zaragoza;Zaragoza;271
+50006049;JULIÁN SANZ IBÁÑEZ;Zona Educación Especial (Z);Zaragoza;Zaragoza;Zaragoza;9
+50006049;JULIÁN SANZ IBÁÑEZ;Zona Zaragoza 7;Zaragoza;Zaragoza;Zaragoza;219
+50006050;LUIS VIVES;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;188
+50006074;MARCOS FRECHÍN;Zona Zaragoza 7;Zaragoza;Zaragoza;Zaragoza;264
+50006128;SAN BRAULIO;Zona Educación Especial (Z);Zaragoza;Zaragoza;Zaragoza;11
+50006128;SAN BRAULIO;Zona Zaragoza 1;Zaragoza;Zaragoza;Zaragoza;247
+50006141;SANTO DOMINGO;Zona Zaragoza 3;Zaragoza;Zaragoza;Zaragoza;180
+50006153;SAN JOSÉ DE CALASANZ;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;177
+50006165;TÍO JORGE;Zona Zaragoza 2;Zaragoza;Zaragoza;Zaragoza;362
+50006207;CALIXTO ARIÑO-HILARIO VAL;Zona Zaragoza 7;Zaragoza;Zaragoza;Zaragoza;279
+50006219;EMILIO MORENO CALVETE;Zona Zaragoza 6;Zaragoza;Zaragoza;Zaragoza;201
+50006220;HILARIÓN GIMENO;Zona Zaragoza 2;Zaragoza;Zaragoza;Zaragoza;603
+50006232;JUAN XXIII;Zona Zaragoza 6;Zaragoza;Zaragoza;Zaragoza;395
+50006281;TOMÁS ALVIRA;Zona Zaragoza 7;Zaragoza;Zaragoza;Zaragoza;392
+50006311;BASILIO PARAÍSO;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;211
+50006414;VIRGEN DEL PILAR;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;47
+50006414;VIRGEN DEL PILAR;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;338
+50006414;VIRGEN DEL PILAR;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;431
+50006414;VIRGEN DEL PILAR;Zona Zaragoza 8 (Secundaria);Zaragoza;Zaragoza;Zaragoza;389
+50006414;VIRGEN DEL PILAR;Zona Zaragoza BTO Arte;Zaragoza;Zaragoza;Zaragoza;37
+50006438;LA ALMOZARA;Zona Zaragoza 3;Zaragoza;Zaragoza;Zaragoza;383
+50006463;LA ANUNCIATA;Zona Zaragoza 3;Zaragoza;Zaragoza;Zaragoza;286
+50006463;LA ANUNCIATA;Zona Zaragoza 3 (Secundaria);Zaragoza;Zaragoza;Zaragoza;181
+50006529;EL BUEN PASTOR;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;18
+50006529;EL BUEN PASTOR;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;59
+50006529;EL BUEN PASTOR;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;62
+50006529;EL BUEN PASTOR;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;427
+50006529;EL BUEN PASTOR;Zona Zaragoza 5 (Secundaria);Zaragoza;Zaragoza;Zaragoza;322
+50006542;CALASANCIO;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;176
+50006542;CALASANCIO;Zona Zaragoza 5 (Secundaria);Zaragoza;Zaragoza;Zaragoza;102
+50006554;CALASANZ;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;425
+50006554;CALASANZ;Zona Zaragoza 5 (Secundaria);Zaragoza;Zaragoza;Zaragoza;206
+50006566;CARDENAL XAVIERRE;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;427
+50006566;CARDENAL XAVIERRE;Zona Zaragoza 5 (Secundaria);Zaragoza;Zaragoza;Zaragoza;216
+50006578;CANTÍN Y GAMBOA;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;204
+50006578;CANTÍN Y GAMBOA;Zona Zaragoza 5 (Secundaria);Zaragoza;Zaragoza;Zaragoza;86
+50006581;COLEGIO MONTESSORI;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;71
+50006581;COLEGIO MONTESSORI;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;457
+50006581;COLEGIO MONTESSORI;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;421
+50006581;COLEGIO MONTESSORI;Zona Zaragoza 5 (Secundaria);Zaragoza;Zaragoza;Zaragoza;211
+50006633;COMPAÑÍA DE MARÍA;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;645
+50006633;COMPAÑÍA DE MARÍA;Zona Zaragoza 5 (Secundaria);Zaragoza;Zaragoza;Zaragoza;327
+50006669;CRISTO REY;Zona Zaragoza 1;Zaragoza;Zaragoza;Zaragoza;764
+50006669;CRISTO REY;Zona Zaragoza 1 (Secundaria);Zaragoza;Zaragoza;Zaragoza;416
+50006700;DON BOSCO;Zona Zaragoza 2;Zaragoza;Zaragoza;Zaragoza;182
+50006700;DON BOSCO;Zona Zaragoza 2 (Secundaria);Zaragoza;Zaragoza;Zaragoza;105
+50006751;ESCUELAS PÍAS;Zona Zaragoza 3;Zaragoza;Zaragoza;Zaragoza;576
+50006751;ESCUELAS PÍAS;Zona Zaragoza 3 (Secundaria);Zaragoza;Zaragoza;Zaragoza;309
+50006761;ESCOLAPIAS SANTA ENGRACIA;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;31
+50006761;ESCOLAPIAS SANTA ENGRACIA;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;261
+50006761;ESCOLAPIAS SANTA ENGRACIA;Zona Zaragoza 7;Zaragoza;Zaragoza;Zaragoza;162
+50006761;ESCOLAPIAS SANTA ENGRACIA;Zona Zaragoza 7 (Secundaria);Zaragoza;Zaragoza;Zaragoza;101
+50006797;PADRE ENRIQUE DE OSSÓ;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;33
+50006797;PADRE ENRIQUE DE OSSÓ;Zona Zaragoza 6;Zaragoza;Zaragoza;Zaragoza;408
+50006797;PADRE ENRIQUE DE OSSÓ;Zona Zaragoza 6 (Secundaria);Zaragoza;Zaragoza;Zaragoza;336
+50006803;MARÍA INMACULADA;Zona Zaragoza 6;Zaragoza;Zaragoza;Zaragoza;404
+50006803;MARÍA INMACULADA;Zona Zaragoza 6 (Secundaria);Zaragoza;Zaragoza;Zaragoza;225
+50006815;LA SALLE FRANCISCANAS;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;635
+50006840;HIJAS DE SAN JOSÉ;Zona Zaragoza 6;Zaragoza;Zaragoza;Zaragoza;588
+50006840;HIJAS DE SAN JOSÉ;Zona Zaragoza 6 (Secundaria);Zaragoza;Zaragoza;Zaragoza;320
+50006888;INMACULADA CONCEPCIÓN;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;211
+50006888;INMACULADA CONCEPCIÓN;Zona Zaragoza 5 (Secundaria);Zaragoza;Zaragoza;Zaragoza;90
+50007017;MARÍA AUXILIADORA;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;26
+50007017;MARÍA AUXILIADORA;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;50
+50007017;MARÍA AUXILIADORA;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;64
+50007017;MARÍA AUXILIADORA;Zona Zaragoza 7;Zaragoza;Zaragoza;Zaragoza;400
+50007017;MARÍA AUXILIADORA;Zona Zaragoza 7 (Secundaria);Zaragoza;Zaragoza;Zaragoza;209
+50007042;LA MILAGROSA;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;194
+50007042;LA MILAGROSA;Zona Zaragoza 5 (Secundaria);Zaragoza;Zaragoza;Zaragoza;99
+50007078;AGUSTÍN GERICÓ;Zona Zaragoza 7;Zaragoza;Zaragoza;Zaragoza;391
+50007078;AGUSTÍN GERICÓ;Zona Zaragoza 7 (Secundaria);Zaragoza;Zaragoza;Zaragoza;213
+50007133;NTRA. SRA. DEL CARMEN;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;634
+50007133;NTRA. SRA. DEL CARMEN;Zona Zaragoza 5 (Secundaria);Zaragoza;Zaragoza;Zaragoza;312
+50007157;NTRA. SRA. DEL CARMEN Y SAN JOSÉ;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;29
+50007157;NTRA. SRA. DEL CARMEN Y SAN JOSÉ;Zona Zaragoza 3;Zaragoza;Zaragoza;Zaragoza;195
+50007157;NTRA. SRA. DEL CARMEN Y SAN JOSÉ;Zona Zaragoza 3 (Secundaria);Zaragoza;Zaragoza;Zaragoza;93
+50007194;NTRA. SRA. DE LA MERCED;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;202
+50007194;NTRA. SRA. DE LA MERCED;Zona Zaragoza 5 (Secundaria);Zaragoza;Zaragoza;Zaragoza;95
+50007236;SALESIANO NTRA. SRA.DEL PILAR;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;57
+50007236;SALESIANO NTRA. SRA.DEL PILAR;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;281
+50007236;SALESIANO NTRA. SRA.DEL PILAR;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;369
+50007236;SALESIANO NTRA. SRA.DEL PILAR;Zona Zaragoza 6;Zaragoza;Zaragoza;Zaragoza;412
+50007236;SALESIANO NTRA. SRA.DEL PILAR;Zona Zaragoza 6 (Secundaria);Zaragoza;Zaragoza;Zaragoza;398
+50007248;TERESIANO DEL PILAR;Zona Zaragoza 6;Zaragoza;Zaragoza;Zaragoza;606
+50007248;TERESIANO DEL PILAR;Zona Zaragoza 6 (Secundaria);Zaragoza;Zaragoza;Zaragoza;282
+50007327;EL PILAR-MARISTAS;Zona Zaragoza 1;Zaragoza;Zaragoza;Zaragoza;606
+50007327;EL PILAR-MARISTAS;Zona Zaragoza 1 (Secundaria);Zaragoza;Zaragoza;Zaragoza;321
+50007352;POMPILIANO;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;421
+50007352;POMPILIANO;Zona Zaragoza 5 (Secundaria);Zaragoza;Zaragoza;Zaragoza;204
+50007376;LA PURÍSIMA PARA NIÑOS SORDOS;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;21
+50007376;LA PURÍSIMA PARA NIÑOS SORDOS;Zona Educación Especial (Z);Zaragoza;Zaragoza;Zaragoza;95
+50007388;LA PURÍSIMA Y SAN ANTONIO;Zona Zaragoza 2;Zaragoza;Zaragoza;Zaragoza;193
+50007388;LA PURÍSIMA Y SAN ANTONIO;Zona Zaragoza 2 (Secundaria);Zaragoza;Zaragoza;Zaragoza;108
+50007421;SAGRADO CORAZÓN;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;640
+50007421;SAGRADO CORAZÓN;Zona Zaragoza 5 (Secundaria);Zaragoza;Zaragoza;Zaragoza;318
+50007431;SAGRADO CORAZÓN DE JESÚS;Zona Zaragoza 1;Zaragoza;Zaragoza;Zaragoza;797
+50007431;SAGRADO CORAZÓN DE JESÚS;Zona Zaragoza 1 (Secundaria);Zaragoza;Zaragoza;Zaragoza;420
+50007467;LA SALLE FRANCISCANAS GRAN VÍA;Zona Zaragoza 5 (Secundaria);Zaragoza;Zaragoza;Zaragoza;312
+50007479;LA SALLE MONTEMOLÍN;Zona Zaragoza 7;Zaragoza;Zaragoza;Zaragoza;608
+50007479;LA SALLE MONTEMOLÍN;Zona Zaragoza 7 (Secundaria);Zaragoza;Zaragoza;Zaragoza;326
+50007492;LA SALLE-SANTO ANGEL;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;37
+50007492;LA SALLE-SANTO ANGEL;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;69
+50007492;LA SALLE-SANTO ANGEL;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;82
+50007492;LA SALLE-SANTO ANGEL;Zona Zaragoza 8 (Secundaria);Zaragoza;Zaragoza;Zaragoza;120
+50007509;SAN AGUSTÍN;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;642
+50007509;SAN AGUSTÍN;Zona Zaragoza 5 (Secundaria);Zaragoza;Zaragoza;Zaragoza;317
+50007534;SAN ANTONIO DE PADUA;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;425
+50007534;SAN ANTONIO DE PADUA;Zona Zaragoza 5 (Secundaria);Zaragoza;Zaragoza;Zaragoza;207
+50007674;ATADES, CENTRO DE EDUCACIÓN ESPECIAL SAN MARTÍN DE PORRES;Zona Educación Especial (Z);Zaragoza;Zaragoza;Zaragoza;139
+50007716;SAN VALERO;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;52
+50007716;SAN VALERO;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;218
+50007716;SAN VALERO;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;308
+50007716;SAN VALERO;Zona Zaragoza 1 (Secundaria);Zaragoza;Zaragoza;Zaragoza;599
+50007728;SAN VICENTE DE PAÚL;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;26
+50007728;SAN VICENTE DE PAÚL;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;50
+50007728;SAN VICENTE DE PAÚL;Zona Zaragoza 2;Zaragoza;Zaragoza;Zaragoza;379
+50007728;SAN VICENTE DE PAÚL;Zona Zaragoza 2 (Secundaria);Zaragoza;Zaragoza;Zaragoza;206
+50007731;SANTA ANA;Zona Zaragoza 7;Zaragoza;Zaragoza;Zaragoza;576
+50007731;SANTA ANA;Zona Zaragoza 7 (Secundaria);Zaragoza;Zaragoza;Zaragoza;305
+50007777;SANTA MAGDALENA SOFÍA;Zona Zaragoza 6;Zaragoza;Zaragoza;Zaragoza;407
+50007777;SANTA MAGDALENA SOFÍA;Zona Zaragoza 6 (Secundaria);Zaragoza;Zaragoza;Zaragoza;215
+50007789;SANTA MARÍA DEL PILAR;Zona Zaragoza 8;Zaragoza;Zaragoza;Zaragoza;902
+50007789;SANTA MARÍA DEL PILAR;Zona Zaragoza 8 (Secundaria);Zaragoza;Zaragoza;Zaragoza;456
+50007790;SANTA MARÍA REINA;Zona Zaragoza 6;Zaragoza;Zaragoza;Zaragoza;196
+50007790;SANTA MARÍA REINA;Zona Zaragoza 6 (Secundaria);Zaragoza;Zaragoza;Zaragoza;109
+50007807;SANTA ROSA;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;420
+50007807;SANTA ROSA;Zona Zaragoza 5 (Secundaria);Zaragoza;Zaragoza;Zaragoza;200
+50007856;OBRA DIOCESANA SANTO DOMINGO DE SILOS;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;116
+50007856;OBRA DIOCESANA SANTO DOMINGO DE SILOS;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;385
+50007856;OBRA DIOCESANA SANTO DOMINGO DE SILOS;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;199
+50007856;OBRA DIOCESANA SANTO DOMINGO DE SILOS;Zona Zaragoza 7;Zaragoza;Zaragoza;Zaragoza;910
+50007856;OBRA DIOCESANA SANTO DOMINGO DE SILOS;Zona Zaragoza 7 (Secundaria);Zaragoza;Zaragoza;Zaragoza;769
+50007996;VILLA CRUZ;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;179
+50007996;VILLA CRUZ;Zona Zaragoza 5 (Secundaria);Zaragoza;Zaragoza;Zaragoza;97
+50008034;BAJO ARAGÓN;Zona Zaragoza 7;Zaragoza;Zaragoza;Zaragoza;397
+50008034;BAJO ARAGÓN;Zona Zaragoza 7 (Secundaria);Zaragoza;Zaragoza;Zaragoza;203
+50008125;CORONA DE ARAGÓN;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;49
+50008125;CORONA DE ARAGÓN;Zona Zaragoza 5 (Secundaria);Zaragoza;Zaragoza;Zaragoza;479
+50008149;EUGENIO LÓPEZ Y LÓPEZ;Zona Zaragoza 1;Zaragoza;Zaragoza;Zaragoza;440
+50008174;MIGUEL SERVET;Zona Zaragoza 5 (Secundaria);Zaragoza;Zaragoza;Zaragoza;782
+50008186;RAMÓN PIGNATELLI;Zona Zaragoza 6 (Secundaria);Zaragoza;Zaragoza;Zaragoza;548
+50008198;GOYA;Zona Zaragoza 5 (Secundaria);Zaragoza;Zaragoza;Zaragoza;876
+50008198;GOYA;Zona Zaragoza BTO Arte;Zaragoza;Zaragoza;Zaragoza;94
+50008277;JERÓNIMO ZURITA;Zona PCPI Zaragoza;Zaragoza;Zaragoza;Zaragoza;18
+50008277;JERÓNIMO ZURITA;Zona Zaragoza 6 (Secundaria);Zaragoza;Zaragoza;Zaragoza;616
+50008289;PEDRO DE LUNA;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;31
+50008289;PEDRO DE LUNA;Zona Zaragoza 2 (Secundaria);Zaragoza;Zaragoza;Zaragoza;771
+50008289;PEDRO DE LUNA;Zona Zaragoza BTO Arte;Zaragoza;Zaragoza;Zaragoza;88
+50008332;ROMAREDA;Zona Zaragoza 8;Zaragoza;Zaragoza;Zaragoza;675
+50008332;ROMAREDA;Zona Zaragoza 8 (Secundaria);Zaragoza;Zaragoza;Zaragoza;322
+50008356;CESÁREO ALIERTA;Zona Zaragoza 8;Zaragoza;Zaragoza;Zaragoza;512
+50008368;DOCTOR AZÚA;Zona Zaragoza 8;Zaragoza;Zaragoza;Zaragoza;581
+50008371;CÉSAR AUGUSTO;Zona Zaragoza 8;Zaragoza;Zaragoza;Zaragoza;503
+50008381;MARGARITA SALAS;Zona Zaragoza 8;Zaragoza;Zaragoza;Zaragoza;495
+50008459;EL PORTILLO;Zona Zaragoza 6 (Secundaria);Zaragoza;Zaragoza;Zaragoza;493
+50008460;LUIS BUÑUEL;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;19
+50008460;LUIS BUÑUEL;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;335
+50008460;LUIS BUÑUEL;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;242
+50008460;LUIS BUÑUEL;Zona Zaragoza 3 (Secundaria);Zaragoza;Zaragoza;Zaragoza;622
+50008514;ESCUELA DE ARTE DE ZARAGOZA;Zona Zaragoza BTO Arte;Zaragoza;Zaragoza;Zaragoza;270
+50008587;ODÓN DE BUEN;Zona Zuera;Zaragoza;Zuera;Zaragoza;431
+50008605;NTRA. SRA. DEL PILAR;Zona Zuera;Zaragoza;Zuera;Zaragoza;184
+50008617;SAN GABRIEL;Zona C.F. Grado Medio (Z);Zaragoza;Zuera;Zaragoza;29
+50008617;SAN GABRIEL;Zona Zuera;Zaragoza;Zuera;Zaragoza;360
+50008629;E.F.A. EL SALTO;Zona C.F. Grado Básico (Z);Zaragoza;Zuera;Zaragoza;12
+50008629;E.F.A. EL SALTO;Zona C.F. Grado Medio (Z);Zaragoza;Zuera;Zaragoza;19
+50008630;CEDES;Zona Educación Especial (Z);Zaragoza;Zaragoza;Zaragoza;52
+50008642;MARÍA MOLINER;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;96
+50008642;MARÍA MOLINER;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;309
+50008642;MARÍA MOLINER;Zona Zaragoza 6 (Secundaria);Zaragoza;Zaragoza;Zaragoza;166
+50008654;CEFOR IZQUIERDO;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;26
+50008654;CEFOR IZQUIERDO;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;107
+50008654;CEFOR IZQUIERDO;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;199
+50008666;AUGUSTA BÍLBILIS;Zona Calatayud;Calatayud;Calatayud;Zaragoza;494
+50008678;RECTOR MAMÉS ESPERABÉ;Zona Educación Especial (Z);Cinco Villas;Ejea de los Caballeros;Zaragoza;15
+50008678;RECTOR MAMÉS ESPERABÉ;Zona Ejea de los Caballeros;Cinco Villas;Ejea de los Caballeros;Zaragoza;432
+50008691;RAMIRO SOLÁNS;Zona Zaragoza 6;Zaragoza;Zaragoza;Zaragoza;264
+50008770;RÍO ARBA;Zona C.F. Grado Básico (Z);Cinco Villas;Tauste;Zaragoza;19
+50008770;RÍO ARBA;Zona C.F. Grado Medio (Z);Cinco Villas;Tauste;Zaragoza;24
+50008770;RÍO ARBA;Zona Tauste;Cinco Villas;Tauste;Zaragoza;378
+50008782;SANTA ENGRACIA;Zona Santa Engracia;Cinco Villas;Tauste;Zaragoza;24
+50008915;SAN GERMÁN;Zona Educación Especial (Z);Zaragoza;Zaragoza;Zaragoza;19
+50008952;RAMÓN Y CAJAL;Zona Cuarte de Huerva;Zaragoza;Cuarte de Huerva;Zaragoza;225
+50008976;ANTONIO MACHADO;Zona Zaragoza 6;Zaragoza;Zaragoza;Zaragoza;193
+50008976;ANTONIO MACHADO;Zona Zaragoza 6 (Secundaria);Zaragoza;Zaragoza;Zaragoza;90
+50009051;PLUS ULTRA;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;32
+50009051;PLUS ULTRA;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;50
+50009129;CINCO VILLAS;Zona C.F. Grado Básico (Z);Cinco Villas;Ejea de los Caballeros;Zaragoza;29
+50009129;CINCO VILLAS;Zona C.F. Grado Medio (Z);Cinco Villas;Ejea de los Caballeros;Zaragoza;98
+50009129;CINCO VILLAS;Zona C.F. Grado Superior (Z);Cinco Villas;Ejea de los Caballeros;Zaragoza;59
+50009129;CINCO VILLAS;Zona Ejea de los Caballeros;Cinco Villas;Ejea de los Caballeros;Zaragoza;423
+50009166;JOSÉ MANUEL BLECUA;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;47
+50009166;JOSÉ MANUEL BLECUA;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;57
+50009166;JOSÉ MANUEL BLECUA;Zona ESPA (Z);Zaragoza;Zaragoza;Zaragoza;791
+50009166;JOSÉ MANUEL BLECUA;Zona Zaragoza 5 (Secundaria);Zaragoza;Zaragoza;Zaragoza;774
+50009166;JOSÉ MANUEL BLECUA;Zona Zaragoza BTO Arte;Zaragoza;Zaragoza;Zaragoza;80
+50009178;PABLO GARGALLO;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;27
+50009178;PABLO GARGALLO;Zona Zaragoza 7 (Secundaria);Zaragoza;Zaragoza;Zaragoza;422
+50009178;PABLO GARGALLO;Zona Zaragoza BTO Arte;Zaragoza;Zaragoza;Zaragoza;50
+50009208;TORRE RAMONA;Zona Zaragoza 7;Zaragoza;Zaragoza;Zaragoza;385
+50009211;FÉLIX DE AZARA;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;19
+50009211;FÉLIX DE AZARA;Zona Zaragoza 6 (Secundaria);Zaragoza;Zaragoza;Zaragoza;745
+50009221;SANTA AGATOCLIA;Zona C.F. Grado Básico (Z);Bajo Cinca;Mequinenza;Zaragoza;29
+50009348;AVEMPACE;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;469
+50009348;AVEMPACE;Zona Zaragoza 1 (Secundaria);Zaragoza;Zaragoza;Zaragoza;495
+50009373;JOSÉ CAMÓN AZNAR;Zona Zaragoza 6;Zaragoza;Zaragoza;Zaragoza;413
+50009385;ZALFONADA;Zona Zaragoza 1;Zaragoza;Zaragoza;Zaragoza;399
+50009397;TENERÍAS;Zona Zaragoza 2;Zaragoza;Zaragoza;Zaragoza;412
+50009403;LAS FUENTES;Zona Zaragoza 7;Zaragoza;Zaragoza;Zaragoza;538
+50009415;GLORIA ARENILLAS;Zona Zaragoza 2;Zaragoza;Zaragoza;Zaragoza;123
+50009452;MARÍA MOLINER;Zona Zaragoza 7;Zaragoza;Zaragoza;Zaragoza;406
+50009488;LOS PUEYOS;Zona Educación Especial (Z);Zaragoza;Zaragoza;Zaragoza;25
+50009531;RAMÓN SÁINZ DE VARANDA;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;587
+50009543;BENJAMÍN JARNÉS;Zona C.F. Grado Básico (Z);Zaragoza;Fuentes de Ebro;Zaragoza;45
+50009543;BENJAMÍN JARNÉS;Zona C.F. Grado Medio (Z);Zaragoza;Fuentes de Ebro;Zaragoza;67
+50009543;BENJAMÍN JARNÉS;Zona Fuentes de Ebro;Zaragoza;Fuentes de Ebro;Zaragoza;619
+50009567;RÍO GÁLLEGO;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;29
+50009567;RÍO GÁLLEGO;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;474
+50009567;RÍO GÁLLEGO;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;236
+50009567;RÍO GÁLLEGO;Zona Zaragoza 2 (Secundaria);Zaragoza;Zaragoza;Zaragoza;442
+50009580;MIRAFLORES;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;640
+50009592;GALLICUM;Zona C.F. Grado Básico (Z);Zaragoza;Zuera;Zaragoza;47
+50009592;GALLICUM;Zona C.F. Grado Medio (Z);Zaragoza;Zuera;Zaragoza;50
+50009592;GALLICUM;Zona C.F. Grado Superior (Z);Zaragoza;Zuera;Zaragoza;62
+50009592;GALLICUM;Zona Zuera;Zaragoza;Zuera;Zaragoza;295
+50009592;GALLICUM;Zona Zuera BTO;Zaragoza;Zuera;Zaragoza;82
+50009646;MARÍA SORIANO;Zona Educación Especial (Z);Zaragoza;Zaragoza;Zaragoza;33
+50009646;MARÍA SORIANO;Zona PCPI Zaragoza;Zaragoza;Zaragoza;Zaragoza;23
+50009749;LA ESTRELLA;Zona Zaragoza 2;Zaragoza;Zaragoza;Zaragoza;439
+50009786;ANTONIO MARTÍNEZ GARAY;Zona Zaragoza 4;Zaragoza;Zaragoza;Zaragoza;162
+50009889;ACADEMIA MARCO;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;26
+50009889;ACADEMIA MARCO;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;285
+50009889;ACADEMIA MARCO;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;272
+50009944;MONSALUD;Zona Zaragoza 6;Zaragoza;Zaragoza;Zaragoza;513
+50010028;ALAÚN;Zona C.F. Grado Básico (Z);Ribera Alta del Ebro;Alagón;Zaragoza;21
+50010028;ALAÚN;Zona C.F. Grado Medio (Z);Ribera Alta del Ebro;Alagón;Zaragoza;37
+50010041;PEDRO CERRADA;Zona C.F. Grado Básico (Z);Zaragoza;Utebo;Zaragoza;53
+50010041;PEDRO CERRADA;Zona C.F. Grado Medio (Z);Zaragoza;Utebo;Zaragoza;127
+50010041;PEDRO CERRADA;Zona C.F. Grado Superior (Z);Zaragoza;Utebo;Zaragoza;128
+50010041;PEDRO CERRADA;Zona Zaragoza 4 (Secundaria);Zaragoza;Utebo;Zaragoza;592
+50010144;PABLO SERRANO;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;52
+50010144;PABLO SERRANO;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;195
+50010144;PABLO SERRANO;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;336
+50010144;PABLO SERRANO;Zona Zaragoza 7 (Secundaria);Zaragoza;Zaragoza;Zaragoza;505
+50010156;MIRALBUENO;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;95
+50010156;MIRALBUENO;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;411
+50010156;MIRALBUENO;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;437
+50010156;MIRALBUENO;Zona Zaragoza 6 (Secundaria);Zaragoza;Zaragoza;Zaragoza;498
+50010168;CONDES DE ARAGÓN;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;49
+50010168;CONDES DE ARAGÓN;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;108
+50010171;HERMANOS MARX;Zona Zaragoza 1;Zaragoza;Zaragoza;Zaragoza;387
+50010181;HISPANIDAD;Zona Zaragoza 6;Zaragoza;Zaragoza;Zaragoza;388
+50010193;PUERTA DE SANCHO;Zona Zaragoza 3;Zaragoza;Zaragoza;Zaragoza;540
+50010247;SANTA ANA;Zona Mainar;Campo de Daroca;Mainar;Zaragoza;7
+50010272;EL SALVADOR;Zona Zaragoza 8;Zaragoza;Zaragoza;Zaragoza;1105
+50010272;EL SALVADOR;Zona Zaragoza 8 (Secundaria);Zaragoza;Zaragoza;Zaragoza;527
+50010284;COMUNIDAD DE DAROCA;Zona Daroca;Campo de Daroca;Daroca;Zaragoza;119
+50010296;INFANTA ELENA;Zona Zaragoza 4;Zaragoza;Utebo;Zaragoza;203
+50010302;FRANCISCO GRANDE COVIÁN;Zona Zaragoza 7 (Secundaria);Zaragoza;Zaragoza;Zaragoza;701
+50010314;LOS ENLACES;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;399
+50010314;LOS ENLACES;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;1532
+50010387;ALBORADA;Zona Educación Especial (Z);Zaragoza;Zaragoza;Zaragoza;103
+50010399;RÍO EBRO;Zona Zaragoza 1;Zaragoza;Zaragoza;Zaragoza;401
+50010478;CIUDAD DE ZARAGOZA;Zona Zaragoza 6;Zaragoza;Zaragoza;Zaragoza;409
+50010481;CORTES DE ARAGÓN;Zona Zaragoza 1;Zaragoza;Zaragoza;Zaragoza;540
+50010491;SANTIAGO HERNÁNDEZ;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;25
+50010491;SANTIAGO HERNÁNDEZ;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;408
+50010491;SANTIAGO HERNÁNDEZ;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;415
+50010491;SANTIAGO HERNÁNDEZ;Zona Zaragoza 6 (Secundaria);Zaragoza;Zaragoza;Zaragoza;510
+50010511;TIEMPOS MODERNOS;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;26
+50010511;TIEMPOS MODERNOS;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;286
+50010511;TIEMPOS MODERNOS;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;170
+50010511;TIEMPOS MODERNOS;Zona Zaragoza 1 (Secundaria);Zaragoza;Zaragoza;Zaragoza;712
+50010533;CABAÑAS;Zona Almunia de Doña Godina (La);Valdejalón;Almunia de Doña Godina (La);Zaragoza;557
+50010533;CABAÑAS;Zona C.F. Grado Básico (Z);Valdejalón;Almunia de Doña Godina (La);Zaragoza;26
+50010533;CABAÑAS;Zona C.F. Grado Medio (Z);Valdejalón;Almunia de Doña Godina (La);Zaragoza;34
+50010533;CABAÑAS;Zona C.F. Grado Superior (Z);Valdejalón;Almunia de Doña Godina (La);Zaragoza;28
+50010727;ELAIOS;Zona Zaragoza 1 (Secundaria);Zaragoza;Zaragoza;Zaragoza;588
+50010739;PILAR LORENGAR;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;25
+50010739;PILAR LORENGAR;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;115
+50010739;PILAR LORENGAR;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;71
+50010739;PILAR LORENGAR;Zona Zaragoza 2 (Secundaria);Zaragoza;Zaragoza;Zaragoza;703
+50010764;ALEJO LORÉN ALBAREDA;Zona Caspe;Caspe;Caspe;Zaragoza;530
+50010946;ANDALÁN;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;93
+50010946;ANDALÁN;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;102
+50010946;ANDALÁN;Zona Zaragoza 3 (Secundaria);Zaragoza;Zaragoza;Zaragoza;442
+50010946;ANDALÁN;Zona Zaragoza BTO Arte;Zaragoza;Zaragoza;Zaragoza;55
+50010958;MIGUEL DE MOLINOS;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;32
+50010958;MIGUEL DE MOLINOS;Zona Zaragoza 1 (Secundaria);Zaragoza;Zaragoza;Zaragoza;412
+50010958;MIGUEL DE MOLINOS;Zona Zaragoza BTO Arte;Zaragoza;Zaragoza;Zaragoza;29
+50010961;SIERRA DE LA VIRGEN;Zona C.F. Grado Básico (Z);Aranda;Illueca;Zaragoza;12
+50010961;SIERRA DE LA VIRGEN;Zona C.F. Grado Medio (Z);Aranda;Illueca;Zaragoza;9
+50010961;SIERRA DE LA VIRGEN;Zona Illueca;Aranda;Illueca;Zaragoza;272
+50010995;MEDINA ALBAIDA;Zona Zaragoza 5 (Secundaria);Zaragoza;Zaragoza;Zaragoza;599
+50011008;RODANAS;Zona C.F. Grado Básico (Z);Valdejalón;Épila;Zaragoza;52
+50011008;RODANAS;Zona C.F. Grado Medio (Z);Valdejalón;Épila;Zaragoza;36
+50011008;RODANAS;Zona C.F. Grado Superior (Z);Valdejalón;Épila;Zaragoza;19
+50011008;RODANAS;Zona Épila;Valdejalón;Épila;Zaragoza;337
+50011069;ÁNGEL SANZ BRIZ;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;26
+50011069;ÁNGEL SANZ BRIZ;Zona Zaragoza 4 (Secundaria);Zaragoza;Zaragoza;Zaragoza;546
+50011070;SIGLO XXI;Zona C.F. Grado Básico (Z);Ribera Alta del Ebro;Pedrola;Zaragoza;50
+50011070;SIGLO XXI;Zona C.F. Grado Medio (Z);Ribera Alta del Ebro;Pedrola;Zaragoza;84
+50011070;SIGLO XXI;Zona C.F. Grado Superior (Z);Ribera Alta del Ebro;Pedrola;Zaragoza;33
+50011070;SIGLO XXI;Zona Pedrola;Ribera Alta del Ebro;Pedrola;Zaragoza;365
+50011100;SAGRADO CORAZÓN-MONCAYO;Zona Zaragoza 8;Zaragoza;Zaragoza;Zaragoza;663
+50011100;SAGRADO CORAZÓN-MONCAYO;Zona Zaragoza 8 (Secundaria);Zaragoza;Zaragoza;Zaragoza;304
+50011124;CUEVAS DEL JALÓN;Zona Lumpiaque;Valdejalón;Lumpiaque;Zaragoza;189
+50011136;EL ENEBRO;Zona Sabiñán;Calatayud;Sabiñán;Zaragoza;47
+50011148;ARANDA-ISUELA;Zona Gotor;Aranda;Gotor;Zaragoza;26
+50011151;TRES RIBERAS;Zona Maluenda;Calatayud;Maluenda;Zaragoza;134
+50011161;RÍO RIBOTA;Zona Aniñón;Calatayud;Aniñón;Zaragoza;60
+50011173;EL MIRADOR;Zona Moros;Calatayud;Villalengua;Zaragoza;31
+50011185;MESA-PIEDRA-ALTO CAMPILLO;Zona Ibdes;Calatayud;Ibdes;Zaragoza;77
+50011197;CERRO DE SANTA CRUZ;Zona Used;Campo de Daroca;Used;Zaragoza;16
+50011203;L' ALBARDÍN;Zona Azuara;Campo de Belchite;Azuara;Zaragoza;52
+50011215;MONLORA;Zona Erla;Cinco Villas;Erla;Zaragoza;39
+50011227;BÉCQUER;Zona Novallas;Tarazona y el Moncayo;Novallas;Zaragoza;106
+50011239;ÍNSULA BARATARIA;Zona Luceni;Ribera Alta del Ebro;Luceni;Zaragoza;205
+50011240;LUIS BUÑUEL;Zona Pinsoro;Cinco Villas;Ejea de los Caballeros;Zaragoza;148
+50011252;ZAURÍN;Zona Ateca;Calatayud;Ateca;Zaragoza;297
+50011252;ZAURÍN;Zona C.F. Grado Básico (Z);Calatayud;Ateca;Zaragoza;15
+50011252;ZAURÍN;Zona C.F. Grado Medio (Z);Calatayud;Ateca;Zaragoza;61
+50011288;CASTILLO QADRIT;Zona Cadrete;Zaragoza;Cadrete;Zaragoza;408
+50011291;LAS VIÑAS;Zona Fuendejalón;Campo de Borja;Fuendejalón;Zaragoza;69
+50011306;MATEO VALERO;Zona Alfamén;Campo de Cariñena;Alfamén;Zaragoza;144
+50011318;PUERTA DE ARAGÓN;Zona Ariza;Calatayud;Ariza;Zaragoza;122
+50011321;L' ALBADA;Zona Bujaraloz;Monegros;Bujaraloz;Zaragoza;102
+50011331;MARÍA MOLINER;Zona Burgo de Ebro (El);Zaragoza;Burgo de Ebro (El);Zaragoza;259
+50011343;FABARA-NONASPE DOS AGUAS;Zona Fabara;Caspe;Fabara;Zaragoza;121
+50011355;DEL EBRO;Zona Gelsa;Ribera Baja del Ebro;Gelsa;Zaragoza;91
+50011367;VICORT-ISUELA;Zona Frasno (El);Calatayud;Frasno (El);Zaragoza;53
+50011379;LA HUECHA;Zona Magallón;Campo de Borja;Magallón;Zaragoza;108
+50011380;ORBA;Zona Muel;Campo de Cariñena;Muel;Zaragoza;132
+50011392;LA CEPA;Zona Paniza;Campo de Cariñena;Paniza;Zaragoza;79
+50011409;LA SABINA;Zona Villafranca de Ebro;Zaragoza;Villafranca de Ebro;Zaragoza;157
+50011410;LOS BAÑALES;Zona Sádaba;Cinco Villas;Sádaba;Zaragoza;138
+50011422;BAJO GÁLLEGO;Zona Leciñena;Zaragoza;Leciñena;Zaragoza;153
+50011513;TUBALCAÍN;Zona C.F. Grado Básico (Z);Tarazona y el Moncayo;Tarazona;Zaragoza;48
+50011513;TUBALCAÍN;Zona C.F. Grado Medio (Z);Tarazona y el Moncayo;Tarazona;Zaragoza;125
+50011513;TUBALCAÍN;Zona C.F. Grado Superior (Z);Tarazona y el Moncayo;Tarazona;Zaragoza;103
+50011513;TUBALCAÍN;Zona Tarazona;Tarazona y el Moncayo;Tarazona;Zaragoza;343
+50011513;TUBALCAÍN;Zona Tarazona BTO;Tarazona y el Moncayo;Tarazona;Zaragoza;128
+50011525;MIGUEL CATALÁN;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;28
+50011525;MIGUEL CATALÁN;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;244
+50011525;MIGUEL CATALÁN;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;369
+50011525;MIGUEL CATALÁN;Zona Zaragoza 8 (Secundaria);Zaragoza;Zaragoza;Zaragoza;967
+50011537;RINCÓN DE GOYA;Zona Educación Especial (Z);Zaragoza;Zaragoza;Zaragoza;72
+50011550;RAMÓN Y CAJAL;Zona PCPI Zaragoza;Zaragoza;Zaragoza;Zaragoza;59
+50011550;RAMÓN Y CAJAL;Zona Zaragoza 5 (Secundaria);Zaragoza;Zaragoza;Zaragoza;308
+50011550;RAMÓN Y CAJAL;Zona Zaragoza BTO Arte;Zaragoza;Zaragoza;Zaragoza;47
+50011562;ANTONIO BELTRÁN MARTÍNEZ;Zona Zaragoza 6;Zaragoza;Zaragoza;Zaragoza;192
+50011665;BAIX MATARRANYA;Zona Maella;Caspe;Maella;Zaragoza;115
+50011677;VALLE DEL HUECHA;Zona Mallén;Campo de Borja;Mallén;Zaragoza;135
+50011689;JOAQUÍN TORRES;Zona Mequinenza;Bajo Cinca;Mequinenza;Zaragoza;79
+50011690;REYES CATÓLICOS;Zona Sádaba;Cinco Villas;Sádaba;Zaragoza;75
+50011707;BENJAMÍN JARNÉS;Zona Sástago;Ribera Baja del Ebro;Sástago;Zaragoza;52
+50011719;BENJAMÍN JARNÉS;Zona Belchite;Campo de Belchite;Belchite;Zaragoza;82
+50011720;SABINA ALBAR;Zona Bujaraloz;Monegros;Bujaraloz;Zaragoza;76
+50011732;MAR DE ARAGÓN;Zona C.F. Grado Básico (Z);Caspe;Caspe;Zaragoza;66
+50011732;MAR DE ARAGÓN;Zona C.F. Grado Medio (Z);Caspe;Caspe;Zaragoza;111
+50011732;MAR DE ARAGÓN;Zona C.F. Grado Superior (Z);Caspe;Caspe;Zaragoza;38
+50011732;MAR DE ARAGÓN;Zona Caspe;Caspe;Caspe;Zaragoza;319
+50011732;MAR DE ARAGÓN;Zona Caspe BTO;Caspe;Caspe;Zaragoza;129
+50011781;VALLE DE TENA;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;80
+50011781;VALLE DE TENA;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;106
+50011793;ARTE-MISS ZARAGOZA, CENTRO 1;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;0
+50011801;JOSÉ ANTONIO LABORDETA SUBÍAS;Zona Zaragoza 1;Zaragoza;Zaragoza;Zaragoza;313
+50011847;JOSEFA AMAR Y BORBÓN;Zona Zaragoza 1;Zaragoza;Zaragoza;Zaragoza;462
+50017072;PARQUE GOYA;Zona Zaragoza 1;Zaragoza;Zaragoza;Zaragoza;444
+50017072;PARQUE GOYA;Zona Zaragoza 1 (Secundaria);Zaragoza;Zaragoza;Zaragoza;221
+50017096;ARSENIO JIMENO;Zona C.F. Grado Básico (Z);Zaragoza;Zaragoza;Zaragoza;28
+50017096;ARSENIO JIMENO;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;84
+50017096;ARSENIO JIMENO;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;40
+50017369;ANGEL RIVIÈRE;Zona Educación Especial (Z);Zaragoza;Zaragoza;Zaragoza;54
+50017448;GIL TARÍN;Zona Muela (La);Valdejalón;Muela (La);Zaragoza;751
+50017451;PARQUE EUROPA;Zona Zaragoza 4;Zaragoza;Utebo;Zaragoza;381
+50017655;EL POMILLO;Zona Ainzón;Campo de Borja;Ainzón;Zaragoza;60
+50017667;DIEGO ESCOLANO;Zona Longares;Campo de Cariñena;Longares;Zaragoza;47
+50017679;PABLO LUNA;Zona Alhama de Aragón;Calatayud;Alhama de Aragón;Zaragoza;73
+50017680;RAMÓN Y CAJAL;Zona Pina de Ebro;Ribera Baja del Ebro;Pina de Ebro;Zaragoza;157
+50017710;MONTECANAL;Zona Zaragoza 8;Zaragoza;Zaragoza;Zaragoza;684
+50017862;AGUSTINA DE ARAGÓN;Zona Zaragoza 1;Zaragoza;Zaragoza;Zaragoza;497
+50017874;EL ESPARTIDERO;Zona Zaragoza 2;Zaragoza;Zaragoza;Zaragoza;450
+50017874;EL ESPARTIDERO;Zona Zaragoza 2 (Secundaria);Zaragoza;Zaragoza;Zaragoza;277
+50017886;LA AZUCARERA;Zona Zaragoza 2 (Secundaria);Zaragoza;Zaragoza;Zaragoza;839
+50017898;REINO DE ARAGÓN;Zona Puebla de Alfindén (La);Zaragoza;Puebla de Alfindén (La);Zaragoza;424
+50017904;GALO PONTE;Zona San Mateo de Gállego;Zaragoza;San Mateo de Gállego;Zaragoza;402
+50017916;SAN ROQUE;Zona María de Huerva;Zaragoza;María de Huerva;Zaragoza;399
+50018121;OCTAVUS;Zona Zaragoza 4;Zaragoza;Utebo;Zaragoza;655
+50018131;JEAN PIAGET;Zona Educación Especial (Z);Zaragoza;Zaragoza;Zaragoza;95
+50018143;LUCIEN BRIET;Zona Zaragoza 1;Zaragoza;Zaragoza;Zaragoza;474
+50018246;VALDESPARTERA;Zona Zaragoza 8;Zaragoza;Zaragoza;Zaragoza;675
+50018258;MARIE CURIE;Zona Zaragoza 2;Zaragoza;Zaragoza;Zaragoza;592
+50018261;RÍO SENA;Zona Zaragoza 6;Zaragoza;Zaragoza;Zaragoza;591
+50018261;RÍO SENA;Zona Zaragoza 6 (Secundaria);Zaragoza;Zaragoza;Zaragoza;210
+50018271;ROSALES DEL CANAL;Zona Zaragoza 8;Zaragoza;Zaragoza;Zaragoza;814
+50018271;ROSALES DEL CANAL;Zona Zaragoza 8 (Secundaria);Zaragoza;Zaragoza;Zaragoza;230
+50018283;FORO ROMANO;Zona Cuarte de Huerva;Zaragoza;Cuarte de Huerva;Zaragoza;724
+50018416;CLARA CAMPOAMOR RODRÍGUEZ;Zona Zaragoza 1 (Secundaria);Zaragoza;Zaragoza;Zaragoza;902
+50018428;TORRE DE LOS ESPEJOS;Zona Zaragoza 4 (Secundaria);Zaragoza;Utebo;Zaragoza;936
+50018817;CATALINA DE ARAGÓN;Zona Zaragoza 1;Zaragoza;Zaragoza;Zaragoza;706
+50018829;CORONA DE ARAGÓN;Zona C.F. Grado Medio (Z);Zaragoza;Zaragoza;Zaragoza;292
+50018829;CORONA DE ARAGÓN;Zona C.F. Grado Superior (Z);Zaragoza;Zaragoza;Zaragoza;1009
+50018830;VADORREY-LES ALLÉES;Zona Zaragoza 2;Zaragoza;Zaragoza;Zaragoza;414
+50018842;DE LA PUEBLA DE ALFINDÉN;Zona C.F. Grado Medio (Z);Zaragoza;Puebla de Alfindén (La);Zaragoza;34
+50018842;DE LA PUEBLA DE ALFINDÉN;Zona Puebla de Alfindén (La) Secundaria;Zaragoza;Puebla de Alfindén (La);Zaragoza;687
+50019019;JULIO VERNE;Zona Zaragoza 6;Zaragoza;Zaragoza;Zaragoza;561
+50019019;JULIO VERNE;Zona Zaragoza 6 (Secundaria);Zaragoza;Zaragoza;Zaragoza;57
+50019020;VALDESPARTERA;Zona Zaragoza 8 (Secundaria);Zaragoza;Zaragoza;Zaragoza;807
+50019081;SAN JORGE;Zona Zaragoza 8;Zaragoza;Zaragoza;Zaragoza;744
+50019081;SAN JORGE;Zona Zaragoza 8 (Secundaria);Zaragoza;Zaragoza;Zaragoza;46
+50019101;VILLANUEVA DE GÁLLEGO;Zona Villanueva de Gállego;Zaragoza;Villanueva de Gállego;Zaragoza;373
+50019147;FUNDACIÓN LABORAL DE LA CONSTRUCCIÓN;Zona C.F. Grado Básico (Z);Zaragoza;Villanueva de Gállego;Zaragoza;23
+50019147;FUNDACIÓN LABORAL DE LA CONSTRUCCIÓN;Zona C.F. Grado Medio (Z);Zaragoza;Villanueva de Gállego;Zaragoza;32
+50019147;FUNDACIÓN LABORAL DE LA CONSTRUCCIÓN;Zona C.F. Grado Superior (Z);Zaragoza;Villanueva de Gállego;Zaragoza;16
+50019251;VAL DE LA ATALAYA;Zona María de Huerva;Zaragoza;María de Huerva;Zaragoza;412
+50019251;VAL DE LA ATALAYA;Zona María de Huerva ESO;Zaragoza;María de Huerva;Zaragoza;236
+50019287;ZARAGOZA SUR;Zona Zaragoza 8;Zaragoza;Zaragoza;Zaragoza;532
+50019299;PILAR BAYONA;Zona Cuarte de Huerva;Zaragoza;Cuarte de Huerva;Zaragoza;549
+50019317;FLORIÁN REY;Zona Almunia de Doña Godina (La);Valdejalón;Almunia de Doña Godina (La);Zaragoza;389
+50019354;DE LA MUELA;Zona Muela (La);Valdejalón;Muela (La);Zaragoza;263
+50019378;INTERNACIONAL ÁNFORA;Zona Cuarte de Huerva;Zaragoza;Cuarte de Huerva;Zaragoza;383
+50019408;SEGEDA;Zona Educación Especial (Z);Calatayud;Calatayud;Zaragoza;32
+50019408;SEGEDA;Zona PCPI Zaragoza;Calatayud;Calatayud;Zaragoza;11
+50019500;EL PICARRAL;Zona Zaragoza 1 (Secundaria);Zaragoza;Zaragoza;Zaragoza;569
+50019548;ARCOSUR;Zona Zaragoza 8;Zaragoza;Zaragoza;Zaragoza;598
+50019551;VALDESPARTERA III;Zona Zaragoza 8;Zaragoza;Zaragoza;Zaragoza;613
+50019597;PARQUE VENECIA;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;568
+50019615;SOLEDAD PUÉRTOLAS;Zona Zaragoza 8;Zaragoza;Zaragoza;Zaragoza;399
+50019676;MARTINA BESCÓS;Zona Cuarte de Huerva;Zaragoza;Cuarte de Huerva;Zaragoza;338
+50019731;FIGUERUELAS;Zona Figueruelas;Ribera Alta del Ebro;Figueruelas;Zaragoza;95
+50019780;ANA MARÍA NAVALES;Zona Zaragoza 8;Zaragoza;Zaragoza;Zaragoza;76
+50019792;MARÍA ZAMBRANO;Zona Zaragoza 5;Zaragoza;Zaragoza;Zaragoza;192

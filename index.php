@@ -5,14 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/estedu.css">
   <link rel="stylesheet" href="css/listados.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://code.highcharts.com/modules/exporting.js"></script>
@@ -28,6 +28,7 @@
 
 <div class="container-fluid">
 	<h2 id='mlateral'>Página estadística educativa</h2>
+<?php include "includes/cabecera.html"; ?>
 	<div class="row">
 		<div class="col-md-3">
 				<div class='ftopmlateral' data-toggle="collapse" data-target="#filtros" ><a>FILTROS</a></div>
@@ -66,7 +67,9 @@
 					</div>
 		</div>
     <div class="col-md-9">
-			<?php include "includes/menufrontal.html"; ?>
+					<div id="cards" class="row">
+						<?php include "includes/cards_superior2.php"; ?>
+					</div>
 		</div>
 	</div>
 	<div class="row">
@@ -83,13 +86,6 @@
 			<?php include "includes/menulateral_evolutivas.html"; ?>
 		</div>
 		<div class="col-md" >
-			<div class="row">
-				<div class="col-md-12 bcentral">
-					<div id="cards" class="row">
-						<?php include "includes/cards_superior2.php"; ?>
-					</div>
-				</div>
-			</div>
 			<div class="row">
 				<div class="col-md-12 bcentral">
 					<form id="formgeneral">
@@ -117,11 +113,12 @@
 			<!--AREA VISUALIZACION DE DATOS-->
 
      	<div class="row">
-    		<div class="col-md-7">
-  			<div id="container1" style="height: 400px;"></div>
-			</div>
-    	<div class="col-md-5">
-  			<div id="container2" style="height: 400px;"></div>
+				<div class="col-md-7">
+					<div id="container1" style="height: 400px;"></div>
+				</div>
+				<div class="col-md-5">
+					<div id="container2" style="height: 400px;"></div>
+				</div>
 			</div>
      	<div class="row">
     		<div class="col-md-12">
@@ -133,7 +130,6 @@
            	</div>
             <div class="row class_tablas" id="stablas" seccion="seccion_tablas">
 							<div class="col-md-12">
-								<div id="lppal">lppal<div id="shiva">TOTAL ALUMNOS FP CURSO 2019: <span class="count">19509</span></div></div>
 								<div id="big-tabla">
 								</div>
 							</div>
@@ -148,8 +144,6 @@
             </div>
                 	</div>
           	</div>
-    		<div class="col-md-3">
-		</div>
          </div>
 </div>
 

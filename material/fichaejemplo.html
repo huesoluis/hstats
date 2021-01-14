@@ -1,0 +1,51 @@
+<div class="card col-md-6">
+	<p class="card-text">Centro de Educacón Secundaria y Formación Profesional</p>
+	<p class="card-text"><small class="text-muted">1200 alumnos</small></p>
+		<table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+	<img class="card-img-top" src="assets/img/shimg.jpg" alt="imagen sh">
+	<div class="card-body">
+		<h5 class="card-title"></h5>
+	</div>
+</div>
+<div class="card col-md-6">
+	<div class="card-body">
+		<h5 class="card-title">Ubicación</h5>
+		<p class="card-text"><small class="text-muted">A 27 minutos de tu ubicación actual</small></p>
+	</div>
+	<div class="card-img-top" id="mapacentro"></div>
+</div>
+<script>
+var uluru = { lat: 41.6575155, lng: -0.9160625 };
+var mapcentro = new google.maps.Map(document.getElementById("mapacentro"), 
+{
+	zoom: 14,
+	center: uluru,
+});
+</script>
+
+

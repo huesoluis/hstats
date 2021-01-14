@@ -27,8 +27,27 @@ function show_graph(vfile,vsel,nombre)
 			yAxis: {
 				title: {
 					text: 'Número de alumnos'
-					}
-				}
+					},
+        	stackLabels: {
+            enabled: true,
+            style: {
+                fontWeight: 'bold',
+                color: ( // theme
+                    Highcharts.defaultOptions.title.style &&
+                    Highcharts.defaultOptions.title.style.color
+                ) || 'gray'
+            }
+        	}
+				},
+
+    plotOptions: {
+        column: {
+            stacking: 'normal',
+            dataLabels: {
+                enabled: true
+            }
+        }
+    }
 		    });
 		}).fail(function(jqXHR, textStatus, errorThrown) {
     // alert( "error" );

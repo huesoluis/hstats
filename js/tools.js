@@ -1,8 +1,5 @@
 $( document ).ready(function() {
-
-
 $('body').on('click', '#mlateral', function(e){
-console.log("ocultando menu");
 $('#menulateral').toggle();
 $('.ftopmlateral').toggle();
 });

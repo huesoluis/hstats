@@ -16,7 +16,7 @@ $keys=$dim_evolutivos;
 	</div>
 	<div class="col-md-4">
 	<div class="input-group mb-3">
-	  <select class="custom-select" id="d21" name="dim[]">
+	  <select class="custom-select" id="d31" name="dim[]">
 	    <option value="0" selected>Elige dato representar</option>
 	<?php
 		foreach($keys as $d=>$v)
@@ -27,7 +27,7 @@ $keys=$dim_evolutivos;
 	</div>
 	<div class="col-md-4">
 	<div class="input-group mb-3">
-	  <select class="custom-select" id="d22"  name="dim[]">
+	  <select class="custom-select" id="d32"  name="dim[]">
 	    <option value="0" selected>Elige dato representar</option>
 	<?php
 		foreach($keys as $d=>$v)

@@ -1,0 +1,19 @@
+body{
+font-family: 'Inter', sans-serif;
+}
+.dtgenerales
+{
+border: 1px solid #999696;
+border-radius: 2%;
+margin-top: 10px;
+padding: 30px;
+
+}
+
+.listados
+{
+padding-right: 100px;
+width: 12%;
+padding:10px;
+color:grey
+}

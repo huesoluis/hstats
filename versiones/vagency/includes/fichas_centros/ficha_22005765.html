@@ -1,0 +1,70 @@
+<div class="row hoja"><div class="card col-md-6"><p class="card-text">Estadísticas PIRINEOS</p><p class="card-text"><small class="text-muted">353 alumnos</small></p><table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th>Enseñanza</th>
+        <th>Alumnos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Infantil</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Primaria</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>ESO</td>
+        <td>196</td>
+      </tr>
+      <tr>
+        <td>Bachillerato</td>
+        <td>72</td>
+      </tr>
+      <tr>
+        <td>FP</td>
+        <td>85</td>
+      </tr>
+    </tbody>
+  </table>
+	<img class="card-img-top" src="assets/img/shimg.jpg" alt="imagen sh">
+	<div class="card-body">
+		<h5 class="card-title"></h5>
+	</div>
+</div>
+<div class="card col-md-6">
+	<div class="card-body row">
+		<div class="col-md-12">
+			<h5 class="card-title">Datos Generales del Centro</h5>
+			<p class="card-text"><b>Nombre</b> PIRINEOS</p>
+			<p class="card-text"><div class="dcentro"><b>Denominación Genérica</b></div> Instituto de Educación Secundaria</p>
+			<p class="card-text"><b>Dirección</b> Cl. Ferrocarril, 17</p>
+			<p class="card-text"><b>CP</b> 22700</p>
+			<p class="card-text"><b>Telefono</b> 974355857</p>
+			<p class="card-text"><b>Provincia</b> Huesca</p>
+			<p class="card-text"><b>Comarca</b>  Jacetania</p>
+			<p class="card-text"><b>Zona</b> Zona Jaca</p>
+			<p class="card-text"><b>Localidad</b>  Jaca</p>
+		</div>
+	</div>
+	<div class="card-body row">
+		<div class="col-md-12">
+			<h5 class="card-title">Características del Centro</h5>
+			<p class="card-text text-muted"><a href="https://www.google.es/search?q=PIRINEOS Cl. Ferrocarril, 17">Centro en Internet</a></p>
+			<p class="card-text"><b>Comedor</b>  no</p>
+			<p class="card-text"><b>Transporte</b>  si</p>
+			<p class="card-text"><b>Tiempos Escolares</b> no</p>
+		</div>
+	</div>
+	<div class="card-img-top" id="mapacentro" style="width:100%;height:400px;"></div>
+</div>
+<script>
+var uluru = { lat: 41.6575155, lng: -0.9160625 };
+var mapcentro = new google.maps.Map(document.getElementById("mapacentro"), 
+{
+	zoom: 14,
+	center: uluru,
+});
+</script>
+</div>

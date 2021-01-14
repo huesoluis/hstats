@@ -1,0 +1,183 @@
+ULTIMA REUNION
+
+DATOS ENSEÑANZAS
+_________________________
+
+Cerrar la versión actual con datos correctos y layout repasado (plantear el layout en modo horizontal)
+Automatizarla para regnerarla automáticamente
+Añadir curso 2019 en la web, en las fichas del centro
+Añadir filtros por años o cursos en cada sección: listados (enseñanzas), tablas (matricula), graficos
+	Obtener ficheros de javier (o de la base de datos sinee) del resto de años, todos.
+	Cargar datosd e todos los años
+	Generar la estadística de cada año. Todos los datos de todos los posibles gráficos 	
+
+Añadir filtro de bilingüismo
+
+Revisar filtros para q incluyan al resto (cuando se pulse uno q se revisen tb los de las otras cajas)
+
+Añadir filtros específicos en cada enseñanza
+	En bachillerato: 	tipo de bachillerato, ver cuales hay en sinee
+
+Añadir oferta formativa (especialidades en BACHILLERATO y ciclos en FP) en las fichas de centro 
+
+GRAFICOS
+___________________
+
+Evolutivos con más años, todos los años. Añadir un grafico tipo zoom
+
+TABLAS
+______________________________
+
+Incluir totales en las tablas y ordenarlas
+Añadir más calculos: num profesores, num centros por tipo, comarca, enseñanza, zona...
+
+Revisar filtros de comarca, zona etc... Hay registro con 'no zona' por ej.
+
+En listados Añadir info de la jerarquía a medida q seleccionamos campos
+
+En tablas añadir parámetros: nprofesores, ncentros por comarca, zona etc...
+
+
+
+PLAN GENERAL TRABAJO desde 13/11/2020
+_____________________________________________________________________________________________________________________________________________________________________
+
+	OK	.Estructurar layout para incluir datos por defecto y búsqueda avanzada tanto en matricula como en enseñanazasa
+	
+	PE. Reorganizar base de datos y directorios
+	PE	.Terminar secciones de ENSEÑANZAS, CENTROS, GRÁFICOS y MATRICULA (TABLAS)
+
+		SECCION ENSEÑANZA
+			.OK Cargar TODOS Los datos desde SINEE (a la espera de q javier envie datos e comracas etc...)
+			.Revisar posibles combinaciones  
+			.Revisar filtros
+			.Datos a incluir en las ficha de centros:
+		
+					Cargar tiempos escolar desde el nuevo dfichero de servicios_complementarios.csv
+					correo, web, comedor (si/no), bilingüe (si/no), jornada continua
+
+		SECCION CENTROS
+			.Se deja para version 2, (se puede dividir en provincias y en cada una poner un filtro por 'cualquier cosa o dato relativo al centro')
+
+		SECCION MATRICULA
+
+			.Función de filtrado de dimensiones para reordenar dimensiones en el caso de elegir una q tenga demasidados valores, como centro.
+
+		SECCION GRAFICOS
+
+			Terminar de cargar datos de padrón
+			Esperar datos de javier de matricula por enseñanza  en excel
+			Grafico 1
+				.Evolutivo matricula por enseñanza, stacked respecto al padrón
+
+				Para cada enseñanza mostrar:
+					alumnado total versus padrón 
+					alumnado publica versus concertada en absulto y porcentaje
+					%alumando pública resp padron versus %alumnado concertada versus padron
+
+					Datos de matricula por enseñanza y año
+					Datos de padrón por franja de edad
+					Datos de matrícula extranjeros por tipo de centro
+			Grafico 2
+				.Evolutivo porcentaje de inmigrantes en concertada y publica, evolucion en los años
+					Datos de alumnado en la ESO por año y origen si es posible en %
+
+	PE	.Permitir descargar tabla en pdf
+	PE	.Integrar php para la generación de json a partir de csv
+	PE	.Vista de tabla en movil en forma jerarquica
+	PE	.Tabla de FP con notas de corte por centro y ciclo (para próxima versiones a partir d eenero)
+
+
+OPERACIONES BASE DEDATOS
+
+
+	MODIFICAICONES VALORES
+	_______________________________________
+
+		EI: 	Educación Infantil
+		EP:		Educación Primaria
+		CFGM:	Grado Medio
+		CFGS:	Grado Superior	
+		Se elimina las enseñanzas OPF y 'Sin especificar'
+		
+
+	CONSULTAS
+	_____________________________________________________________________________________________________________________________________________________________________
+
+		Set filtros (comerdor, transporte, ...) para la tablade centros 
+		=================================================================
+
+			update base_centros bc join stats_centros sc on bc.codcentro=sc.codcentro  set filtros=concat(sc.comedor,';',sc.transporte,';',sc.tiempos_escolares);
+
+		Calculo de padron por enseñanzas
+		===================================
+			update enseñanzas set padron=(select sum(padron) from sinee_ine_padron where edad like '0 años' or  edad like '%1 años%' or edad like '2 años' or edad like '3 años' or edad like '4 años' or edad like '5 años') where cod_enseñanza_agrupada='EI';
+
+			update enseñanzas set padron=(select sum(padron) from sinee_ine_padron where edad like '6 años' or  edad like '7 años%' or edad like '8 años' or edad like '9 años' or edad like '10 años' or edad like '11 años') where cod_enseñanza_agrupada='EP';
+
+			update enseñanzas set padron=(select sum(padron) from sinee_ine_padron where edad like '12 años' or edad like '13 años' or edad like '14 años' or edad like '15 años') where cod_enseñanza_agrupada='ESO';
+
+			update enseñanzas set padron=(select sum(padron) from sinee_ine_padron where edad like '16 años' or edad like '17 años') where cod_enseñanza_agrupada='BACH';
+
+
+		
+		Calculo de numero de alumnos por enseñanzas y tipo de centro o naturaleza
+		===============================================================================
+			
+			update enseñanzas set nalumnos=(select sum(nalumnos) from sinee_matricula_centros_ensenanzas where  cod_enseñanza_agrupada='ESO') where curso_escolar='' cod_enseñanza_agrupada='ESO';
+		
+			update enseñanzas set nalumnos_concertada=(select sum(sm.nalumnos) from sinee_matricula_centros_ensenanzas sm,base_centros c where c.codcentro=sm.codcentro and cod_enseñanza_agrupada='EI' and c.naturaleza='privado' and curso_escolar='2017/2018') where cod_enseñanza_agrupada='EI' and curso_escolar='2017/2018';
+
+
+
+
+		Ejemplo completo con 2019
+
+
+			update enseñanzas set padron=(select sum(padron) from sinee_ine_padron where año=2019 and( edad like '0 años' or  edad like '%1 años%' or edad like '2 años' or edad like '3 años' or edad like '4 años' or edad like '5 años')) where curso_escolar='2019/2020' and cod_enseñanza_agrupada='EI';
+
+			update enseñanzas set padron=(select sum(padron) from sinee_ine_padron where año=2019 and( edad like '6 años' or  edad like '7 años%' or edad like '8 años' or edad like '9 años' or edad like '10 años' or edad like '11 años')) where cod_enseñanza_agrupada='EP';
+
+			update enseñanzas set padron=(select sum(padron) from sinee_ine_padron where año=2019 and( edad like '12 años' or edad like '13 años' or edad like '14 años' or edad like '15 años')) where cod_enseñanza_agrupada='ESO';
+
+			update enseñanzas set padron=(select sum(padron) from sinee_ine_padron where año=2019 and( edad like '16 años' or edad like '17 años') where cod_enseñanza_agrupada='BACH';
+
+			Numero de allumnos
+
+			update enseñanzas set nalumnos=(select sum(nalumnos) from sinee_matricula_centros_ensenanzas where cod_enseñanza_agrupada='EI' and curso_escolar='2019/2020' and modalidad='Total') where cod_enseñanza_agrupada='EI' and curso_escolar='2019/2020';
+
+			Numero alumnos concertada
+
+			update enseñanzas set nalumnos_concertada=(select sum(sm.nalumnos) from sinee_matricula_centros_ensenanzas sm,base_centros c where c.codcentro=sm.codcentro and cod_enseñanza_agrupada='EP' and c. naturaleza='privado' and curso_escolar='2017/2018' and modalidad='Total') where cod_enseñanza_agrupada='EP' and curso_escolar='2017/2018';
+
+
+
+
+
+
+REFERENCIAS 
+_____________________________________________________________________________________________________________________________________________________________________
+
+	GRAFICOS
+		https://www.highcharts.com/demo/spline-plot-bands
+
+	FUENTES
+		https://www.w3schools.com/howto/howto_google_fonts.asp	
+
+	MAPAS
+
+		https://datacovid.salud.aragon.es/covid/
+		https://leafletjs.com/examples/quick-start/
+
+DATOS
+_____________________________________________________________________________________________________________________________________________________________________
+
+	Edades
+		0-2 	Infantil 1 ciclo
+		3-5		Infantil 2 ciclo
+		6-11	Primaria
+		12-15	ESO
+		16-18	Bachillerato
+
+
+

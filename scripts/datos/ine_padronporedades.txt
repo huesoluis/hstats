@@ -1,0 +1,919 @@
+Comunidades;Edad (año a año);Españoles/Extranjeros;Sexo;Año;Total
+ARAGÓN;TOTAL EDADES;TOTAL;Ambos sexos;2019;1.319.291
+ARAGÓN;TOTAL EDADES;TOTAL;Hombres;2019;650.694
+ARAGÓN;TOTAL EDADES;TOTAL;Mujeres;2019;668.597
+ARAGÓN;TOTAL EDADES;Españoles;Ambos sexos;2019;1.169.992
+ARAGÓN;TOTAL EDADES;Españoles;Hombres;2019;575.399
+ARAGÓN;TOTAL EDADES;Españoles;Mujeres;2019;594.593
+ARAGÓN;TOTAL EDADES;Extranjeros;Ambos sexos;2019;149.299
+ARAGÓN;TOTAL EDADES;Extranjeros;Hombres;2019;75.295
+ARAGÓN;TOTAL EDADES;Extranjeros;Mujeres;2019;74.004
+ARAGÓN;0 años;TOTAL;Ambos sexos;2019;9.744
+ARAGÓN;0 años;TOTAL;Hombres;2019;5.024
+ARAGÓN;0 años;TOTAL;Mujeres;2019;4.720
+ARAGÓN;0 años;Españoles;Ambos sexos;2019;7.996
+ARAGÓN;0 años;Españoles;Hombres;2019;4.117
+ARAGÓN;0 años;Españoles;Mujeres;2019;3.879
+ARAGÓN;0 años;Extranjeros;Ambos sexos;2019;1.748
+ARAGÓN;0 años;Extranjeros;Hombres;2019;907
+ARAGÓN;0 años;Extranjeros;Mujeres;2019;841
+ARAGÓN;1 año;TOTAL;Ambos sexos;2019;10.896
+ARAGÓN;1 año;TOTAL;Hombres;2019;5.618
+ARAGÓN;1 año;TOTAL;Mujeres;2019;5.278
+ARAGÓN;1 año;Españoles;Ambos sexos;2019;8.976
+ARAGÓN;1 año;Españoles;Hombres;2019;4.627
+ARAGÓN;1 año;Españoles;Mujeres;2019;4.349
+ARAGÓN;1 año;Extranjeros;Ambos sexos;2019;1.920
+ARAGÓN;1 año;Extranjeros;Hombres;2019;991
+ARAGÓN;1 año;Extranjeros;Mujeres;2019;929
+ARAGÓN;2 años;TOTAL;Ambos sexos;2019;11.216
+ARAGÓN;2 años;TOTAL;Hombres;2019;5.716
+ARAGÓN;2 años;TOTAL;Mujeres;2019;5.500
+ARAGÓN;2 años;Españoles;Ambos sexos;2019;9.363
+ARAGÓN;2 años;Españoles;Hombres;2019;4.758
+ARAGÓN;2 años;Españoles;Mujeres;2019;4.605
+ARAGÓN;2 años;Extranjeros;Ambos sexos;2019;1.853
+ARAGÓN;2 años;Extranjeros;Hombres;2019;958
+ARAGÓN;2 años;Extranjeros;Mujeres;2019;895
+ARAGÓN;3 años;TOTAL;Ambos sexos;2019;11.795
+ARAGÓN;3 años;TOTAL;Hombres;2019;5.997
+ARAGÓN;3 años;TOTAL;Mujeres;2019;5.798
+ARAGÓN;3 años;Españoles;Ambos sexos;2019;9.934
+ARAGÓN;3 años;Españoles;Hombres;2019;5.065
+ARAGÓN;3 años;Españoles;Mujeres;2019;4.869
+ARAGÓN;3 años;Extranjeros;Ambos sexos;2019;1.861
+ARAGÓN;3 años;Extranjeros;Hombres;2019;932
+ARAGÓN;3 años;Extranjeros;Mujeres;2019;929
+ARAGÓN;4 años;TOTAL;Ambos sexos;2019;12.084
+ARAGÓN;4 años;TOTAL;Hombres;2019;6.254
+ARAGÓN;4 años;TOTAL;Mujeres;2019;5.830
+ARAGÓN;4 años;Españoles;Ambos sexos;2019;10.143
+ARAGÓN;4 años;Españoles;Hombres;2019;5.238
+ARAGÓN;4 años;Españoles;Mujeres;2019;4.905
+ARAGÓN;4 años;Extranjeros;Ambos sexos;2019;1.941
+ARAGÓN;4 años;Extranjeros;Hombres;2019;1.016
+ARAGÓN;4 años;Extranjeros;Mujeres;2019;925
+ARAGÓN;5 años;TOTAL;Ambos sexos;2019;12.028
+ARAGÓN;5 años;TOTAL;Hombres;2019;6.199
+ARAGÓN;5 años;TOTAL;Mujeres;2019;5.829
+ARAGÓN;5 años;Españoles;Ambos sexos;2019;10.276
+ARAGÓN;5 años;Españoles;Hombres;2019;5.291
+ARAGÓN;5 años;Españoles;Mujeres;2019;4.985
+ARAGÓN;5 años;Extranjeros;Ambos sexos;2019;1.752
+ARAGÓN;5 años;Extranjeros;Hombres;2019;908
+ARAGÓN;5 años;Extranjeros;Mujeres;2019;844
+ARAGÓN;6 años;TOTAL;Ambos sexos;2019;12.312
+ARAGÓN;6 años;TOTAL;Hombres;2019;6.256
+ARAGÓN;6 años;TOTAL;Mujeres;2019;6.056
+ARAGÓN;6 años;Españoles;Ambos sexos;2019;10.664
+ARAGÓN;6 años;Españoles;Hombres;2019;5.440
+ARAGÓN;6 años;Españoles;Mujeres;2019;5.224
+ARAGÓN;6 años;Extranjeros;Ambos sexos;2019;1.648
+ARAGÓN;6 años;Extranjeros;Hombres;2019;816
+ARAGÓN;6 años;Extranjeros;Mujeres;2019;832
+ARAGÓN;7 años;TOTAL;Ambos sexos;2019;12.769
+ARAGÓN;7 años;TOTAL;Hombres;2019;6.529
+ARAGÓN;7 años;TOTAL;Mujeres;2019;6.240
+ARAGÓN;7 años;Españoles;Ambos sexos;2019;11.205
+ARAGÓN;7 años;Españoles;Hombres;2019;5.731
+ARAGÓN;7 años;Españoles;Mujeres;2019;5.474
+ARAGÓN;7 años;Extranjeros;Ambos sexos;2019;1.564
+ARAGÓN;7 años;Extranjeros;Hombres;2019;798
+ARAGÓN;7 años;Extranjeros;Mujeres;2019;766
+ARAGÓN;8 años;TOTAL;Ambos sexos;2019;13.017
+ARAGÓN;8 años;TOTAL;Hombres;2019;6.660
+ARAGÓN;8 años;TOTAL;Mujeres;2019;6.357
+ARAGÓN;8 años;Españoles;Ambos sexos;2019;11.466
+ARAGÓN;8 años;Españoles;Hombres;2019;5.848
+ARAGÓN;8 años;Españoles;Mujeres;2019;5.618
+ARAGÓN;8 años;Extranjeros;Ambos sexos;2019;1.551
+ARAGÓN;8 años;Extranjeros;Hombres;2019;812
+ARAGÓN;8 años;Extranjeros;Mujeres;2019;739
+ARAGÓN;9 años;TOTAL;Ambos sexos;2019;13.174
+ARAGÓN;9 años;TOTAL;Hombres;2019;6.778
+ARAGÓN;9 años;TOTAL;Mujeres;2019;6.396
+ARAGÓN;9 años;Españoles;Ambos sexos;2019;11.617
+ARAGÓN;9 años;Españoles;Hombres;2019;5.974
+ARAGÓN;9 años;Españoles;Mujeres;2019;5.643
+ARAGÓN;9 años;Extranjeros;Ambos sexos;2019;1.557
+ARAGÓN;9 años;Extranjeros;Hombres;2019;804
+ARAGÓN;9 años;Extranjeros;Mujeres;2019;753
+ARAGÓN;10 años;TOTAL;Ambos sexos;2019;13.663
+ARAGÓN;10 años;TOTAL;Hombres;2019;7.112
+ARAGÓN;10 años;TOTAL;Mujeres;2019;6.551
+ARAGÓN;10 años;Españoles;Ambos sexos;2019;12.121
+ARAGÓN;10 años;Españoles;Hombres;2019;6.301
+ARAGÓN;10 años;Españoles;Mujeres;2019;5.820
+ARAGÓN;10 años;Extranjeros;Ambos sexos;2019;1.542
+ARAGÓN;10 años;Extranjeros;Hombres;2019;811
+ARAGÓN;10 años;Extranjeros;Mujeres;2019;731
+ARAGÓN;11 años;TOTAL;Ambos sexos;2019;13.362
+ARAGÓN;11 años;TOTAL;Hombres;2019;6.868
+ARAGÓN;11 años;TOTAL;Mujeres;2019;6.494
+ARAGÓN;11 años;Españoles;Ambos sexos;2019;11.958
+ARAGÓN;11 años;Españoles;Hombres;2019;6.148
+ARAGÓN;11 años;Españoles;Mujeres;2019;5.810
+ARAGÓN;11 años;Extranjeros;Ambos sexos;2019;1.404
+ARAGÓN;11 años;Extranjeros;Hombres;2019;720
+ARAGÓN;11 años;Extranjeros;Mujeres;2019;684
+ARAGÓN;12 años;TOTAL;Ambos sexos;2019;12.991
+ARAGÓN;12 años;TOTAL;Hombres;2019;6.741
+ARAGÓN;12 años;TOTAL;Mujeres;2019;6.250
+ARAGÓN;12 años;Españoles;Ambos sexos;2019;11.676
+ARAGÓN;12 años;Españoles;Hombres;2019;6.064
+ARAGÓN;12 años;Españoles;Mujeres;2019;5.612
+ARAGÓN;12 años;Extranjeros;Ambos sexos;2019;1.315
+ARAGÓN;12 años;Extranjeros;Hombres;2019;677
+ARAGÓN;12 años;Extranjeros;Mujeres;2019;638
+ARAGÓN;13 años;TOTAL;Ambos sexos;2019;12.656
+ARAGÓN;13 años;TOTAL;Hombres;2019;6.529
+ARAGÓN;13 años;TOTAL;Mujeres;2019;6.127
+ARAGÓN;13 años;Españoles;Ambos sexos;2019;11.332
+ARAGÓN;13 años;Españoles;Hombres;2019;5.852
+ARAGÓN;13 años;Españoles;Mujeres;2019;5.480
+ARAGÓN;13 años;Extranjeros;Ambos sexos;2019;1.324
+ARAGÓN;13 años;Extranjeros;Hombres;2019;677
+ARAGÓN;13 años;Extranjeros;Mujeres;2019;647
+ARAGÓN;14 años;TOTAL;Ambos sexos;2019;12.835
+ARAGÓN;14 años;TOTAL;Hombres;2019;6.545
+ARAGÓN;14 años;TOTAL;Mujeres;2019;6.290
+ARAGÓN;14 años;Españoles;Ambos sexos;2019;11.508
+ARAGÓN;14 años;Españoles;Hombres;2019;5.833
+ARAGÓN;14 años;Españoles;Mujeres;2019;5.675
+ARAGÓN;14 años;Extranjeros;Ambos sexos;2019;1.327
+ARAGÓN;14 años;Extranjeros;Hombres;2019;712
+ARAGÓN;14 años;Extranjeros;Mujeres;2019;615
+ARAGÓN;15 años;TOTAL;Ambos sexos;2019;12.598
+ARAGÓN;15 años;TOTAL;Hombres;2019;6.450
+ARAGÓN;15 años;TOTAL;Mujeres;2019;6.148
+ARAGÓN;15 años;Españoles;Ambos sexos;2019;11.177
+ARAGÓN;15 años;Españoles;Hombres;2019;5.697
+ARAGÓN;15 años;Españoles;Mujeres;2019;5.480
+ARAGÓN;15 años;Extranjeros;Ambos sexos;2019;1.421
+ARAGÓN;15 años;Extranjeros;Hombres;2019;753
+ARAGÓN;15 años;Extranjeros;Mujeres;2019;668
+ARAGÓN;16 años;TOTAL;Ambos sexos;2019;12.130
+ARAGÓN;16 años;TOTAL;Hombres;2019;6.271
+ARAGÓN;16 años;TOTAL;Mujeres;2019;5.859
+ARAGÓN;16 años;Españoles;Ambos sexos;2019;10.693
+ARAGÓN;16 años;Españoles;Hombres;2019;5.508
+ARAGÓN;16 años;Españoles;Mujeres;2019;5.185
+ARAGÓN;16 años;Extranjeros;Ambos sexos;2019;1.437
+ARAGÓN;16 años;Extranjeros;Hombres;2019;763
+ARAGÓN;16 años;Extranjeros;Mujeres;2019;674
+ARAGÓN;17 años;TOTAL;Ambos sexos;2019;12.383
+ARAGÓN;17 años;TOTAL;Hombres;2019;6.353
+ARAGÓN;17 años;TOTAL;Mujeres;2019;6.030
+ARAGÓN;17 años;Españoles;Ambos sexos;2019;10.877
+ARAGÓN;17 años;Españoles;Hombres;2019;5.538
+ARAGÓN;17 años;Españoles;Mujeres;2019;5.339
+ARAGÓN;17 años;Extranjeros;Ambos sexos;2019;1.506
+ARAGÓN;17 años;Extranjeros;Hombres;2019;815
+ARAGÓN;17 años;Extranjeros;Mujeres;2019;691
+ARAGÓN;18 años;TOTAL;Ambos sexos;2019;12.344
+ARAGÓN;18 años;TOTAL;Hombres;2019;6.471
+ARAGÓN;18 años;TOTAL;Mujeres;2019;5.873
+ARAGÓN;18 años;Españoles;Ambos sexos;2019;10.560
+ARAGÓN;18 años;Españoles;Hombres;2019;5.493
+ARAGÓN;18 años;Españoles;Mujeres;2019;5.067
+ARAGÓN;18 años;Extranjeros;Ambos sexos;2019;1.784
+ARAGÓN;18 años;Extranjeros;Hombres;2019;978
+ARAGÓN;18 años;Extranjeros;Mujeres;2019;806
+ARAGÓN;19 años;TOTAL;Ambos sexos;2019;12.270
+ARAGÓN;19 años;TOTAL;Hombres;2019;6.368
+ARAGÓN;19 años;TOTAL;Mujeres;2019;5.902
+ARAGÓN;19 años;Españoles;Ambos sexos;2019;10.408
+ARAGÓN;19 años;Españoles;Hombres;2019;5.398
+ARAGÓN;19 años;Españoles;Mujeres;2019;5.010
+ARAGÓN;19 años;Extranjeros;Ambos sexos;2019;1.862
+ARAGÓN;19 años;Extranjeros;Hombres;2019;970
+ARAGÓN;19 años;Extranjeros;Mujeres;2019;892
+ARAGÓN;20 años;TOTAL;Ambos sexos;2019;12.088
+ARAGÓN;20 años;TOTAL;Hombres;2019;6.379
+ARAGÓN;20 años;TOTAL;Mujeres;2019;5.709
+ARAGÓN;20 años;Españoles;Ambos sexos;2019;10.031
+ARAGÓN;20 años;Españoles;Hombres;2019;5.292
+ARAGÓN;20 años;Españoles;Mujeres;2019;4.739
+ARAGÓN;20 años;Extranjeros;Ambos sexos;2019;2.057
+ARAGÓN;20 años;Extranjeros;Hombres;2019;1.087
+ARAGÓN;20 años;Extranjeros;Mujeres;2019;970
+ARAGÓN;21 años;TOTAL;Ambos sexos;2019;12.422
+ARAGÓN;21 años;TOTAL;Hombres;2019;6.354
+ARAGÓN;21 años;TOTAL;Mujeres;2019;6.068
+ARAGÓN;21 años;Españoles;Ambos sexos;2019;10.258
+ARAGÓN;21 años;Españoles;Hombres;2019;5.268
+ARAGÓN;21 años;Españoles;Mujeres;2019;4.990
+ARAGÓN;21 años;Extranjeros;Ambos sexos;2019;2.164
+ARAGÓN;21 años;Extranjeros;Hombres;2019;1.086
+ARAGÓN;21 años;Extranjeros;Mujeres;2019;1.078
+ARAGÓN;22 años;TOTAL;Ambos sexos;2019;12.428
+ARAGÓN;22 años;TOTAL;Hombres;2019;6.366
+ARAGÓN;22 años;TOTAL;Mujeres;2019;6.062
+ARAGÓN;22 años;Españoles;Ambos sexos;2019;10.207
+ARAGÓN;22 años;Españoles;Hombres;2019;5.209
+ARAGÓN;22 años;Españoles;Mujeres;2019;4.998
+ARAGÓN;22 años;Extranjeros;Ambos sexos;2019;2.221
+ARAGÓN;22 años;Extranjeros;Hombres;2019;1.157
+ARAGÓN;22 años;Extranjeros;Mujeres;2019;1.064
+ARAGÓN;23 años;TOTAL;Ambos sexos;2019;12.404
+ARAGÓN;23 años;TOTAL;Hombres;2019;6.339
+ARAGÓN;23 años;TOTAL;Mujeres;2019;6.065
+ARAGÓN;23 años;Españoles;Ambos sexos;2019;10.118
+ARAGÓN;23 años;Españoles;Hombres;2019;5.233
+ARAGÓN;23 años;Españoles;Mujeres;2019;4.885
+ARAGÓN;23 años;Extranjeros;Ambos sexos;2019;2.286
+ARAGÓN;23 años;Extranjeros;Hombres;2019;1.106
+ARAGÓN;23 años;Extranjeros;Mujeres;2019;1.180
+ARAGÓN;24 años;TOTAL;Ambos sexos;2019;12.803
+ARAGÓN;24 años;TOTAL;Hombres;2019;6.515
+ARAGÓN;24 años;TOTAL;Mujeres;2019;6.288
+ARAGÓN;24 años;Españoles;Ambos sexos;2019;10.319
+ARAGÓN;24 años;Españoles;Hombres;2019;5.323
+ARAGÓN;24 años;Españoles;Mujeres;2019;4.996
+ARAGÓN;24 años;Extranjeros;Ambos sexos;2019;2.484
+ARAGÓN;24 años;Extranjeros;Hombres;2019;1.192
+ARAGÓN;24 años;Extranjeros;Mujeres;2019;1.292
+ARAGÓN;25 años;TOTAL;Ambos sexos;2019;12.728
+ARAGÓN;25 años;TOTAL;Hombres;2019;6.510
+ARAGÓN;25 años;TOTAL;Mujeres;2019;6.218
+ARAGÓN;25 años;Españoles;Ambos sexos;2019;10.207
+ARAGÓN;25 años;Españoles;Hombres;2019;5.275
+ARAGÓN;25 años;Españoles;Mujeres;2019;4.932
+ARAGÓN;25 años;Extranjeros;Ambos sexos;2019;2.521
+ARAGÓN;25 años;Extranjeros;Hombres;2019;1.235
+ARAGÓN;25 años;Extranjeros;Mujeres;2019;1.286
+ARAGÓN;26 años;TOTAL;Ambos sexos;2019;13.084
+ARAGÓN;26 años;TOTAL;Hombres;2019;6.584
+ARAGÓN;26 años;TOTAL;Mujeres;2019;6.500
+ARAGÓN;26 años;Españoles;Ambos sexos;2019;10.477
+ARAGÓN;26 años;Españoles;Hombres;2019;5.327
+ARAGÓN;26 años;Españoles;Mujeres;2019;5.150
+ARAGÓN;26 años;Extranjeros;Ambos sexos;2019;2.607
+ARAGÓN;26 años;Extranjeros;Hombres;2019;1.257
+ARAGÓN;26 años;Extranjeros;Mujeres;2019;1.350
+ARAGÓN;27 años;TOTAL;Ambos sexos;2019;13.137
+ARAGÓN;27 años;TOTAL;Hombres;2019;6.570
+ARAGÓN;27 años;TOTAL;Mujeres;2019;6.567
+ARAGÓN;27 años;Españoles;Ambos sexos;2019;10.377
+ARAGÓN;27 años;Españoles;Hombres;2019;5.273
+ARAGÓN;27 años;Españoles;Mujeres;2019;5.104
+ARAGÓN;27 años;Extranjeros;Ambos sexos;2019;2.760
+ARAGÓN;27 años;Extranjeros;Hombres;2019;1.297
+ARAGÓN;27 años;Extranjeros;Mujeres;2019;1.463
+ARAGÓN;28 años;TOTAL;Ambos sexos;2019;13.240
+ARAGÓN;28 años;TOTAL;Hombres;2019;6.802
+ARAGÓN;28 años;TOTAL;Mujeres;2019;6.438
+ARAGÓN;28 años;Españoles;Ambos sexos;2019;10.361
+ARAGÓN;28 años;Españoles;Hombres;2019;5.493
+ARAGÓN;28 años;Españoles;Mujeres;2019;4.868
+ARAGÓN;28 años;Extranjeros;Ambos sexos;2019;2.879
+ARAGÓN;28 años;Extranjeros;Hombres;2019;1.309
+ARAGÓN;28 años;Extranjeros;Mujeres;2019;1.570
+ARAGÓN;29 años;TOTAL;Ambos sexos;2019;13.933
+ARAGÓN;29 años;TOTAL;Hombres;2019;7.138
+ARAGÓN;29 años;TOTAL;Mujeres;2019;6.795
+ARAGÓN;29 años;Españoles;Ambos sexos;2019;10.812
+ARAGÓN;29 años;Españoles;Hombres;2019;5.742
+ARAGÓN;29 años;Españoles;Mujeres;2019;5.070
+ARAGÓN;29 años;Extranjeros;Ambos sexos;2019;3.121
+ARAGÓN;29 años;Extranjeros;Hombres;2019;1.396
+ARAGÓN;29 años;Extranjeros;Mujeres;2019;1.725
+ARAGÓN;30 años;TOTAL;Ambos sexos;2019;14.334
+ARAGÓN;30 años;TOTAL;Hombres;2019;7.300
+ARAGÓN;30 años;TOTAL;Mujeres;2019;7.034
+ARAGÓN;30 años;Españoles;Ambos sexos;2019;11.105
+ARAGÓN;30 años;Españoles;Hombres;2019;5.810
+ARAGÓN;30 años;Españoles;Mujeres;2019;5.295
+ARAGÓN;30 años;Extranjeros;Ambos sexos;2019;3.229
+ARAGÓN;30 años;Extranjeros;Hombres;2019;1.490
+ARAGÓN;30 años;Extranjeros;Mujeres;2019;1.739
+ARAGÓN;31 años;TOTAL;Ambos sexos;2019;14.505
+ARAGÓN;31 años;TOTAL;Hombres;2019;7.262
+ARAGÓN;31 años;TOTAL;Mujeres;2019;7.243
+ARAGÓN;31 años;Españoles;Ambos sexos;2019;11.137
+ARAGÓN;31 años;Españoles;Hombres;2019;5.720
+ARAGÓN;31 años;Españoles;Mujeres;2019;5.417
+ARAGÓN;31 años;Extranjeros;Ambos sexos;2019;3.368
+ARAGÓN;31 años;Extranjeros;Hombres;2019;1.542
+ARAGÓN;31 años;Extranjeros;Mujeres;2019;1.826
+ARAGÓN;32 años;TOTAL;Ambos sexos;2019;15.081
+ARAGÓN;32 años;TOTAL;Hombres;2019;7.613
+ARAGÓN;32 años;TOTAL;Mujeres;2019;7.468
+ARAGÓN;32 años;Españoles;Ambos sexos;2019;11.584
+ARAGÓN;32 años;Españoles;Hombres;2019;5.990
+ARAGÓN;32 años;Españoles;Mujeres;2019;5.594
+ARAGÓN;32 años;Extranjeros;Ambos sexos;2019;3.497
+ARAGÓN;32 años;Extranjeros;Hombres;2019;1.623
+ARAGÓN;32 años;Extranjeros;Mujeres;2019;1.874
+ARAGÓN;33 años;TOTAL;Ambos sexos;2019;15.597
+ARAGÓN;33 años;TOTAL;Hombres;2019;7.938
+ARAGÓN;33 años;TOTAL;Mujeres;2019;7.659
+ARAGÓN;33 años;Españoles;Ambos sexos;2019;12.091
+ARAGÓN;33 años;Españoles;Hombres;2019;6.287
+ARAGÓN;33 años;Españoles;Mujeres;2019;5.804
+ARAGÓN;33 años;Extranjeros;Ambos sexos;2019;3.506
+ARAGÓN;33 años;Extranjeros;Hombres;2019;1.651
+ARAGÓN;33 años;Extranjeros;Mujeres;2019;1.855
+ARAGÓN;34 años;TOTAL;Ambos sexos;2019;16.072
+ARAGÓN;34 años;TOTAL;Hombres;2019;8.280
+ARAGÓN;34 años;TOTAL;Mujeres;2019;7.792
+ARAGÓN;34 años;Españoles;Ambos sexos;2019;12.438
+ARAGÓN;34 años;Españoles;Hombres;2019;6.563
+ARAGÓN;34 años;Españoles;Mujeres;2019;5.875
+ARAGÓN;34 años;Extranjeros;Ambos sexos;2019;3.634
+ARAGÓN;34 años;Extranjeros;Hombres;2019;1.717
+ARAGÓN;34 años;Extranjeros;Mujeres;2019;1.917
+ARAGÓN;35 años;TOTAL;Ambos sexos;2019;16.295
+ARAGÓN;35 años;TOTAL;Hombres;2019;8.383
+ARAGÓN;35 años;TOTAL;Mujeres;2019;7.912
+ARAGÓN;35 años;Españoles;Ambos sexos;2019;12.721
+ARAGÓN;35 años;Españoles;Hombres;2019;6.600
+ARAGÓN;35 años;Españoles;Mujeres;2019;6.121
+ARAGÓN;35 años;Extranjeros;Ambos sexos;2019;3.574
+ARAGÓN;35 años;Extranjeros;Hombres;2019;1.783
+ARAGÓN;35 años;Extranjeros;Mujeres;2019;1.791
+ARAGÓN;36 años;TOTAL;Ambos sexos;2019;17.374
+ARAGÓN;36 años;TOTAL;Hombres;2019;8.784
+ARAGÓN;36 años;TOTAL;Mujeres;2019;8.590
+ARAGÓN;36 años;Españoles;Ambos sexos;2019;13.748
+ARAGÓN;36 años;Españoles;Hombres;2019;7.041
+ARAGÓN;36 años;Españoles;Mujeres;2019;6.707
+ARAGÓN;36 años;Extranjeros;Ambos sexos;2019;3.626
+ARAGÓN;36 años;Extranjeros;Hombres;2019;1.743
+ARAGÓN;36 años;Extranjeros;Mujeres;2019;1.883
+ARAGÓN;37 años;TOTAL;Ambos sexos;2019;18.437
+ARAGÓN;37 años;TOTAL;Hombres;2019;9.363
+ARAGÓN;37 años;TOTAL;Mujeres;2019;9.074
+ARAGÓN;37 años;Españoles;Ambos sexos;2019;14.648
+ARAGÓN;37 años;Españoles;Hombres;2019;7.512
+ARAGÓN;37 años;Españoles;Mujeres;2019;7.136
+ARAGÓN;37 años;Extranjeros;Ambos sexos;2019;3.789
+ARAGÓN;37 años;Extranjeros;Hombres;2019;1.851
+ARAGÓN;37 años;Extranjeros;Mujeres;2019;1.938
+ARAGÓN;38 años;TOTAL;Ambos sexos;2019;19.648
+ARAGÓN;38 años;TOTAL;Hombres;2019;10.038
+ARAGÓN;38 años;TOTAL;Mujeres;2019;9.610
+ARAGÓN;38 años;Españoles;Ambos sexos;2019;15.733
+ARAGÓN;38 años;Españoles;Hombres;2019;8.011
+ARAGÓN;38 años;Españoles;Mujeres;2019;7.722
+ARAGÓN;38 años;Extranjeros;Ambos sexos;2019;3.915
+ARAGÓN;38 años;Extranjeros;Hombres;2019;2.027
+ARAGÓN;38 años;Extranjeros;Mujeres;2019;1.888
+ARAGÓN;39 años;TOTAL;Ambos sexos;2019;20.175
+ARAGÓN;39 años;TOTAL;Hombres;2019;10.260
+ARAGÓN;39 años;TOTAL;Mujeres;2019;9.915
+ARAGÓN;39 años;Españoles;Ambos sexos;2019;16.240
+ARAGÓN;39 años;Españoles;Hombres;2019;8.188
+ARAGÓN;39 años;Españoles;Mujeres;2019;8.052
+ARAGÓN;39 años;Extranjeros;Ambos sexos;2019;3.935
+ARAGÓN;39 años;Extranjeros;Hombres;2019;2.072
+ARAGÓN;39 años;Extranjeros;Mujeres;2019;1.863
+ARAGÓN;40 años;TOTAL;Ambos sexos;2019;21.023
+ARAGÓN;40 años;TOTAL;Hombres;2019;10.715
+ARAGÓN;40 años;TOTAL;Mujeres;2019;10.308
+ARAGÓN;40 años;Españoles;Ambos sexos;2019;17.291
+ARAGÓN;40 años;Españoles;Hombres;2019;8.783
+ARAGÓN;40 años;Españoles;Mujeres;2019;8.508
+ARAGÓN;40 años;Extranjeros;Ambos sexos;2019;3.732
+ARAGÓN;40 años;Extranjeros;Hombres;2019;1.932
+ARAGÓN;40 años;Extranjeros;Mujeres;2019;1.800
+ARAGÓN;41 años;TOTAL;Ambos sexos;2019;21.822
+ARAGÓN;41 años;TOTAL;Hombres;2019;11.142
+ARAGÓN;41 años;TOTAL;Mujeres;2019;10.680
+ARAGÓN;41 años;Españoles;Ambos sexos;2019;17.972
+ARAGÓN;41 años;Españoles;Hombres;2019;9.115
+ARAGÓN;41 años;Españoles;Mujeres;2019;8.857
+ARAGÓN;41 años;Extranjeros;Ambos sexos;2019;3.850
+ARAGÓN;41 años;Extranjeros;Hombres;2019;2.027
+ARAGÓN;41 años;Extranjeros;Mujeres;2019;1.823
+ARAGÓN;42 años;TOTAL;Ambos sexos;2019;22.001
+ARAGÓN;42 años;TOTAL;Hombres;2019;11.405
+ARAGÓN;42 años;TOTAL;Mujeres;2019;10.596
+ARAGÓN;42 años;Españoles;Ambos sexos;2019;18.419
+ARAGÓN;42 años;Españoles;Hombres;2019;9.479
+ARAGÓN;42 años;Españoles;Mujeres;2019;8.940
+ARAGÓN;42 años;Extranjeros;Ambos sexos;2019;3.582
+ARAGÓN;42 años;Extranjeros;Hombres;2019;1.926
+ARAGÓN;42 años;Extranjeros;Mujeres;2019;1.656
+ARAGÓN;43 años;TOTAL;Ambos sexos;2019;22.150
+ARAGÓN;43 años;TOTAL;Hombres;2019;11.381
+ARAGÓN;43 años;TOTAL;Mujeres;2019;10.769
+ARAGÓN;43 años;Españoles;Ambos sexos;2019;18.493
+ARAGÓN;43 años;Españoles;Hombres;2019;9.435
+ARAGÓN;43 años;Españoles;Mujeres;2019;9.058
+ARAGÓN;43 años;Extranjeros;Ambos sexos;2019;3.657
+ARAGÓN;43 años;Extranjeros;Hombres;2019;1.946
+ARAGÓN;43 años;Extranjeros;Mujeres;2019;1.711
+ARAGÓN;44 años;TOTAL;Ambos sexos;2019;21.651
+ARAGÓN;44 años;TOTAL;Hombres;2019;11.257
+ARAGÓN;44 años;TOTAL;Mujeres;2019;10.394
+ARAGÓN;44 años;Españoles;Ambos sexos;2019;18.343
+ARAGÓN;44 años;Españoles;Hombres;2019;9.458
+ARAGÓN;44 años;Españoles;Mujeres;2019;8.885
+ARAGÓN;44 años;Extranjeros;Ambos sexos;2019;3.308
+ARAGÓN;44 años;Extranjeros;Hombres;2019;1.799
+ARAGÓN;44 años;Extranjeros;Mujeres;2019;1.509
+ARAGÓN;45 años;TOTAL;Ambos sexos;2019;21.153
+ARAGÓN;45 años;TOTAL;Hombres;2019;10.878
+ARAGÓN;45 años;TOTAL;Mujeres;2019;10.275
+ARAGÓN;45 años;Españoles;Ambos sexos;2019;18.108
+ARAGÓN;45 años;Españoles;Hombres;2019;9.213
+ARAGÓN;45 años;Españoles;Mujeres;2019;8.895
+ARAGÓN;45 años;Extranjeros;Ambos sexos;2019;3.045
+ARAGÓN;45 años;Extranjeros;Hombres;2019;1.665
+ARAGÓN;45 años;Extranjeros;Mujeres;2019;1.380
+ARAGÓN;46 años;TOTAL;Ambos sexos;2019;21.432
+ARAGÓN;46 años;TOTAL;Hombres;2019;11.053
+ARAGÓN;46 años;TOTAL;Mujeres;2019;10.379
+ARAGÓN;46 años;Españoles;Ambos sexos;2019;18.560
+ARAGÓN;46 años;Españoles;Hombres;2019;9.479
+ARAGÓN;46 años;Españoles;Mujeres;2019;9.081
+ARAGÓN;46 años;Extranjeros;Ambos sexos;2019;2.872
+ARAGÓN;46 años;Extranjeros;Hombres;2019;1.574
+ARAGÓN;46 años;Extranjeros;Mujeres;2019;1.298
+ARAGÓN;47 años;TOTAL;Ambos sexos;2019;20.949
+ARAGÓN;47 años;TOTAL;Hombres;2019;10.609
+ARAGÓN;47 años;TOTAL;Mujeres;2019;10.340
+ARAGÓN;47 años;Españoles;Ambos sexos;2019;18.235
+ARAGÓN;47 años;Españoles;Hombres;2019;9.180
+ARAGÓN;47 años;Españoles;Mujeres;2019;9.055
+ARAGÓN;47 años;Extranjeros;Ambos sexos;2019;2.714
+ARAGÓN;47 años;Extranjeros;Hombres;2019;1.429
+ARAGÓN;47 años;Extranjeros;Mujeres;2019;1.285
+ARAGÓN;48 años;TOTAL;Ambos sexos;2019;20.929
+ARAGÓN;48 años;TOTAL;Hombres;2019;10.744
+ARAGÓN;48 años;TOTAL;Mujeres;2019;10.185
+ARAGÓN;48 años;Españoles;Ambos sexos;2019;18.260
+ARAGÓN;48 años;Españoles;Hombres;2019;9.319
+ARAGÓN;48 años;Españoles;Mujeres;2019;8.941
+ARAGÓN;48 años;Extranjeros;Ambos sexos;2019;2.669
+ARAGÓN;48 años;Extranjeros;Hombres;2019;1.425
+ARAGÓN;48 años;Extranjeros;Mujeres;2019;1.244
+ARAGÓN;49 años;TOTAL;Ambos sexos;2019;20.371
+ARAGÓN;49 años;TOTAL;Hombres;2019;10.487
+ARAGÓN;49 años;TOTAL;Mujeres;2019;9.884
+ARAGÓN;49 años;Españoles;Ambos sexos;2019;17.856
+ARAGÓN;49 años;Españoles;Hombres;2019;9.110
+ARAGÓN;49 años;Españoles;Mujeres;2019;8.746
+ARAGÓN;49 años;Extranjeros;Ambos sexos;2019;2.515
+ARAGÓN;49 años;Extranjeros;Hombres;2019;1.377
+ARAGÓN;49 años;Extranjeros;Mujeres;2019;1.138
+ARAGÓN;50 años;TOTAL;Ambos sexos;2019;20.442
+ARAGÓN;50 años;TOTAL;Hombres;2019;10.282
+ARAGÓN;50 años;TOTAL;Mujeres;2019;10.160
+ARAGÓN;50 años;Españoles;Ambos sexos;2019;17.944
+ARAGÓN;50 años;Españoles;Hombres;2019;8.997
+ARAGÓN;50 años;Españoles;Mujeres;2019;8.947
+ARAGÓN;50 años;Extranjeros;Ambos sexos;2019;2.498
+ARAGÓN;50 años;Extranjeros;Hombres;2019;1.285
+ARAGÓN;50 años;Extranjeros;Mujeres;2019;1.213
+ARAGÓN;51 años;TOTAL;Ambos sexos;2019;20.475
+ARAGÓN;51 años;TOTAL;Hombres;2019;10.176
+ARAGÓN;51 años;TOTAL;Mujeres;2019;10.299
+ARAGÓN;51 años;Españoles;Ambos sexos;2019;18.140
+ARAGÓN;51 años;Españoles;Hombres;2019;8.985
+ARAGÓN;51 años;Españoles;Mujeres;2019;9.155
+ARAGÓN;51 años;Extranjeros;Ambos sexos;2019;2.335
+ARAGÓN;51 años;Extranjeros;Hombres;2019;1.191
+ARAGÓN;51 años;Extranjeros;Mujeres;2019;1.144
+ARAGÓN;52 años;TOTAL;Ambos sexos;2019;20.187
+ARAGÓN;52 años;TOTAL;Hombres;2019;10.324
+ARAGÓN;52 años;TOTAL;Mujeres;2019;9.863
+ARAGÓN;52 años;Españoles;Ambos sexos;2019;18.442
+ARAGÓN;52 años;Españoles;Hombres;2019;9.375
+ARAGÓN;52 años;Españoles;Mujeres;2019;9.067
+ARAGÓN;52 años;Extranjeros;Ambos sexos;2019;1.745
+ARAGÓN;52 años;Extranjeros;Hombres;2019;949
+ARAGÓN;52 años;Extranjeros;Mujeres;2019;796
+ARAGÓN;53 años;TOTAL;Ambos sexos;2019;19.866
+ARAGÓN;53 años;TOTAL;Hombres;2019;10.036
+ARAGÓN;53 años;TOTAL;Mujeres;2019;9.830
+ARAGÓN;53 años;Españoles;Ambos sexos;2019;18.232
+ARAGÓN;53 años;Españoles;Hombres;2019;9.146
+ARAGÓN;53 años;Españoles;Mujeres;2019;9.086
+ARAGÓN;53 años;Extranjeros;Ambos sexos;2019;1.634
+ARAGÓN;53 años;Extranjeros;Hombres;2019;890
+ARAGÓN;53 años;Extranjeros;Mujeres;2019;744
+ARAGÓN;54 años;TOTAL;Ambos sexos;2019;20.366
+ARAGÓN;54 años;TOTAL;Hombres;2019;10.369
+ARAGÓN;54 años;TOTAL;Mujeres;2019;9.997
+ARAGÓN;54 años;Españoles;Ambos sexos;2019;18.779
+ARAGÓN;54 años;Españoles;Hombres;2019;9.561
+ARAGÓN;54 años;Españoles;Mujeres;2019;9.218
+ARAGÓN;54 años;Extranjeros;Ambos sexos;2019;1.587
+ARAGÓN;54 años;Extranjeros;Hombres;2019;808
+ARAGÓN;54 años;Extranjeros;Mujeres;2019;779
+ARAGÓN;55 años;TOTAL;Ambos sexos;2019;19.621
+ARAGÓN;55 años;TOTAL;Hombres;2019;9.969
+ARAGÓN;55 años;TOTAL;Mujeres;2019;9.652
+ARAGÓN;55 años;Españoles;Ambos sexos;2019;18.168
+ARAGÓN;55 años;Españoles;Hombres;2019;9.232
+ARAGÓN;55 años;Españoles;Mujeres;2019;8.936
+ARAGÓN;55 años;Extranjeros;Ambos sexos;2019;1.453
+ARAGÓN;55 años;Extranjeros;Hombres;2019;737
+ARAGÓN;55 años;Extranjeros;Mujeres;2019;716
+ARAGÓN;56 años;TOTAL;Ambos sexos;2019;19.195
+ARAGÓN;56 años;TOTAL;Hombres;2019;9.755
+ARAGÓN;56 años;TOTAL;Mujeres;2019;9.440
+ARAGÓN;56 años;Españoles;Ambos sexos;2019;17.834
+ARAGÓN;56 años;Españoles;Hombres;2019;9.052
+ARAGÓN;56 años;Españoles;Mujeres;2019;8.782
+ARAGÓN;56 años;Extranjeros;Ambos sexos;2019;1.361
+ARAGÓN;56 años;Extranjeros;Hombres;2019;703
+ARAGÓN;56 años;Extranjeros;Mujeres;2019;658
+ARAGÓN;57 años;TOTAL;Ambos sexos;2019;18.753
+ARAGÓN;57 años;TOTAL;Hombres;2019;9.329
+ARAGÓN;57 años;TOTAL;Mujeres;2019;9.424
+ARAGÓN;57 años;Españoles;Ambos sexos;2019;17.543
+ARAGÓN;57 años;Españoles;Hombres;2019;8.697
+ARAGÓN;57 años;Españoles;Mujeres;2019;8.846
+ARAGÓN;57 años;Extranjeros;Ambos sexos;2019;1.210
+ARAGÓN;57 años;Extranjeros;Hombres;2019;632
+ARAGÓN;57 años;Extranjeros;Mujeres;2019;578
+ARAGÓN;58 años;TOTAL;Ambos sexos;2019;18.778
+ARAGÓN;58 años;TOTAL;Hombres;2019;9.256
+ARAGÓN;58 años;TOTAL;Mujeres;2019;9.522
+ARAGÓN;58 años;Españoles;Ambos sexos;2019;17.590
+ARAGÓN;58 años;Españoles;Hombres;2019;8.644
+ARAGÓN;58 años;Españoles;Mujeres;2019;8.946
+ARAGÓN;58 años;Extranjeros;Ambos sexos;2019;1.188
+ARAGÓN;58 años;Extranjeros;Hombres;2019;612
+ARAGÓN;58 años;Extranjeros;Mujeres;2019;576
+ARAGÓN;59 años;TOTAL;Ambos sexos;2019;18.263
+ARAGÓN;59 años;TOTAL;Hombres;2019;9.146
+ARAGÓN;59 años;TOTAL;Mujeres;2019;9.117
+ARAGÓN;59 años;Españoles;Ambos sexos;2019;17.263
+ARAGÓN;59 años;Españoles;Hombres;2019;8.657
+ARAGÓN;59 años;Españoles;Mujeres;2019;8.606
+ARAGÓN;59 años;Extranjeros;Ambos sexos;2019;1.000
+ARAGÓN;59 años;Extranjeros;Hombres;2019;489
+ARAGÓN;59 años;Extranjeros;Mujeres;2019;511
+ARAGÓN;60 años;TOTAL;Ambos sexos;2019;17.798
+ARAGÓN;60 años;TOTAL;Hombres;2019;8.912
+ARAGÓN;60 años;TOTAL;Mujeres;2019;8.886
+ARAGÓN;60 años;Españoles;Ambos sexos;2019;16.835
+ARAGÓN;60 años;Españoles;Hombres;2019;8.447
+ARAGÓN;60 años;Españoles;Mujeres;2019;8.388
+ARAGÓN;60 años;Extranjeros;Ambos sexos;2019;963
+ARAGÓN;60 años;Extranjeros;Hombres;2019;465
+ARAGÓN;60 años;Extranjeros;Mujeres;2019;498
+ARAGÓN;61 años;TOTAL;Ambos sexos;2019;17.463
+ARAGÓN;61 años;TOTAL;Hombres;2019;8.656
+ARAGÓN;61 años;TOTAL;Mujeres;2019;8.807
+ARAGÓN;61 años;Españoles;Ambos sexos;2019;16.652
+ARAGÓN;61 años;Españoles;Hombres;2019;8.290
+ARAGÓN;61 años;Españoles;Mujeres;2019;8.362
+ARAGÓN;61 años;Extranjeros;Ambos sexos;2019;811
+ARAGÓN;61 años;Extranjeros;Hombres;2019;366
+ARAGÓN;61 años;Extranjeros;Mujeres;2019;445
+ARAGÓN;62 años;TOTAL;Ambos sexos;2019;16.400
+ARAGÓN;62 años;TOTAL;Hombres;2019;8.087
+ARAGÓN;62 años;TOTAL;Mujeres;2019;8.313
+ARAGÓN;62 años;Españoles;Ambos sexos;2019;15.620
+ARAGÓN;62 años;Españoles;Hombres;2019;7.716
+ARAGÓN;62 años;Españoles;Mujeres;2019;7.904
+ARAGÓN;62 años;Extranjeros;Ambos sexos;2019;780
+ARAGÓN;62 años;Extranjeros;Hombres;2019;371
+ARAGÓN;62 años;Extranjeros;Mujeres;2019;409
+ARAGÓN;63 años;TOTAL;Ambos sexos;2019;15.845
+ARAGÓN;63 años;TOTAL;Hombres;2019;7.810
+ARAGÓN;63 años;TOTAL;Mujeres;2019;8.035
+ARAGÓN;63 años;Españoles;Ambos sexos;2019;15.162
+ARAGÓN;63 años;Españoles;Hombres;2019;7.491
+ARAGÓN;63 años;Españoles;Mujeres;2019;7.671
+ARAGÓN;63 años;Extranjeros;Ambos sexos;2019;683
+ARAGÓN;63 años;Extranjeros;Hombres;2019;319
+ARAGÓN;63 años;Extranjeros;Mujeres;2019;364
+ARAGÓN;64 años;TOTAL;Ambos sexos;2019;14.706
+ARAGÓN;64 años;TOTAL;Hombres;2019;7.164
+ARAGÓN;64 años;TOTAL;Mujeres;2019;7.542
+ARAGÓN;64 años;Españoles;Ambos sexos;2019;14.130
+ARAGÓN;64 años;Españoles;Hombres;2019;6.880
+ARAGÓN;64 años;Españoles;Mujeres;2019;7.250
+ARAGÓN;64 años;Extranjeros;Ambos sexos;2019;576
+ARAGÓN;64 años;Extranjeros;Hombres;2019;284
+ARAGÓN;64 años;Extranjeros;Mujeres;2019;292
+ARAGÓN;65 años;TOTAL;Ambos sexos;2019;14.733
+ARAGÓN;65 años;TOTAL;Hombres;2019;7.117
+ARAGÓN;65 años;TOTAL;Mujeres;2019;7.616
+ARAGÓN;65 años;Españoles;Ambos sexos;2019;14.228
+ARAGÓN;65 años;Españoles;Hombres;2019;6.909
+ARAGÓN;65 años;Españoles;Mujeres;2019;7.319
+ARAGÓN;65 años;Extranjeros;Ambos sexos;2019;505
+ARAGÓN;65 años;Extranjeros;Hombres;2019;208
+ARAGÓN;65 años;Extranjeros;Mujeres;2019;297
+ARAGÓN;66 años;TOTAL;Ambos sexos;2019;14.869
+ARAGÓN;66 años;TOTAL;Hombres;2019;7.205
+ARAGÓN;66 años;TOTAL;Mujeres;2019;7.664
+ARAGÓN;66 años;Españoles;Ambos sexos;2019;14.421
+ARAGÓN;66 años;Españoles;Hombres;2019;7.003
+ARAGÓN;66 años;Españoles;Mujeres;2019;7.418
+ARAGÓN;66 años;Extranjeros;Ambos sexos;2019;448
+ARAGÓN;66 años;Extranjeros;Hombres;2019;202
+ARAGÓN;66 años;Extranjeros;Mujeres;2019;246
+ARAGÓN;67 años;TOTAL;Ambos sexos;2019;13.629
+ARAGÓN;67 años;TOTAL;Hombres;2019;6.552
+ARAGÓN;67 años;TOTAL;Mujeres;2019;7.077
+ARAGÓN;67 años;Españoles;Ambos sexos;2019;13.212
+ARAGÓN;67 años;Españoles;Hombres;2019;6.379
+ARAGÓN;67 años;Españoles;Mujeres;2019;6.833
+ARAGÓN;67 años;Extranjeros;Ambos sexos;2019;417
+ARAGÓN;67 años;Extranjeros;Hombres;2019;173
+ARAGÓN;67 años;Extranjeros;Mujeres;2019;244
+ARAGÓN;68 años;TOTAL;Ambos sexos;2019;13.426
+ARAGÓN;68 años;TOTAL;Hombres;2019;6.488
+ARAGÓN;68 años;TOTAL;Mujeres;2019;6.938
+ARAGÓN;68 años;Españoles;Ambos sexos;2019;13.062
+ARAGÓN;68 años;Españoles;Hombres;2019;6.329
+ARAGÓN;68 años;Españoles;Mujeres;2019;6.733
+ARAGÓN;68 años;Extranjeros;Ambos sexos;2019;364
+ARAGÓN;68 años;Extranjeros;Hombres;2019;159
+ARAGÓN;68 años;Extranjeros;Mujeres;2019;205
+ARAGÓN;69 años;TOTAL;Ambos sexos;2019;13.777
+ARAGÓN;69 años;TOTAL;Hombres;2019;6.514
+ARAGÓN;69 años;TOTAL;Mujeres;2019;7.263
+ARAGÓN;69 años;Españoles;Ambos sexos;2019;13.497
+ARAGÓN;69 años;Españoles;Hombres;2019;6.403
+ARAGÓN;69 años;Españoles;Mujeres;2019;7.094
+ARAGÓN;69 años;Extranjeros;Ambos sexos;2019;280
+ARAGÓN;69 años;Extranjeros;Hombres;2019;111
+ARAGÓN;69 años;Extranjeros;Mujeres;2019;169
+ARAGÓN;70 años;TOTAL;Ambos sexos;2019;14.140
+ARAGÓN;70 años;TOTAL;Hombres;2019;6.695
+ARAGÓN;70 años;TOTAL;Mujeres;2019;7.445
+ARAGÓN;70 años;Españoles;Ambos sexos;2019;13.898
+ARAGÓN;70 años;Españoles;Hombres;2019;6.594
+ARAGÓN;70 años;Españoles;Mujeres;2019;7.304
+ARAGÓN;70 años;Extranjeros;Ambos sexos;2019;242
+ARAGÓN;70 años;Extranjeros;Hombres;2019;101
+ARAGÓN;70 años;Extranjeros;Mujeres;2019;141
+ARAGÓN;71 años;TOTAL;Ambos sexos;2019;12.990
+ARAGÓN;71 años;TOTAL;Hombres;2019;6.152
+ARAGÓN;71 años;TOTAL;Mujeres;2019;6.838
+ARAGÓN;71 años;Españoles;Ambos sexos;2019;12.770
+ARAGÓN;71 años;Españoles;Hombres;2019;6.056
+ARAGÓN;71 años;Españoles;Mujeres;2019;6.714
+ARAGÓN;71 años;Extranjeros;Ambos sexos;2019;220
+ARAGÓN;71 años;Extranjeros;Hombres;2019;96
+ARAGÓN;71 años;Extranjeros;Mujeres;2019;124
+ARAGÓN;72 años;TOTAL;Ambos sexos;2019;12.711
+ARAGÓN;72 años;TOTAL;Hombres;2019;5.939
+ARAGÓN;72 años;TOTAL;Mujeres;2019;6.772
+ARAGÓN;72 años;Españoles;Ambos sexos;2019;12.503
+ARAGÓN;72 años;Españoles;Hombres;2019;5.852
+ARAGÓN;72 años;Españoles;Mujeres;2019;6.651
+ARAGÓN;72 años;Extranjeros;Ambos sexos;2019;208
+ARAGÓN;72 años;Extranjeros;Hombres;2019;87
+ARAGÓN;72 años;Extranjeros;Mujeres;2019;121
+ARAGÓN;73 años;TOTAL;Ambos sexos;2019;12.825
+ARAGÓN;73 años;TOTAL;Hombres;2019;5.937
+ARAGÓN;73 años;TOTAL;Mujeres;2019;6.888
+ARAGÓN;73 años;Españoles;Ambos sexos;2019;12.658
+ARAGÓN;73 años;Españoles;Hombres;2019;5.873
+ARAGÓN;73 años;Españoles;Mujeres;2019;6.785
+ARAGÓN;73 años;Extranjeros;Ambos sexos;2019;167
+ARAGÓN;73 años;Extranjeros;Hombres;2019;64
+ARAGÓN;73 años;Extranjeros;Mujeres;2019;103
+ARAGÓN;74 años;TOTAL;Ambos sexos;2019;12.080
+ARAGÓN;74 años;TOTAL;Hombres;2019;5.589
+ARAGÓN;74 años;TOTAL;Mujeres;2019;6.491
+ARAGÓN;74 años;Españoles;Ambos sexos;2019;11.903
+ARAGÓN;74 años;Españoles;Hombres;2019;5.524
+ARAGÓN;74 años;Españoles;Mujeres;2019;6.379
+ARAGÓN;74 años;Extranjeros;Ambos sexos;2019;177
+ARAGÓN;74 años;Extranjeros;Hombres;2019;65
+ARAGÓN;74 años;Extranjeros;Mujeres;2019;112
+ARAGÓN;75 años;TOTAL;Ambos sexos;2019;11.719
+ARAGÓN;75 años;TOTAL;Hombres;2019;5.279
+ARAGÓN;75 años;TOTAL;Mujeres;2019;6.440
+ARAGÓN;75 años;Españoles;Ambos sexos;2019;11.586
+ARAGÓN;75 años;Españoles;Hombres;2019;5.220
+ARAGÓN;75 años;Españoles;Mujeres;2019;6.366
+ARAGÓN;75 años;Extranjeros;Ambos sexos;2019;133
+ARAGÓN;75 años;Extranjeros;Hombres;2019;59
+ARAGÓN;75 años;Extranjeros;Mujeres;2019;74
+ARAGÓN;76 años;TOTAL;Ambos sexos;2019;10.458
+ARAGÓN;76 años;TOTAL;Hombres;2019;4.771
+ARAGÓN;76 años;TOTAL;Mujeres;2019;5.687
+ARAGÓN;76 años;Españoles;Ambos sexos;2019;10.343
+ARAGÓN;76 años;Españoles;Hombres;2019;4.729
+ARAGÓN;76 años;Españoles;Mujeres;2019;5.614
+ARAGÓN;76 años;Extranjeros;Ambos sexos;2019;115
+ARAGÓN;76 años;Extranjeros;Hombres;2019;42
+ARAGÓN;76 años;Extranjeros;Mujeres;2019;73
+ARAGÓN;77 años;TOTAL;Ambos sexos;2019;9.539
+ARAGÓN;77 años;TOTAL;Hombres;2019;4.276
+ARAGÓN;77 años;TOTAL;Mujeres;2019;5.263
+ARAGÓN;77 años;Españoles;Ambos sexos;2019;9.431
+ARAGÓN;77 años;Españoles;Hombres;2019;4.227
+ARAGÓN;77 años;Españoles;Mujeres;2019;5.204
+ARAGÓN;77 años;Extranjeros;Ambos sexos;2019;108
+ARAGÓN;77 años;Extranjeros;Hombres;2019;49
+ARAGÓN;77 años;Extranjeros;Mujeres;2019;59
+ARAGÓN;78 años;TOTAL;Ambos sexos;2019;10.563
+ARAGÓN;78 años;TOTAL;Hombres;2019;4.669
+ARAGÓN;78 años;TOTAL;Mujeres;2019;5.894
+ARAGÓN;78 años;Españoles;Ambos sexos;2019;10.469
+ARAGÓN;78 años;Españoles;Hombres;2019;4.633
+ARAGÓN;78 años;Españoles;Mujeres;2019;5.836
+ARAGÓN;78 años;Extranjeros;Ambos sexos;2019;94
+ARAGÓN;78 años;Extranjeros;Hombres;2019;36
+ARAGÓN;78 años;Extranjeros;Mujeres;2019;58
+ARAGÓN;79 años;TOTAL;Ambos sexos;2019;7.288
+ARAGÓN;79 años;TOTAL;Hombres;2019;3.117
+ARAGÓN;79 años;TOTAL;Mujeres;2019;4.171
+ARAGÓN;79 años;Españoles;Ambos sexos;2019;7.197
+ARAGÓN;79 años;Españoles;Hombres;2019;3.084
+ARAGÓN;79 años;Españoles;Mujeres;2019;4.113
+ARAGÓN;79 años;Extranjeros;Ambos sexos;2019;91
+ARAGÓN;79 años;Extranjeros;Hombres;2019;33
+ARAGÓN;79 años;Extranjeros;Mujeres;2019;58
+ARAGÓN;80 años;TOTAL;Ambos sexos;2019;7.673
+ARAGÓN;80 años;TOTAL;Hombres;2019;3.292
+ARAGÓN;80 años;TOTAL;Mujeres;2019;4.381
+ARAGÓN;80 años;Españoles;Ambos sexos;2019;7.592
+ARAGÓN;80 años;Españoles;Hombres;2019;3.258
+ARAGÓN;80 años;Españoles;Mujeres;2019;4.334
+ARAGÓN;80 años;Extranjeros;Ambos sexos;2019;81
+ARAGÓN;80 años;Extranjeros;Hombres;2019;34
+ARAGÓN;80 años;Extranjeros;Mujeres;2019;47
+ARAGÓN;81 años;TOTAL;Ambos sexos;2019;8.734
+ARAGÓN;81 años;TOTAL;Hombres;2019;3.605
+ARAGÓN;81 años;TOTAL;Mujeres;2019;5.129
+ARAGÓN;81 años;Españoles;Ambos sexos;2019;8.686
+ARAGÓN;81 años;Españoles;Hombres;2019;3.589
+ARAGÓN;81 años;Españoles;Mujeres;2019;5.097
+ARAGÓN;81 años;Extranjeros;Ambos sexos;2019;48
+ARAGÓN;81 años;Extranjeros;Hombres;2019;16
+ARAGÓN;81 años;Extranjeros;Mujeres;2019;32
+ARAGÓN;82 años;TOTAL;Ambos sexos;2019;9.728
+ARAGÓN;82 años;TOTAL;Hombres;2019;3.993
+ARAGÓN;82 años;TOTAL;Mujeres;2019;5.735
+ARAGÓN;82 años;Españoles;Ambos sexos;2019;9.676
+ARAGÓN;82 años;Españoles;Hombres;2019;3.971
+ARAGÓN;82 años;Españoles;Mujeres;2019;5.705
+ARAGÓN;82 años;Extranjeros;Ambos sexos;2019;52
+ARAGÓN;82 años;Extranjeros;Hombres;2019;22
+ARAGÓN;82 años;Extranjeros;Mujeres;2019;30
+ARAGÓN;83 años;TOTAL;Ambos sexos;2019;9.268
+ARAGÓN;83 años;TOTAL;Hombres;2019;3.804
+ARAGÓN;83 años;TOTAL;Mujeres;2019;5.464
+ARAGÓN;83 años;Españoles;Ambos sexos;2019;9.210
+ARAGÓN;83 años;Españoles;Hombres;2019;3.783
+ARAGÓN;83 años;Españoles;Mujeres;2019;5.427
+ARAGÓN;83 años;Extranjeros;Ambos sexos;2019;58
+ARAGÓN;83 años;Extranjeros;Hombres;2019;21
+ARAGÓN;83 años;Extranjeros;Mujeres;2019;37
+ARAGÓN;84 años;TOTAL;Ambos sexos;2019;8.806
+ARAGÓN;84 años;TOTAL;Hombres;2019;3.513
+ARAGÓN;84 años;TOTAL;Mujeres;2019;5.293
+ARAGÓN;84 años;Españoles;Ambos sexos;2019;8.759
+ARAGÓN;84 años;Españoles;Hombres;2019;3.496
+ARAGÓN;84 años;Españoles;Mujeres;2019;5.263
+ARAGÓN;84 años;Extranjeros;Ambos sexos;2019;47
+ARAGÓN;84 años;Extranjeros;Hombres;2019;17
+ARAGÓN;84 años;Extranjeros;Mujeres;2019;30
+ARAGÓN;85 años;TOTAL;Ambos sexos;2019;8.590
+ARAGÓN;85 años;TOTAL;Hombres;2019;3.385
+ARAGÓN;85 años;TOTAL;Mujeres;2019;5.205
+ARAGÓN;85 años;Españoles;Ambos sexos;2019;8.557
+ARAGÓN;85 años;Españoles;Hombres;2019;3.371
+ARAGÓN;85 años;Españoles;Mujeres;2019;5.186
+ARAGÓN;85 años;Extranjeros;Ambos sexos;2019;33
+ARAGÓN;85 años;Extranjeros;Hombres;2019;14
+ARAGÓN;85 años;Extranjeros;Mujeres;2019;19
+ARAGÓN;86 años;TOTAL;Ambos sexos;2019;8.092
+ARAGÓN;86 años;TOTAL;Hombres;2019;3.067
+ARAGÓN;86 años;TOTAL;Mujeres;2019;5.025
+ARAGÓN;86 años;Españoles;Ambos sexos;2019;8.060
+ARAGÓN;86 años;Españoles;Hombres;2019;3.055
+ARAGÓN;86 años;Españoles;Mujeres;2019;5.005
+ARAGÓN;86 años;Extranjeros;Ambos sexos;2019;32
+ARAGÓN;86 años;Extranjeros;Hombres;2019;12
+ARAGÓN;86 años;Extranjeros;Mujeres;2019;20
+ARAGÓN;87 años;TOTAL;Ambos sexos;2019;7.071
+ARAGÓN;87 años;TOTAL;Hombres;2019;2.710
+ARAGÓN;87 años;TOTAL;Mujeres;2019;4.361
+ARAGÓN;87 años;Españoles;Ambos sexos;2019;7.045
+ARAGÓN;87 años;Españoles;Hombres;2019;2.702
+ARAGÓN;87 años;Españoles;Mujeres;2019;4.343
+ARAGÓN;87 años;Extranjeros;Ambos sexos;2019;26
+ARAGÓN;87 años;Extranjeros;Hombres;2019;8
+ARAGÓN;87 años;Extranjeros;Mujeres;2019;18
+ARAGÓN;88 años;TOTAL;Ambos sexos;2019;6.369
+ARAGÓN;88 años;TOTAL;Hombres;2019;2.252
+ARAGÓN;88 años;TOTAL;Mujeres;2019;4.117
+ARAGÓN;88 años;Españoles;Ambos sexos;2019;6.344
+ARAGÓN;88 años;Españoles;Hombres;2019;2.244
+ARAGÓN;88 años;Españoles;Mujeres;2019;4.100
+ARAGÓN;88 años;Extranjeros;Ambos sexos;2019;25
+ARAGÓN;88 años;Extranjeros;Hombres;2019;8
+ARAGÓN;88 años;Extranjeros;Mujeres;2019;17
+ARAGÓN;89 años;TOTAL;Ambos sexos;2019;5.586
+ARAGÓN;89 años;TOTAL;Hombres;2019;1.989
+ARAGÓN;89 años;TOTAL;Mujeres;2019;3.597
+ARAGÓN;89 años;Españoles;Ambos sexos;2019;5.569
+ARAGÓN;89 años;Españoles;Hombres;2019;1.983
+ARAGÓN;89 años;Españoles;Mujeres;2019;3.586
+ARAGÓN;89 años;Extranjeros;Ambos sexos;2019;17
+ARAGÓN;89 años;Extranjeros;Hombres;2019;6
+ARAGÓN;89 años;Extranjeros;Mujeres;2019;11
+ARAGÓN;90 años;TOTAL;Ambos sexos;2019;4.639
+ARAGÓN;90 años;TOTAL;Hombres;2019;1.502
+ARAGÓN;90 años;TOTAL;Mujeres;2019;3.137
+ARAGÓN;90 años;Españoles;Ambos sexos;2019;4.627
+ARAGÓN;90 años;Españoles;Hombres;2019;1.499
+ARAGÓN;90 años;Españoles;Mujeres;2019;3.128
+ARAGÓN;90 años;Extranjeros;Ambos sexos;2019;12
+ARAGÓN;90 años;Extranjeros;Hombres;2019;3
+ARAGÓN;90 años;Extranjeros;Mujeres;2019;9
+ARAGÓN;91 años;TOTAL;Ambos sexos;2019;3.826
+ARAGÓN;91 años;TOTAL;Hombres;2019;1.277
+ARAGÓN;91 años;TOTAL;Mujeres;2019;2.549
+ARAGÓN;91 años;Españoles;Ambos sexos;2019;3.818
+ARAGÓN;91 años;Españoles;Hombres;2019;1.274
+ARAGÓN;91 años;Españoles;Mujeres;2019;2.544
+ARAGÓN;91 años;Extranjeros;Ambos sexos;2019;8
+ARAGÓN;91 años;Extranjeros;Hombres;2019;3
+ARAGÓN;91 años;Extranjeros;Mujeres;2019;5
+ARAGÓN;92 años;TOTAL;Ambos sexos;2019;3.097
+ARAGÓN;92 años;TOTAL;Hombres;2019;962
+ARAGÓN;92 años;TOTAL;Mujeres;2019;2.135
+ARAGÓN;92 años;Españoles;Ambos sexos;2019;3.092
+ARAGÓN;92 años;Españoles;Hombres;2019;962
+ARAGÓN;92 años;Españoles;Mujeres;2019;2.130
+ARAGÓN;92 años;Extranjeros;Ambos sexos;2019;5
+ARAGÓN;92 años;Extranjeros;Hombres;2019;0
+ARAGÓN;92 años;Extranjeros;Mujeres;2019;5
+ARAGÓN;93 años;TOTAL;Ambos sexos;2019;2.457
+ARAGÓN;93 años;TOTAL;Hombres;2019;757
+ARAGÓN;93 años;TOTAL;Mujeres;2019;1.700
+ARAGÓN;93 años;Españoles;Ambos sexos;2019;2.447
+ARAGÓN;93 años;Españoles;Hombres;2019;755
+ARAGÓN;93 años;Españoles;Mujeres;2019;1.692
+ARAGÓN;93 años;Extranjeros;Ambos sexos;2019;10
+ARAGÓN;93 años;Extranjeros;Hombres;2019;2
+ARAGÓN;93 años;Extranjeros;Mujeres;2019;8
+ARAGÓN;94 años;TOTAL;Ambos sexos;2019;2.058
+ARAGÓN;94 años;TOTAL;Hombres;2019;593
+ARAGÓN;94 años;TOTAL;Mujeres;2019;1.465
+ARAGÓN;94 años;Españoles;Ambos sexos;2019;2.051
+ARAGÓN;94 años;Españoles;Hombres;2019;590
+ARAGÓN;94 años;Españoles;Mujeres;2019;1.461
+ARAGÓN;94 años;Extranjeros;Ambos sexos;2019;7
+ARAGÓN;94 años;Extranjeros;Hombres;2019;3
+ARAGÓN;94 años;Extranjeros;Mujeres;2019;4
+ARAGÓN;95 años;TOTAL;Ambos sexos;2019;1.538
+ARAGÓN;95 años;TOTAL;Hombres;2019;456
+ARAGÓN;95 años;TOTAL;Mujeres;2019;1.082
+ARAGÓN;95 años;Españoles;Ambos sexos;2019;1.535
+ARAGÓN;95 años;Españoles;Hombres;2019;456
+ARAGÓN;95 años;Españoles;Mujeres;2019;1.079
+ARAGÓN;95 años;Extranjeros;Ambos sexos;2019;3
+ARAGÓN;95 años;Extranjeros;Hombres;2019;0
+ARAGÓN;95 años;Extranjeros;Mujeres;2019;3
+ARAGÓN;96 años;TOTAL;Ambos sexos;2019;1.150
+ARAGÓN;96 años;TOTAL;Hombres;2019;307
+ARAGÓN;96 años;TOTAL;Mujeres;2019;843
+ARAGÓN;96 años;Españoles;Ambos sexos;2019;1.147
+ARAGÓN;96 años;Españoles;Hombres;2019;307
+ARAGÓN;96 años;Españoles;Mujeres;2019;840
+ARAGÓN;96 años;Extranjeros;Ambos sexos;2019;3
+ARAGÓN;96 años;Extranjeros;Hombres;2019;0
+ARAGÓN;96 años;Extranjeros;Mujeres;2019;3
+ARAGÓN;97 años;TOTAL;Ambos sexos;2019;776
+ARAGÓN;97 años;TOTAL;Hombres;2019;198
+ARAGÓN;97 años;TOTAL;Mujeres;2019;578
+ARAGÓN;97 años;Españoles;Ambos sexos;2019;775
+ARAGÓN;97 años;Españoles;Hombres;2019;198
+ARAGÓN;97 años;Españoles;Mujeres;2019;577
+ARAGÓN;97 años;Extranjeros;Ambos sexos;2019;1
+ARAGÓN;97 años;Extranjeros;Hombres;2019;0
+ARAGÓN;97 años;Extranjeros;Mujeres;2019;1
+ARAGÓN;98 años;TOTAL;Ambos sexos;2019;517
+ARAGÓN;98 años;TOTAL;Hombres;2019;109
+ARAGÓN;98 años;TOTAL;Mujeres;2019;408
+ARAGÓN;98 años;Españoles;Ambos sexos;2019;515
+ARAGÓN;98 años;Españoles;Hombres;2019;109
+ARAGÓN;98 años;Españoles;Mujeres;2019;406
+ARAGÓN;98 años;Extranjeros;Ambos sexos;2019;2
+ARAGÓN;98 años;Extranjeros;Hombres;2019;0
+ARAGÓN;98 años;Extranjeros;Mujeres;2019;2
+ARAGÓN;99 años;TOTAL;Ambos sexos;2019;310
+ARAGÓN;99 años;TOTAL;Hombres;2019;62
+ARAGÓN;99 años;TOTAL;Mujeres;2019;248
+ARAGÓN;99 años;Españoles;Ambos sexos;2019;309
+ARAGÓN;99 años;Españoles;Hombres;2019;61
+ARAGÓN;99 años;Españoles;Mujeres;2019;248
+ARAGÓN;99 años;Extranjeros;Ambos sexos;2019;1
+ARAGÓN;99 años;Extranjeros;Hombres;2019;1
+ARAGÓN;99 años;Extranjeros;Mujeres;2019;0
+ARAGÓN;100 años y más;TOTAL;Ambos sexos;2019;568
+ARAGÓN;100 años y más;TOTAL;Hombres;2019;102
+ARAGÓN;100 años y más;TOTAL;Mujeres;2019;466
+ARAGÓN;100 años y más;Españoles;Ambos sexos;2019;567
+ARAGÓN;100 años y más;Españoles;Hombres;2019;102
+ARAGÓN;100 años y más;Españoles;Mujeres;2019;465
+ARAGÓN;100 años y más;Extranjeros;Ambos sexos;2019;1
+ARAGÓN;100 años y más;Extranjeros;Hombres;2019;0
+ARAGÓN;100 años y más;Extranjeros;Mujeres;2019;1

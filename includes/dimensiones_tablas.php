@@ -4,7 +4,7 @@ include_once('./scripts/php/datos_origen/dim_tablas.php');
 //$keys=array_keys($dim_graficos);
 $keys=$dim_tablas;
 ?>
-<div class="col-md-4" id="dimlistados">
+<div class="col-md-4 filadim" id="dimlistados" >
 	<div class="input-group mb-3">
 	  <select class="custom-select" id="d20" >
 	    <option selected>Elige dato representar</option>
